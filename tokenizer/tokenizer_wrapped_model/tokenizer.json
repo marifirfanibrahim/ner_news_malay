@@ -1,0 +1,11408 @@
+{
+  "version": "1.0",
+  "truncation": null,
+  "padding": null,
+  "added_tokens": [
+    {
+      "id": 0,
+      "content": "[UNK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 1,
+      "content": "[PAD]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 2,
+      "content": "[CLS]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 3,
+      "content": "[SEP]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 4,
+      "content": "[MASK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    }
+  ],
+  "normalizer": {
+    "type": "Sequence",
+    "normalizers": [
+      {
+        "type": "NFD"
+      },
+      {
+        "type": "StripAccents"
+      }
+    ]
+  },
+  "pre_tokenizer": {
+    "type": "Whitespace"
+  },
+  "post_processor": null,
+  "decoder": null,
+  "model": {
+    "type": "BPE",
+    "dropout": null,
+    "unk_token": "[UNK]",
+    "continuing_subword_prefix": null,
+    "end_of_word_suffix": null,
+    "fuse_unk": false,
+    "byte_fallback": false,
+    "ignore_merges": false,
+    "vocab": {
+      "[UNK]": 0,
+      "[PAD]": 1,
+      "[CLS]": 2,
+      "[SEP]": 3,
+      "[MASK]": 4,
+      "!": 5,
+      "\"": 6,
+      "#": 7,
+      "$": 8,
+      "&": 9,
+      "'": 10,
+      "(": 11,
+      ")": 12,
+      ",": 13,
+      "-": 14,
+      ".": 15,
+      "/": 16,
+      "0": 17,
+      "1": 18,
+      "2": 19,
+      "3": 20,
+      "4": 21,
+      "5": 22,
+      "6": 23,
+      "7": 24,
+      "8": 25,
+      "9": 26,
+      ":": 27,
+      ";": 28,
+      "?": 29,
+      "[": 30,
+      "]": 31,
+      "a": 32,
+      "b": 33,
+      "c": 34,
+      "d": 35,
+      "e": 36,
+      "f": 37,
+      "g": 38,
+      "h": 39,
+      "i": 40,
+      "j": 41,
+      "k": 42,
+      "l": 43,
+      "m": 44,
+      "n": 45,
+      "o": 46,
+      "p": 47,
+      "q": 48,
+      "r": 49,
+      "s": 50,
+      "t": 51,
+      "u": 52,
+      "v": 53,
+      "w": 54,
+      "x": 55,
+      "y": 56,
+      "z": 57,
+      "£": 58,
+      "–": 59,
+      "—": 60,
+      "‘": 61,
+      "’": 62,
+      "“": 63,
+      "”": 64,
+      "…": 65,
+      "an": 66,
+      "er": 67,
+      "en": 68,
+      "la": 69,
+      "ar": 70,
+      "di": 71,
+      "in": 72,
+      "ang": 73,
+      "at": 74,
+      "se": 75,
+      "as": 76,
+      "ah": 77,
+      "kan": 78,
+      "men": 79,
+      "da": 80,
+      "un": 81,
+      "em": 82,
+      "am": 83,
+      "ke": 84,
+      "ber": 85,
+      "um": 86,
+      "li": 87,
+      "si": 88,
+      "tu": 89,
+      "per": 90,
+      "ur": 91,
+      "ter": 92,
+      "ak": 93,
+      "le": 94,
+      "ku": 95,
+      "al": 96,
+      "ala": 97,
+      "ti": 98,
+      "on": 99,
+      "pa": 100,
+      "pen": 101,
+      "or": 102,
+      "ya": 103,
+      "ai": 104,
+      "ing": 105,
+      "ari": 106,
+      "ta": 107,
+      "bu": 108,
+      "el": 109,
+      "ka": 110,
+      "ja": 111,
+      "mem": 112,
+      "du": 113,
+      "dan": 114,
+      "yang": 115,
+      "ga": 116,
+      "is": 117,
+      "ba": 118,
+      "gan": 119,
+      "ki": 120,
+      "pe": 121,
+      "us": 122,
+      "ini": 123,
+      "bi": 124,
+      "gi": 125,
+      "me": 126,
+      "be": 127,
+      "tah": 128,
+      "lam": 129,
+      "ump": 130,
+      "meng": 131,
+      "sem": 132,
+      "pas": 133,
+      "ra": 134,
+      "ada": 135,
+      "pi": 136,
+      "asi": 137,
+      "pada": 138,
+      "pem": 139,
+      "ut": 140,
+      "den": 141,
+      "ko": 142,
+      "tuk": 143,
+      "kuala": 144,
+      "ri": 145,
+      "ara": 146,
+      "ung": 147,
+      "lu": 148,
+      "ma": 149,
+      "angan": 150,
+      "de": 151,
+      "atan": 152,
+      "dalam": 153,
+      "ker": 154,
+      "po": 155,
+      "pu": 156,
+      "untuk": 157,
+      "lump": 158,
+      "ata": 159,
+      "lumpur": 160,
+      "han": 161,
+      "sa": 162,
+      "sia": 163,
+      "bo": 164,
+      "hari": 165,
+      "lan": 166,
+      "ban": 167,
+      "re": 168,
+      "te": 169,
+      "dengan": 170,
+      "ju": 171,
+      "sy": 172,
+      "alam": 173,
+      "bang": 174,
+      "nya": 175,
+      "dak": 176,
+      "ama": 177,
+      "orang": 178,
+      "gu": 179,
+      "tan": 180,
+      "ia": 181,
+      "mi": 182,
+      "tahan": 183,
+      "aru": 184,
+      "00": 185,
+      "itu": 186,
+      "su": 187,
+      "ser": 188,
+      "sele": 189,
+      "aan": 190,
+      "hada": 191,
+      "ne": 192,
+      "atu": 193,
+      "peng": 194,
+      "selepas": 195,
+      "fi": 196,
+      "kon": 197,
+      "mu": 198,
+      "mer": 199,
+      "pan": 200,
+      "rm": 201,
+      "ati": 202,
+      "bera": 203,
+      "lis": 204,
+      "aki": 205,
+      "dah": 206,
+      "wan": 207,
+      "eng": 208,
+      "ol": 209,
+      "os": 210,
+      "tr": 211,
+      "vi": 212,
+      "zi": 213,
+      "meny": 214,
+      "lik": 215,
+      "lebi": 216,
+      "jaya": 217,
+      "dua": 218,
+      "bah": 219,
+      "bel": 220,
+      "por": 221,
+      "uru": 222,
+      "lebih": 223,
+      "ca": 224,
+      "kam": 225,
+      "ram": 226,
+      "rum": 227,
+      "lapor": 228,
+      "dia": 229,
+      "teri": 230,
+      "polis": 231,
+      "rumah": 232,
+      "aw": 233,
+      "dar": 234,
+      "sen": 235,
+      "laki": 236,
+      "arkan": 237,
+      "beri": 238,
+      "lelaki": 239,
+      "ci": 240,
+      "hi": 241,
+      "ji": 242,
+      "mah": 243,
+      "ran": 244,
+      "aran": 245,
+      "ditahan": 246,
+      "jadi": 247,
+      "tahun": 248,
+      "hadap": 249,
+      "belum": 250,
+      "dari": 251,
+      "ge": 252,
+      "kat": 253,
+      "mala": 254,
+      "sama": 255,
+      "tem": 256,
+      "eri": 257,
+      "seorang": 258,
+      "terhadap": 259,
+      "alan": 260,
+      "dun": 261,
+      "ken": 262,
+      "mas": 263,
+      "pat": 264,
+      "semalam": 265,
+      "11": 266,
+      "20": 267,
+      "82": 268,
+      "kata": 269,
+      "sini": 270,
+      "ukan": 271,
+      "ysia": 272,
+      "lah": 273,
+      "lar": 274,
+      "seba": 275,
+      "kej": 276,
+      "malaysia": 277,
+      "aja": 278,
+      "bar": 279,
+      "bat": 280,
+      "ch": 281,
+      "hu": 282,
+      "rem": 283,
+      "to": 284,
+      "wa": 285,
+      "menj": 286,
+      "tidak": 287,
+      "&#": 288,
+      "akan": 289,
+      "ben": 290,
+      "do": 291,
+      "gun": 292,
+      "hing": 293,
+      "ila": 294,
+      "kem": 295,
+      "lo": 296,
+      "so": 297,
+      "usia": 298,
+      "was": 299,
+      "duk": 300,
+      "dunia": 301,
+      "13": 302,
+      "co": 303,
+      "cah": 304,
+      "dang": 305,
+      "eka": 306,
+      "gai": 307,
+      "ham": 308,
+      "kur": 309,
+      "lon": 310,
+      "par": 311,
+      "st": 312,
+      "uh": 313,
+      "sebu": 314,
+      "menjadi": 315,
+      "akin": 316,
+      "pendu": 317,
+      "membu": 318,
+      "bagi": 319,
+      "keraja": 320,
+      "neg": 321,
+      "fizi": 322,
+      "kerajaan": 323,
+      "10": 324,
+      "ce": 325,
+      "don": 326,
+      "for": 327,
+      "ha": 328,
+      "jan": 329,
+      "kal": 330,
+      "masi": 331,
+      "pel": 332,
+      "pre": 333,
+      "tin": 334,
+      "ting": 335,
+      "za": 336,
+      "lalu": 337,
+      "dik": 338,
+      "din": 339,
+      "diper": 340,
+      "sel": 341,
+      "sebelum": 342,
+      "menteri": 343,
+      "aman": 344,
+      "kepada": 345,
+      "peny": 346,
+      "bantu": 347,
+      "baharu": 348,
+      "8211": 349,
+      "der": 350,
+      "gen": 351,
+      "jam": 352,
+      "mo": 353,
+      "man": 354,
+      "pun": 355,
+      "war": 356,
+      "yah": 357,
+      "uni": 358,
+      "bersama": 359,
+      "leh": 360,
+      "media": 361,
+      "bes": 362,
+      "beli": 363,
+      "mereka": 364,
+      "reman": 365,
+      "penduduk": 366,
+      "ap": 367,
+      "datu": 368,
+      "hak": 369,
+      "jalan": 370,
+      "kini": 371,
+      "mar": 372,
+      "sh": 373,
+      "th": 374,
+      "tang": 375,
+      "teng": 376,
+      "ana": 377,
+      "laku": 378,
+      "diri": 379,
+      "atus": 380,
+      "siden": 381,
+      "tikan": 382,
+      "gaza": 383,
+      "isu": 384,
+      "isra": 385,
+      "kira": 386,
+      "semakin": 387,
+      "pasukan": 388,
+      "pembang": 389,
+      "mula": 390,
+      "daripada": 391,
+      "sebagai": 392,
+      "london": 393,
+      "masih": 394,
+      "israel": 395,
+      "bin": 396,
+      "cer": 397,
+      "ek": 398,
+      "ger": 399,
+      "gar": 400,
+      "im": 401,
+      "jung": 402,
+      "og": 403,
+      "obo": 404,
+      "pin": 405,
+      "satu": 406,
+      "dil": 407,
+      "asa": 408,
+      "ast": 409,
+      "asatan": 410,
+      "umi": 411,
+      "sim": 412,
+      "siasatan": 413,
+      "tif": 414,
+      "bukan": 415,
+      "pela": 416,
+      "pir": 417,
+      "atau": 418,
+      "land": 419,
+      "dakwa": 420,
+      "berapa": 421,
+      "kamah": 422,
+      "mahkamah": 423,
+      "fizikal": 424,
+      "presiden": 425,
+      "cerobo": 426,
+      "ceroboh": 427,
+      "agen": 428,
+      "nila": 429,
+      "ris": 430,
+      "ster": 431,
+      "sus": 432,
+      "tal": 433,
+      "ton": 434,
+      "indi": 435,
+      "angat": 436,
+      "atkan": 437,
+      "menda": 438,
+      "menur": 439,
+      "emas": 440,
+      "lih": 441,
+      "limen": 442,
+      "sial": 443,
+      "uri": 444,
+      "penga": 445,
+      "arikat": 446,
+      "elang": 447,
+      "dana": 448,
+      "ist": 449,
+      "petr": 450,
+      "beberapa": 451,
+      "pula": 452,
+      "syarikat": 453,
+      "bangsa": 454,
+      "new": 455,
+      "parlimen": 456,
+      "datuk": 457,
+      "agensi": 458,
+      "bur": 459,
+      "cin": 460,
+      "cam": 461,
+      "cara": 462,
+      "cangan": 463,
+      "cast": 464,
+      "guru": 465,
+      "jen": 466,
+      "kl": 467,
+      "kang": 468,
+      "k13": 469,
+      "patan": 470,
+      "tun": 471,
+      "tara": 472,
+      "uk": 473,
+      "uan": 474,
+      "ula": 475,
+      "ulan": 476,
+      "wang": 477,
+      "yak": 478,
+      "arah": 479,
+      "sek": 480,
+      "aha": 481,
+      "empat": 482,
+      "ket": 483,
+      "ketu": 484,
+      "perin": 485,
+      "peratus": 486,
+      "perdana": 487,
+      "tersebu": 488,
+      "tik": 489,
+      "tika": 490,
+      "pagi": 491,
+      "ingan": 492,
+      "kit": 493,
+      "pecah": 494,
+      "menge": 495,
+      "mengen": 496,
+      "pihak": 497,
+      "maj": 498,
+      "deo": 499,
+      "000": 500,
+      "serta": 501,
+      "rmk13": 502,
+      "beradik": 503,
+      "wani": 504,
+      "video": 505,
+      "hingga": 506,
+      "sosial": 507,
+      "negara": 508,
+      "tinggi": 509,
+      "besar": 510,
+      "tengah": 511,
+      "lakukan": 512,
+      "pembangkang": 513,
+      "ogos": 514,
+      "nilai": 515,
+      "menurut": 516,
+      "castle": 517,
+      "tersebut": 518,
+      "40": 519,
+      "44": 520,
+      "bumi": 521,
+      "fa": 522,
+      "gam": 523,
+      "gol": 524,
+      "ik": 525,
+      "ip": 526,
+      "kr": 527,
+      "kas": 528,
+      "lum": 529,
+      "nati": 530,
+      "pr": 531,
+      "pak": 532,
+      "pal": 533,
+      "pga": 534,
+      "ron": 535,
+      "san": 536,
+      "son": 537,
+      "udi": 538,
+      "antara": 539,
+      "lain": 540,
+      "disy": 541,
+      "didakwa": 542,
+      "ina": 543,
+      "selam": 544,
+      "ahli": 545,
+      "dakan": 546,
+      "ameri": 547,
+      "kedua": 548,
+      "ketika": 549,
+      "bermula": 550,
+      "tuju": 551,
+      "pern": 552,
+      "perse": 553,
+      "urus": 554,
+      "kul": 555,
+      "aik": 556,
+      "tadi": 557,
+      "buka": 558,
+      "memper": 559,
+      "kilo": 560,
+      "petal": 561,
+      "pempeng": 562,
+      "utama": 563,
+      "pukul": 564,
+      "teg": 565,
+      "juta": 566,
+      "syen": 567,
+      "aruh": 568,
+      "seri": 569,
+      "akibat": 570,
+      "vidu": 571,
+      "darah": 572,
+      "tempatan": 573,
+      "masing": 574,
+      "2040": 575,
+      "kejar": 576,
+      "guna": 577,
+      "hampir": 578,
+      "kurang": 579,
+      "tindakan": 580,
+      "individu": 581,
+      "newcastle": 582,
+      "ketua": 583,
+      "wanita": 584,
+      "disyaki": 585,
+      "amerika": 586,
+      "petaling": 587,
+      "pempengaruh": 588,
+      "apa": 589,
+      "bkan": 590,
+      "hasi": 591,
+      "ibu": 592,
+      "ly": 593,
+      "mb": 594,
+      "min": 595,
+      "nor": 596,
+      "oku": 597,
+      "oleh": 598,
+      "rah": 599,
+      "run": 600,
+      "rak": 601,
+      "tam": 602,
+      "tak": 603,
+      "ug": 604,
+      "ve": 605,
+      "wal": 606,
+      "yat": 607,
+      "kanada": 608,
+      "daya": 609,
+      "berjaya": 610,
+      "berken": 611,
+      "berusia": 612,
+      "umum": 613,
+      "lian": 614,
+      "lion": 615,
+      "tus": 616,
+      "tera": 617,
+      "air": 618,
+      "inggu": 619,
+      "bulan": 620,
+      "kawas": 621,
+      "bilion": 622,
+      "melakukan": 623,
+      "bekas": 624,
+      "pasan": 625,
+      "kod": 626,
+      "rik": 627,
+      "depan": 628,
+      "kerana": 629,
+      "pulu": 630,
+      "bandar": 631,
+      "ret": 632,
+      "rekod": 633,
+      "tahanan": 634,
+      "rm1": 635,
+      "enggan": 636,
+      "hir": 637,
+      "hington": 638,
+      "washington": 639,
+      "membuat": 640,
+      "pelan": 641,
+      "bantuan": 642,
+      "jamin": 643,
+      "pelabur": 644,
+      "istret": 645,
+      "mengenai": 646,
+      "majistret": 647,
+      "hasil": 648,
+      "rundin": 649,
+      "berkenaan": 650,
+      "kawasan": 651,
+      "),": 652,
+      ").": 653,
+      "844": 654,
+      "bak": 655,
+      "bri": 656,
+      "batu": 657,
+      "cu": 658,
+      "ele": 659,
+      "fe": 660,
+      "gel": 661,
+      "has": 662,
+      "ib": 663,
+      "ij": 664,
+      "jang": 665,
+      "jur": 666,
+      "kah": 667,
+      "pm": 668,
+      "pati": 669,
+      "ras": 670,
+      "sb": 671,
+      "sum": 672,
+      "tas": 673,
+      "usi": 674,
+      "ugi": 675,
+      "wila": 676,
+      "anan": 677,
+      "anwar": 678,
+      "erusi": 679,
+      "dike": 680,
+      "dira": 681,
+      "direman": 682,
+      "atas": 683,
+      "sej": 684,
+      "seka": 685,
+      "sejam": 686,
+      "secara": 687,
+      "asan": 688,
+      "askan": 689,
+      "asaran": 690,
+      "mene": 691,
+      "meneri": 692,
+      "menceroboh": 693,
+      "undang": 694,
+      "kel": 695,
+      "kes": 696,
+      "bernilai": 697,
+      "sitif": 698,
+      "peri": 699,
+      "perlu": 700,
+      "terenggan": 701,
+      "kuasa": 702,
+      "pai": 703,
+      "padan": 704,
+      "penuh": 705,
+      "ailand": 706,
+      "tau": 707,
+      "talian": 708,
+      "bul": 709,
+      "elon": 710,
+      "jauh": 711,
+      "meme": 712,
+      "meman": 713,
+      "memberi": 714,
+      "membantu": 715,
+      "balik": 716,
+      "pek": 717,
+      "usaha": 718,
+      "bila": 719,
+      "meter": 720,
+      "beij": 721,
+      "semula": 722,
+      "dewan": 723,
+      "kere": 724,
+      "bot": 725,
+      "boja": 726,
+      "boleh": 727,
+      "ted": 728,
+      "gug": 729,
+      "milik": 730,
+      "pengguna": 731,
+      "rm10": 732,
+      "berapi": 733,
+      "dahkan": 734,
+      "trump": 735,
+      "uruhan": 736,
+      "laporan": 737,
+      "rancangan": 738,
+      "202": 739,
+      "hujung": 740,
+      "gunung": 741,
+      "kemboja": 742,
+      "sebuah": 743,
+      "negeri": 744,
+      "diperdaya": 745,
+      "united": 746,
+      "thailand": 747,
+      "susulan": 748,
+      "petro": 749,
+      "pulau": 750,
+      "selama": 751,
+      "norris": 752,
+      "ugut": 753,
+      "rundingan": 754,
+      "wilayah": 755,
+      "menerima": 756,
+      "terengganu": 757,
+      "beijing": 758,
+      "rm104": 759,
+      "30": 760,
+      "90": 761,
+      "ad": 762,
+      "ain": 763,
+      "bas": 764,
+      "bari": 765,
+      "batan": 766,
+      "drm": 767,
+      "eh": 768,
+      "ex": 769,
+      "flik": 770,
+      "gsi": 771,
+      "hal": 772,
+      "hai": 773,
+      "je": 774,
+      "ktikan": 775,
+      "lang": 776,
+      "lem": 777,
+      "lung": 778,
+      "mak": 779,
+      "mel": 780,
+      "mus": 781,
+      "malam": 782,
+      "minggu": 783,
+      "nin": 784,
+      "oo": 785,
+      "ohan": 786,
+      "pkan": 787,
+      "pta": 788,
+      "pdrm": 789,
+      "sah": 790,
+      "sur": 791,
+      "ten": 792,
+      "tkan": 793,
+      "tari": 794,
+      "tump": 795,
+      "tangan": 796,
+      "ver": 797,
+      "wak": 798,
+      "wai": 799,
+      "yi": 800,
+      "yar": 801,
+      "ani": 802,
+      "anyi": 803,
+      "erah": 804,
+      "aring": 805,
+      "diaan": 806,
+      "diberi": 807,
+      "angor": 808,
+      "ses": 809,
+      "sepak": 810,
+      "menci": 811,
+      "unan": 812,
+      "untu": 813,
+      "kec": 814,
+      "berkon": 815,
+      "berkata": 816,
+      "liti": 817,
+      "lihan": 818,
+      "sip": 819,
+      "tular": 820,
+      "pertu": 821,
+      "pertahanan": 822,
+      "peruntu": 823,
+      "terus": 824,
+      "ternati": 825,
+      "kuh": 826,
+      "kuas": 827,
+      "alau": 828,
+      "tiga": 829,
+      "paya": 830,
+      "pende": 831,
+      "pengu": 832,
+      "yai": 833,
+      "buat": 834,
+      "membeli": 835,
+      "gawai": 836,
+      "isnin": 837,
+      "pegawai": 838,
+      "sempadan": 839,
+      "raya": 840,
+      "pilihan": 841,
+      "kole": 842,
+      "kota": 843,
+      "komi": 844,
+      "riti": 845,
+      "luarkan": 846,
+      "maung": 847,
+      "dekat": 848,
+      "positif": 849,
+      "saingan": 850,
+      "sub": 851,
+      "konflik": 852,
+      "musim": 853,
+      "bahaw": 854,
+      "terima": 855,
+      "senti": 856,
+      "berita": 857,
+      "hidu": 858,
+      "mahu": 859,
+      "ged": 860,
+      "masuk": 861,
+      "kejohan": 862,
+      "menjelang": 863,
+      "benjamin": 864,
+      "stasi": 865,
+      "membuktikan": 866,
+      "ford": 867,
+      "forex": 868,
+      "janji": 869,
+      "selangor": 870,
+      "shah": 871,
+      "bintang": 872,
+      "pengadil": 873,
+      "perintah": 874,
+      "tikto": 875,
+      "gambar": 876,
+      "pernah": 877,
+      "apabila": 878,
+      "mbsb": 879,
+      "rahim": 880,
+      "rakyat": 881,
+      "puluh": 882,
+      "pelaburan": 883,
+      "briged": 884,
+      "ibrahim": 885,
+      "dikeluarkan": 886,
+      "maklum": 887,
+      "tumpuan": 888,
+      "diberikan": 889,
+      "mencipta": 890,
+      "peruntukan": 891,
+      "pendek": 892,
+      "bahawa": 893,
+      "kejohanan": 894,
+      "24": 895,
+      "29": 896,
+      "77": 897,
+      "95": 898,
+      "au": 899,
+      "ayah": 900,
+      "bun": 901,
+      "bra": 902,
+      "bung": 903,
+      "bkl": 904,
+      "cang": 905,
+      "cari": 906,
+      "clar": 907,
+      "dbi": 908,
+      "dangan": 909,
+      "dbkl": 910,
+      "eai": 911,
+      "ekon": 912,
+      "ester": 913,
+      "f1": 914,
+      "fc": 915,
+      "flo": 916,
+      "gem": 917,
+      "gus": 918,
+      "gara": 919,
+      "gram": 920,
+      "he": 921,
+      "hford": 922,
+      "ili": 923,
+      "ico": 924,
+      "jo": 925,
+      "jair": 926,
+      "kt": 927,
+      "kin": 928,
+      "kor": 929,
+      "kaki": 930,
+      "lson": 931,
+      "mam": 932,
+      "mai": 933,
+      "muri": 934,
+      "melang": 935,
+      "mclar": 936,
+      "ni": 937,
+      "naik": 938,
+      "ou": 939,
+      "omi": 940,
+      "ps": 941,
+      "pam": 942,
+      "pur": 943,
+      "put": 944,
+      "pung": 945,
+      "pkr": 946,
+      "ry": 947,
+      "ren": 948,
+      "sla": 949,
+      "sun": 950,
+      "ski": 951,
+      "suri": 952,
+      "ty": 953,
+      "tar": 954,
+      "tai": 955,
+      "wn": 956,
+      "xico": 957,
+      "zah": 958,
+      "zon": 959,
+      "anjung": 960,
+      "era": 961,
+      "erry": 962,
+      "lagu": 963,
+      "aro": 964,
+      "ditem": 965,
+      "dikejar": 966,
+      "inti": 967,
+      "insip": 968,
+      "angsa": 969,
+      "atm": 970,
+      "atrik": 971,
+      "atkuas": 972,
+      "sela": 973,
+      "semen": 974,
+      "sehingga": 975,
+      "aspek": 976,
+      "kanan": 977,
+      "kanak": 978,
+      "mening": 979,
+      "menari": 980,
+      "menangan": 981,
+      "menca": 982,
+      "dadah": 983,
+      "amang": 984,
+      "kela": 985,
+      "kejaya": 986,
+      "kekur": 987,
+      "kesel": 988,
+      "kebangsa": 989,
+      "berada": 990,
+      "berha": 991,
+      "lisi": 992,
+      "liver": 993,
+      "sidi": 994,
+      "peranan": 995,
+      "urkan": 996,
+      "uraw": 997,
+      "terbaharu": 998,
+      "terbuka": 999,
+      "termasuk": 1000,
+      "akti": 1001,
+      "leum": 1002,
+      "lesen": 1003,
+      "letus": 1004,
+      "kutu": 1005,
+      "alternati": 1006,
+      "tih": 1007,
+      "ong": 1008,
+      "pakej": 1009,
+      "penta": 1010,
+      "aitu": 1011,
+      "inggi": 1012,
+      "tapi": 1013,
+      "bukit": 1014,
+      "kad": 1015,
+      "jabat": 1016,
+      "jabatan": 1017,
+      "memin": 1018,
+      "memba": 1019,
+      "memap": 1020,
+      "istan": 1021,
+      "pejabat": 1022,
+      "bitkan": 1023,
+      "meski": 1024,
+      "mexico": 1025,
+      "meletus": 1026,
+      "beg": 1027,
+      "mengumum": 1028,
+      "semangat": 1029,
+      "rafizi": 1030,
+      "pil": 1031,
+      "peman": 1032,
+      "pemer": 1033,
+      "pemain": 1034,
+      "araan": 1035,
+      "dalaman": 1036,
+      "kerdil": 1037,
+      "pool": 1038,
+      "polisi": 1039,
+      "hanya": 1040,
+      "bolson": 1041,
+      "banji": 1042,
+      "tesla": 1043,
+      "juga": 1044,
+      "syor": 1045,
+      "tanah": 1046,
+      "005": 1047,
+      "sual": 1048,
+      "hadapi": 1049,
+      "pengerusi": 1050,
+      "kongan": 1051,
+      "muda": 1052,
+      "atik": 1053,
+      "viti": 1054,
+      "zil": 1055,
+      "liknya": 1056,
+      "uruh": 1057,
+      "cayai": 1058,
+      "kampung": 1059,
+      "laporkan": 1060,
+      "awam": 1061,
+      "awal": 1062,
+      "cian": 1063,
+      "mahsuri": 1064,
+      "geor": 1065,
+      "kender": 1066,
+      "sebaliknya": 1067,
+      "chester": 1068,
+      "town": 1069,
+      "menjurus": 1070,
+      "menjaring": 1071,
+      "sokongan": 1072,
+      "hamzah": 1073,
+      "parti": 1074,
+      "ding": 1075,
+      "dipercayai": 1076,
+      "penyasaran": 1077,
+      "moh": 1078,
+      "manchester": 1079,
+      "marin": 1080,
+      "sherry": 1081,
+      "sterol": 1082,
+      "mendapat": 1083,
+      "cincin": 1084,
+      "jenayah": 1085,
+      "sekatan": 1086,
+      "seksual": 1087,
+      "ketum": 1088,
+      "perincian": 1089,
+      "ipk": 1090,
+      "prinsip": 1091,
+      "palsu": 1092,
+      "ron95": 1093,
+      "udit": 1094,
+      "antarabangsa": 1095,
+      "kilometer": 1096,
+      "kilogram": 1097,
+      "eles": 1098,
+      "fesyen": 1099,
+      "jangka": 1100,
+      "jururaw": 1101,
+      "rashford": 1102,
+      "diraja": 1103,
+      "kelmarin": 1104,
+      "kereta": 1105,
+      "botol": 1106,
+      "gugurkan": 1107,
+      "2025": 1108,
+      "petroleum": 1109,
+      "bariatrik": 1110,
+      "gsikan": 1111,
+      "haiwan": 1112,
+      "musk": 1113,
+      "waktu": 1114,
+      "sesko": 1115,
+      "berkongsikan": 1116,
+      "penguatkuas": 1117,
+      "kolesterol": 1118,
+      "subsidi": 1119,
+      "maklumat": 1120,
+      "brazil": 1121,
+      "dbiran": 1122,
+      "eaic": 1123,
+      "ekonomi": 1124,
+      "gempa": 1125,
+      "mampu": 1126,
+      "murid": 1127,
+      "mclaren": 1128,
+      "pampasan": 1129,
+      "ditemukan": 1130,
+      "semenanjung": 1131,
+      "kejayaan": 1132,
+      "kekurangan": 1133,
+      "keseluruhan": 1134,
+      "kebangsaan": 1135,
+      "berhad": 1136,
+      "liverpool": 1137,
+      "aktiviti": 1138,
+      "alternatif": 1139,
+      "pentadbiran": 1140,
+      "memaparkan": 1141,
+      "meskipun": 1142,
+      "mengumumkan": 1143,
+      "bolsonaro": 1144,
+      "banjir": 1145,
+      "kenderaan": 1146,
+      "menjaringkan": 1147,
+      "jururawat": 1148,
+      "penguatkuasaan": 1149,
+      "16": 1150,
+      "28": 1151,
+      "500": 1152,
+      "80": 1153,
+      "aa": 1154,
+      "ab": 1155,
+      "ase": 1156,
+      "aut": 1157,
+      "ajan": 1158,
+      "audit": 1159,
+      "bal": 1160,
+      "bis": 1161,
+      "bangan": 1162,
+      "baru": 1163,
+      "buru": 1164,
+      "baik": 1165,
+      "cc": 1166,
+      "car": 1167,
+      "cat": 1168,
+      "catan": 1169,
+      "cia": 1170,
+      "dm": 1171,
+      "das": 1172,
+      "dung": 1173,
+      "ey": 1174,
+      "ez": 1175,
+      "eba": 1176,
+      "fan": 1177,
+      "gat": 1178,
+      "gal": 1179,
+      "gran": 1180,
+      "ho": 1181,
+      "har": 1182,
+      "hem": 1183,
+      "hala": 1184,
+      "hut": 1185,
+      "hati": 1186,
+      "hangat": 1187,
+      "ium": 1188,
+      "iaitu": 1189,
+      "jum": 1190,
+      "kar": 1191,
+      "kasi": 1192,
+      "khi": 1193,
+      "lin": 1194,
+      "ling": 1195,
+      "los": 1196,
+      "mata": 1197,
+      "mos": 1198,
+      "ny": 1199,
+      "nam": 1200,
+      "nasi": 1201,
+      "om": 1202,
+      "oper": 1203,
+      "ph": 1204,
+      "pus": 1205,
+      "pram": 1206,
+      "prem": 1207,
+      "rb": 1208,
+      "rat": 1209,
+      "rugi": 1210,
+      "sk": 1211,
+      "sor": 1212,
+      "sara": 1213,
+      "sangat": 1214,
+      "tmen": 1215,
+      "tasi": 1216,
+      "taman": 1217,
+      "ua": 1218,
+      "uari": 1219,
+      "usim": 1220,
+      "upaya": 1221,
+      "vasi": 1222,
+      "wangan": 1223,
+      "waan": 1224,
+      "walan": 1225,
+      "walau": 1226,
+      "yata": 1227,
+      "yaran": 1228,
+      "yakin": 1229,
+      "zaman": 1230,
+      "zoo": 1231,
+      "anc": 1232,
+      "annya": 1233,
+      "anfi": 1234,
+      "ander": 1235,
+      "erang": 1236,
+      "ertai": 1237,
+      "lawan": 1238,
+      "layar": 1239,
+      "arat": 1240,
+      "dikata": 1241,
+      "integ": 1242,
+      "infan": 1243,
+      "anggu": 1244,
+      "angeles": 1245,
+      "seko": 1246,
+      "seban": 1247,
+      "sesama": 1248,
+      "sedang": 1249,
+      "setuju": 1250,
+      "segel": 1251,
+      "sepenuh": 1252,
+      "sejauh": 1253,
+      "astikan": 1254,
+      "ahkan": 1255,
+      "menam": 1256,
+      "menga": 1257,
+      "mengan": 1258,
+      "mence": 1259,
+      "daan": 1260,
+      "dapat": 1261,
+      "damai": 1262,
+      "undi": 1263,
+      "untun": 1264,
+      "emuan": 1265,
+      "ampi": 1266,
+      "keh": 1267,
+      "keda": 1268,
+      "keci": 1269,
+      "kekal": 1270,
+      "kemenangan": 1271,
+      "kewangan": 1272,
+      "keuntun": 1273,
+      "berak": 1274,
+      "berhu": 1275,
+      "berkuasa": 1276,
+      "berani": 1277,
+      "lia": 1278,
+      "liga": 1279,
+      "sif": 1280,
+      "perang": 1281,
+      "perjanji": 1282,
+      "permoh": 1283,
+      "perlawan": 1284,
+      "uran": 1285,
+      "teraan": 1286,
+      "tertinggi": 1287,
+      "terutama": 1288,
+      "akta": 1289,
+      "aktif": 1290,
+      "leip": 1291,
+      "kus": 1292,
+      "kukuh": 1293,
+      "kudung": 1294,
+      "alah": 1295,
+      "tim": 1296,
+      "tila": 1297,
+      "tivasi": 1298,
+      "tikus": 1299,
+      "onan": 1300,
+      "onal": 1301,
+      "pentas": 1302,
+      "penemuan": 1303,
+      "penampi": 1304,
+      "aih": 1305,
+      "aiki": 1306,
+      "aris": 1307,
+      "taw": 1308,
+      "tawar": 1309,
+      "eld": 1310,
+      "kali": 1311,
+      "kawal": 1312,
+      "kawalan": 1313,
+      "memili": 1314,
+      "memastikan": 1315,
+      "duhan": 1316,
+      "gaan": 1317,
+      "badi": 1318,
+      "bagai": 1319,
+      "pelar": 1320,
+      "biada": 1321,
+      "bilan": 1322,
+      "mela": 1323,
+      "belayar": 1324,
+      "mengu": 1325,
+      "mengge": 1326,
+      "sembilan": 1327,
+      "rakan": 1328,
+      "adalah": 1329,
+      "pemi": 1330,
+      "koh": 1331,
+      "kok": 1332,
+      "koman": 1333,
+      "luar": 1334,
+      "maju": 1335,
+      "dedik": 1336,
+      "kerugi": 1337,
+      "atakan": 1338,
+      "saya": 1339,
+      "bank": 1340,
+      "tele": 1341,
+      "telah": 1342,
+      "alami": 1343,
+      "dakwaan": 1344,
+      "tanyah": 1345,
+      "iagaan": 1346,
+      "misi": 1347,
+      "sulung": 1348,
+      "netanyah": 1349,
+      "penghujung": 1350,
+      "fifa": 1351,
+      "filem": 1352,
+      "kontr": 1353,
+      "muzi": 1354,
+      "panas": 1355,
+      "panik": 1356,
+      "osak": 1357,
+      "zig": 1358,
+      "menyam": 1359,
+      "menyeba": 1360,
+      "menyertai": 1361,
+      "menyatakan": 1362,
+      "ramai": 1363,
+      "rampasan": 1364,
+      "sendiri": 1365,
+      "berisi": 1366,
+      "city": 1367,
+      "hil": 1368,
+      "tempat": 1369,
+      "kenyata": 1370,
+      "barangan": 1371,
+      "chia": 1372,
+      "huey": 1373,
+      "tokoh": 1374,
+      "bentuk": 1375,
+      "dolu": 1376,
+      "cow": 1377,
+      "cahkan": 1378,
+      "loni": 1379,
+      "status": 1380,
+      "menjadikan": 1381,
+      "januari": 1382,
+      "pelbagai": 1383,
+      "prestasi": 1384,
+      "tino": 1385,
+      "penye": 1386,
+      "penyerang": 1387,
+      "motivasi": 1388,
+      "unit": 1389,
+      "beliau": 1390,
+      "marc": 1391,
+      "tengku": 1392,
+      "anadolu": 1393,
+      "pasukannya": 1394,
+      "pembangunan": 1395,
+      "bincang": 1396,
+      "ekor": 1397,
+      "gerakan": 1398,
+      "garcia": 1399,
+      "pintu": 1400,
+      "pirasi": 1401,
+      "mendapati": 1402,
+      "campur": 1403,
+      "pecahkan": 1404,
+      "mengecam": 1405,
+      "tujuan": 1406,
+      "perniagaan": 1407,
+      "persekutu": 1408,
+      "urusan": 1409,
+      "minyak": 1410,
+      "vesel": 1411,
+      "pelanc": 1412,
+      "bakat": 1413,
+      "bakal": 1414,
+      "cup": 1415,
+      "hasrat": 1416,
+      "sekali": 1417,
+      "sekadar": 1418,
+      "perikanan": 1419,
+      "peribadi": 1420,
+      "memetik": 1421,
+      "memecahkan": 1422,
+      "ehwal": 1423,
+      "tentera": 1424,
+      "anyian": 1425,
+      "pertuduhan": 1426,
+      "komitmen": 1427,
+      "hidup": 1428,
+      "tiktok": 1429,
+      "bunuh": 1430,
+      "flotila": 1431,
+      "melanggar": 1432,
+      "putra": 1433,
+      "intir": 1434,
+      "meninggal": 1435,
+      "menarik": 1436,
+      "mencapai": 1437,
+      "kelab": 1438,
+      "membabitkan": 1439,
+      "pemandu": 1440,
+      "pemerin": 1441,
+      "mendapatkan": 1442,
+      "cincinnati": 1443,
+      "ajansi": 1444,
+      "hutang": 1445,
+      "khidm": 1446,
+      "moscow": 1447,
+      "nyanyian": 1448,
+      "namun": 1449,
+      "pramusim": 1450,
+      "premium": 1451,
+      "anfield": 1452,
+      "anderson": 1453,
+      "dikatakan": 1454,
+      "integriti": 1455,
+      "infantino": 1456,
+      "sekolah": 1457,
+      "sebanyak": 1458,
+      "segelintir": 1459,
+      "menamatkan": 1460,
+      "kecil": 1461,
+      "keuntungan": 1462,
+      "berakhir": 1463,
+      "berhubung": 1464,
+      "perjanjian": 1465,
+      "permohonan": 1466,
+      "perlawanan": 1467,
+      "leipzig": 1468,
+      "penampilan": 1469,
+      "memiliki": 1470,
+      "pelarasan": 1471,
+      "dedikasi": 1472,
+      "kerugian": 1473,
+      "netanyahu": 1474,
+      "kontrak": 1475,
+      "menyebabkan": 1476,
+      "kenyataan": 1477,
+      "persekutuan": 1478,
+      ",”": 1479,
+      "18": 1480,
+      "19": 1481,
+      "100": 1482,
+      "224": 1483,
+      "32": 1484,
+      "35": 1485,
+      "39": 1486,
+      "50": 1487,
+      "60": 1488,
+      "62": 1489,
+      "69": 1490,
+      "700": 1491,
+      "762": 1492,
+      "aq": 1493,
+      "ay": 1494,
+      "aus": 1495,
+      "ade": 1496,
+      "aju": 1497,
+      "adira": 1498,
+      "bh": 1499,
+      "bala": 1500,
+      "baran": 1501,
+      "bris": 1502,
+      "cen": 1503,
+      "cal": 1504,
+      "cing": 1505,
+      "col": 1506,
+      "celon": 1507,
+      "dr": 1508,
+      "dpa": 1509,
+      "dra": 1510,
+      "dara": 1511,
+      "dram": 1512,
+      "ddin": 1513,
+      "djo": 1514,
+      "ea": 1515,
+      "es": 1516,
+      "ela": 1517,
+      "egi": 1518,
+      "edah": 1519,
+      "eik": 1520,
+      "fl": 1521,
+      "fm": 1522,
+      "fon": 1523,
+      "faki": 1524,
+      "foku": 1525,
+      "fera": 1526,
+      "gn": 1527,
+      "gp": 1528,
+      "gum": 1529,
+      "gala": 1530,
+      "gon": 1531,
+      "gangan": 1532,
+      "gre": 1533,
+      "garkan": 1534,
+      "garan": 1535,
+      "galan": 1536,
+      "gina": 1537,
+      "hen": 1538,
+      "hung": 1539,
+      "hol": 1540,
+      "haw": 1541,
+      "hbar": 1542,
+      "it": 1543,
+      "ida": 1544,
+      "ior": 1545,
+      "iko": 1546,
+      "ide": 1547,
+      "ipu": 1548,
+      "jp": 1549,
+      "jer": 1550,
+      "jas": 1551,
+      "jah": 1552,
+      "jut": 1553,
+      "jara": 1554,
+      "jata": 1555,
+      "juru": 1556,
+      "kla": 1557,
+      "kkan": 1558,
+      "ksi": 1559,
+      "kai": 1560,
+      "kump": 1561,
+      "ksan": 1562,
+      "kalau": 1563,
+      "kcup": 1564,
+      "lut": 1565,
+      "mk": 1566,
+      "mm": 1567,
+      "mun": 1568,
+      "mal": 1569,
+      "mis": 1570,
+      "mung": 1571,
+      "maru": 1572,
+      "muni": 1573,
+      "mangsa": 1574,
+      "na": 1575,
+      "nama": 1576,
+      "nahkan": 1577,
+      "ngum": 1578,
+      "olah": 1579,
+      "oha": 1580,
+      "pn": 1581,
+      "pt": 1582,
+      "pri": 1583,
+      "pso": 1584,
+      "pinggi": 1585,
+      "paris": 1586,
+      "qu": 1587,
+      "qis": 1588,
+      "ro": 1589,
+      "ru": 1590,
+      "rus": 1591,
+      "rump": 1592,
+      "rut": 1593,
+      "rusia": 1594,
+      "ringgi": 1595,
+      "sas": 1596,
+      "skan": 1597,
+      "sam": 1598,
+      "sal": 1599,
+      "sya": 1600,
+      "sung": 1601,
+      "str": 1602,
+      "sha": 1603,
+      "sindi": 1604,
+      "scam": 1605,
+      "sasaran": 1606,
+      "suruhan": 1607,
+      "salah": 1608,
+      "spirasi": 1609,
+      "smk": 1610,
+      "ts": 1611,
+      "tel": 1612,
+      "tra": 1613,
+      "taran": 1614,
+      "ui": 1615,
+      "uda": 1616,
+      "uka": 1617,
+      "udu": 1618,
+      "ulu": 1619,
+      "uju": 1620,
+      "ubah": 1621,
+      "ukur": 1622,
+      "uger": 1623,
+      "upm": 1624,
+      "uddin": 1625,
+      "vo": 1626,
+      "win": 1627,
+      "waki": 1628,
+      "woo": 1629,
+      "wuju": 1630,
+      "xin": 1631,
+      "zel": 1632,
+      "zara": 1633,
+      "’.": 1634,
+      "….": 1635,
+      "anak": 1636,
+      "anti": 1637,
+      "antan": 1638,
+      "anusia": 1639,
+      "antau": 1640,
+      "andangan": 1641,
+      "anni": 1642,
+      "anuger": 1643,
+      "erus": 1644,
+      "erni": 1645,
+      "enam": 1646,
+      "entang": 1647,
+      "enton": 1648,
+      "lak": 1649,
+      "lake": 1650,
+      "lagi": 1651,
+      "laut": 1652,
+      "laran": 1653,
+      "layak": 1654,
+      "lahir": 1655,
+      "lafc": 1656,
+      "latih": 1657,
+      "ary": 1658,
+      "dias": 1659,
+      "dili": 1660,
+      "diing": 1661,
+      "diram": 1662,
+      "diseba": 1663,
+      "diaman": 1664,
+      "dijalan": 1665,
+      "dipin": 1666,
+      "dibuka": 1667,
+      "diugut": 1668,
+      "dilaporkan": 1669,
+      "dijangka": 1670,
+      "dilahir": 1671,
+      "int": 1672,
+      "inya": 1673,
+      "indah": 1674,
+      "india": 1675,
+      "insan": 1676,
+      "inve": 1677,
+      "inkcup": 1678,
+      "inspirasi": 1679,
+      "inuddin": 1680,
+      "angka": 1681,
+      "anggaran": 1682,
+      "atka": 1683,
+      "atasi": 1684,
+      "ategi": 1685,
+      "sea": 1686,
+      "seper": 1687,
+      "seku": 1688,
+      "seis": 1689,
+      "seki": 1690,
+      "sepe": 1691,
+      "sehari": 1692,
+      "sedia": 1693,
+      "sedar": 1694,
+      "selar": 1695,
+      "sekit": 1696,
+      "segam": 1697,
+      "selain": 1698,
+      "sesyen": 1699,
+      "seou": 1700,
+      "sebotol": 1701,
+      "sepasukannya": 1702,
+      "segala": 1703,
+      "asy": 1704,
+      "asas": 1705,
+      "asing": 1706,
+      "asarkan": 1707,
+      "asist": 1708,
+      "asingan": 1709,
+      "ahan": 1710,
+      "ahanan": 1711,
+      "ahteraan": 1712,
+      "mena": 1713,
+      "ment": 1714,
+      "menang": 1715,
+      "menun": 1716,
+      "menump": 1717,
+      "mende": 1718,
+      "menama": 1719,
+      "meneng": 1720,
+      "menjaya": 1721,
+      "menaw": 1722,
+      "menim": 1723,
+      "mendakwa": 1724,
+      "menerusi": 1725,
+      "menerus": 1726,
+      "menentang": 1727,
+      "menahan": 1728,
+      "dape": 1729,
+      "daerah": 1730,
+      "dagangan": 1731,
+      "unsur": 1732,
+      "emal": 1733,
+      "ami": 1734,
+      "amel": 1735,
+      "ambi": 1736,
+      "ampas": 1737,
+      "ambang": 1738,
+      "keku": 1739,
+      "kega": 1740,
+      "kegi": 1741,
+      "keju": 1742,
+      "kebang": 1743,
+      "keca": 1744,
+      "kelih": 1745,
+      "keselam": 1746,
+      "kesej": 1747,
+      "keperlu": 1748,
+      "kebul": 1749,
+      "kehidu": 1750,
+      "keyakin": 1751,
+      "kehil": 1752,
+      "kediaman": 1753,
+      "berat": 1754,
+      "berku": 1755,
+      "berban": 1756,
+      "berwar": 1757,
+      "berkec": 1758,
+      "berjanji": 1759,
+      "berpuluh": 1760,
+      "berjum": 1761,
+      "bersk": 1762,
+      "bersetuju": 1763,
+      "bersif": 1764,
+      "berkai": 1765,
+      "berasingan": 1766,
+      "berkeku": 1767,
+      "umur": 1768,
+      "umba": 1769,
+      "lipi": 1770,
+      "libat": 1771,
+      "ligat": 1772,
+      "sir": 1773,
+      "sit": 1774,
+      "siang": 1775,
+      "sion": 1776,
+      "turut": 1777,
+      "pereka": 1778,
+      "perbin": 1779,
+      "perlum": 1780,
+      "persaingan": 1781,
+      "pertaman": 1782,
+      "perosak": 1783,
+      "teran": 1784,
+      "terba": 1785,
+      "terbi": 1786,
+      "terde": 1787,
+      "terlebih": 1788,
+      "terci": 1789,
+      "terjadi": 1790,
+      "tergug": 1791,
+      "terpendek": 1792,
+      "terkor": 1793,
+      "terkawal": 1794,
+      "akhbar": 1795,
+      "akui": 1796,
+      "lebat": 1797,
+      "kup": 1798,
+      "kumen": 1799,
+      "kuda": 1800,
+      "kutan": 1801,
+      "kuatkan": 1802,
+      "kuantan": 1803,
+      "ald": 1804,
+      "alsu": 1805,
+      "alhada": 1806,
+      "aldo": 1807,
+      "tiang": 1808,
+      "onas": 1809,
+      "ongan": 1810,
+      "pau": 1811,
+      "pagar": 1812,
+      "penting": 1813,
+      "pendiri": 1814,
+      "penipu": 1815,
+      "penjara": 1816,
+      "penahanan": 1817,
+      "oro": 1818,
+      "orida": 1819,
+      "tapkan": 1820,
+      "bus": 1821,
+      "but": 1822,
+      "buan": 1823,
+      "buhan": 1824,
+      "budape": 1825,
+      "elps": 1826,
+      "eluruh": 1827,
+      "elsea": 1828,
+      "kadar": 1829,
+      "kapal": 1830,
+      "kapkan": 1831,
+      "memus": 1832,
+      "memben": 1833,
+      "memburu": 1834,
+      "dulu": 1835,
+      "duduk": 1836,
+      "dani": 1837,
+      "isteri": 1838,
+      "isfera": 1839,
+      "baan": 1840,
+      "bali": 1841,
+      "badan": 1842,
+      "bayar": 1843,
+      "bayaran": 1844,
+      "kiri": 1845,
+      "pegu": 1846,
+      "pelih": 1847,
+      "pesara": 1848,
+      "bia": 1849,
+      "bidas": 1850,
+      "gih": 1851,
+      "gianni": 1852,
+      "mei": 1853,
+      "mega": 1854,
+      "melam": 1855,
+      "melalu": 1856,
+      "melaporkan": 1857,
+      "melibat": 1858,
+      "mesir": 1859,
+      "bedah": 1860,
+      "menggun": 1861,
+      "mengek": 1862,
+      "mengarah": 1863,
+      "menghal": 1864,
+      "menghadapi": 1865,
+      "menggugurkan": 1866,
+      "mengundi": 1867,
+      "mengalami": 1868,
+      "mengatasi": 1869,
+      "mengkebang": 1870,
+      "mengakui": 1871,
+      "seminggu": 1872,
+      "semua": 1873,
+      "pasangan": 1874,
+      "pasaran": 1875,
+      "raga": 1876,
+      "pian": 1877,
+      "piast": 1878,
+      "pembeli": 1879,
+      "pembuka": 1880,
+      "pemangsa": 1881,
+      "pemuda": 1882,
+      "pemalsu": 1883,
+      "pembedah": 1884,
+      "utara": 1885,
+      "kovi": 1886,
+      "komuni": 1887,
+      "ribu": 1888,
+      "luaskan": 1889,
+      "mac": 1890,
+      "main": 1891,
+      "maut": 1892,
+      "mayat": 1893,
+      "magn": 1894,
+      "madani": 1895,
+      "defi": 1896,
+      "kers": 1897,
+      "kering": 1898,
+      "kerumi": 1899,
+      "poh": 1900,
+      "popula": 1901,
+      "pokok": 1902,
+      "puteri": 1903,
+      "putus": 1904,
+      "putera": 1905,
+      "putih": 1906,
+      "atase": 1907,
+      "hantar": 1908,
+      "hantaran": 1909,
+      "saint": 1910,
+      "bola": 1911,
+      "boiko": 1912,
+      "lando": 1913,
+      "bandara": 1914,
+      "read": 1915,
+      "resor": 1916,
+      "tegu": 1917,
+      "teliti": 1918,
+      "tetapi": 1919,
+      "julung": 1920,
+      "jukkan": 1921,
+      "syarat": 1922,
+      "syamel": 1923,
+      "alaman": 1924,
+      "bangkan": 1925,
+      "bangkit": 1926,
+      "tanpa": 1927,
+      "mik": 1928,
+      "aruzaman": 1929,
+      "itud": 1930,
+      "suci": 1931,
+      "supaya": 1932,
+      "sukar": 1933,
+      "suami": 1934,
+      "sert": 1935,
+      "serangan": 1936,
+      "serong": 1937,
+      "serantau": 1938,
+      "serbuan": 1939,
+      "hadapan": 1940,
+      "penghantaran": 1941,
+      "kontin": 1942,
+      "konsert": 1943,
+      "mudah": 1944,
+      "merah": 1945,
+      "meraih": 1946,
+      "merampas": 1947,
+      "pantang": 1948,
+      "panjang": 1949,
+      "panannya": 1950,
+      "atipso": 1951,
+      "akiman": 1952,
+      "dahulu": 1953,
+      "england": 1954,
+      "engkapkan": 1955,
+      "oscar": 1956,
+      "trenton": 1957,
+      "menyala": 1958,
+      "menyerah": 1959,
+      "menyasarkan": 1960,
+      "menyeluruh": 1961,
+      "likasi": 1962,
+      "bella": 1963,
+      "cabang": 1964,
+      "cabaran": 1965,
+      "kamch": 1966,
+      "kamaruzaman": 1967,
+      "ramli": 1968,
+      "ramos": 1969,
+      "senat": 1970,
+      "senior": 1971,
+      "senjata": 1972,
+      "cir": 1973,
+      "jid": 1974,
+      "jikan": 1975,
+      "jika": 1976,
+      "jiwa": 1977,
+      "rantau": 1978,
+      "jadikan": 1979,
+      "gesa": 1980,
+      "gelaran": 1981,
+      "katia": 1982,
+      "malah": 1983,
+      "tempoh": 1984,
+      "alani": 1985,
+      "dungi": 1986,
+      "kenha": 1987,
+      "masjid": 1988,
+      "201": 1989,
+      "8220": 1990,
+      "lahad": 1991,
+      "barca": 1992,
+      "barcelon": 1993,
+      "china": 1994,
+      "chelsea": 1995,
+      "hua": 1996,
+      "hujan": 1997,
+      "tot": 1998,
+      "menjela": 1999,
+      "menjalani": 2000,
+      "benar": 2001,
+      "dof": 2002,
+      "dolar": 2003,
+      "dokt": 2004,
+      "dokumen": 2005,
+      "kemanusia": 2006,
+      "kembali": 2007,
+      "lokasi": 2008,
+      "com": 2009,
+      "stment": 2010,
+      "membuatkan": 2011,
+      "cebis": 2012,
+      "cekup": 2013,
+      "donald": 2014,
+      "formula": 2015,
+      "pelanggaran": 2016,
+      "pelumba": 2017,
+      "zainuddin": 2018,
+      "seluruh": 2019,
+      "derland": 2020,
+      "warga": 2021,
+      "besut": 2022,
+      "besaran": 2023,
+      "apal": 2024,
+      "apmm": 2025,
+      "aplikasi": 2026,
+      "hakemal": 2027,
+      "jalani": 2028,
+      "marqu": 2029,
+      "sheik": 2030,
+      "the": 2031,
+      "thinkcup": 2032,
+      "thread": 2033,
+      "ekstasi": 2034,
+      "ekseku": 2035,
+      "germain": 2036,
+      "impian": 2037,
+      "ogram": 2038,
+      "pindah": 2039,
+      "pintar": 2040,
+      "pindaan": 2041,
+      "simpanannya": 2042,
+      "tifnya": 2043,
+      "pelaksan": 2044,
+      "fizikalnya": 2045,
+      "sterling": 2046,
+      "suspek": 2047,
+      "mendadak": 2048,
+      "lihat": 2049,
+      "pengacara": 2050,
+      "pengaudi": 2051,
+      "petros": 2052,
+      "petronas": 2053,
+      "news": 2054,
+      "bursa": 2055,
+      "jentera": 2056,
+      "kl2040": 2057,
+      "klcc": 2058,
+      "tunai": 2059,
+      "tunis": 2060,
+      "wangsa": 2061,
+      "ahad": 2062,
+      "mengesyor": 2063,
+      "pihaknya": 2064,
+      "majlis": 2065,
+      "bumiputera": 2066,
+      "faedah": 2067,
+      "krai": 2068,
+      "pro": 2069,
+      "program": 2070,
+      "paling": 2071,
+      "ronaldo": 2072,
+      "persediaan": 2073,
+      "persetujuan": 2074,
+      "memperkuatkan": 2075,
+      "tegang": 2076,
+      "lydia": 2077,
+      "lywoo": 2078,
+      "minta": 2079,
+      "rakaman": 2080,
+      "tampak": 2081,
+      "tampil": 2082,
+      "veteran": 2083,
+      "puluhan": 2084,
+      "elekt": 2085,
+      "gelandangan": 2086,
+      "hasina": 2087,
+      "kahwin": 2088,
+      "rasmi": 2089,
+      "sumber": 2090,
+      "summer": 2091,
+      "sumbangan": 2092,
+      "sejak": 2093,
+      "sejarah": 2094,
+      "meneliti": 2095,
+      "kelly": 2096,
+      "bulkan": 2097,
+      "memandu": 2098,
+      "memandang": 2099,
+      "keresah": 2100,
+      "ugutan": 2101,
+      "ehati": 2102,
+      "jepun": 2103,
+      "langgar": 2104,
+      "lemak": 2105,
+      "suria": 2106,
+      "tarif": 2107,
+      "tarik": 2108,
+      "animasi": 2109,
+      "sepakat": 2110,
+      "pertubuhan": 2111,
+      "komision": 2112,
+      "sentiasa": 2113,
+      "sentimeter": 2114,
+      "tiktokers": 2115,
+      "heung": 2116,
+      "jose": 2117,
+      "korea": 2118,
+      "psg": 2119,
+      "rentas": 2120,
+      "sunderland": 2121,
+      "selatan": 2122,
+      "meminta": 2123,
+      "memindahkan": 2124,
+      "istana": 2125,
+      "istanbul": 2126,
+      "george": 2127,
+      "georgina": 2128,
+      "288": 2129,
+      "asean": 2130,
+      "balqis": 2131,
+      "grand": 2132,
+      "haram": 2133,
+      "hemisfera": 2134,
+      "nasional": 2135,
+      "ombia": 2136,
+      "operasi": 2137,
+      "phelps": 2138,
+      "pusat": 2139,
+      "tasik": 2140,
+      "walaupun": 2141,
+      "ancaman": 2142,
+      "sepenuhnya": 2143,
+      "mengadili": 2144,
+      "mengandungi": 2145,
+      "mencecah": 2146,
+      "kehakiman": 2147,
+      "kedai": 2148,
+      "timur": 2149,
+      "tawarkan": 2150,
+      "biadab": 2151,
+      "melaka": 2152,
+      "menggegarkan": 2153,
+      "komander": 2154,
+      "telefon": 2155,
+      "muzium": 2156,
+      "menyambut": 2157,
+      "penyediaan": 2158,
+      "marcus": 2159,
+      "ekoran": 2160,
+      "pelancong": 2161,
+      "hidupnya": 2162,
+      "putrajaya": 2163,
+      "pemerintah": 2164,
+      "khidmat": 2165,
+      "355": 2166,
+      "aqsa": 2167,
+      "austra": 2168,
+      "adegan": 2169,
+      "bharu": 2170,
+      "balas": 2171,
+      "calo": 2172,
+      "colombia": 2173,
+      "draf": 2174,
+      "dramatik": 2175,
+      "djokovi": 2176,
+      "florida": 2177,
+      "fmf": 2178,
+      "fakir": 2179,
+      "fokus": 2180,
+      "goncalo": 2181,
+      "hungary": 2182,
+      "hollywoo": 2183,
+      "hawari": 2184,
+      "itzel": 2185,
+      "ideal": 2186,
+      "jpj": 2187,
+      "jerman": 2188,
+      "jurulatih": 2189,
+      "kumpulan": 2190,
+      "lutkenha": 2191,
+      "miskin": 2192,
+      "mungkin": 2193,
+      "maruah": 2194,
+      "nahkannya": 2195,
+      "ngumoha": 2196,
+      "olahraga": 2197,
+      "ptkl2040": 2198,
+      "prix": 2199,
+      "pinggir": 2200,
+      "russia": 2201,
+      "rumput": 2202,
+      "ringgit": 2203,
+      "sasar": 2204,
+      "salun": 2205,
+      "syabu": 2206,
+      "sungai": 2207,
+      "strategi": 2208,
+      "sindiket": 2209,
+      "scammer": 2210,
+      "suruhanjaya": 2211,
+      "wujud": 2212,
+      "xinhua": 2213,
+      "anugerah": 2214,
+      "ernie": 2215,
+      "laketown": 2216,
+      "dirampas": 2217,
+      "disebabkan": 2218,
+      "dijalankan": 2219,
+      "dipindahkan": 2220,
+      "dilahirkan": 2221,
+      "investment": 2222,
+      "seperti": 2223,
+      "seismik": 2224,
+      "sepeket": 2225,
+      "selaras": 2226,
+      "sekitar": 2227,
+      "segamat": 2228,
+      "seoul": 2229,
+      "asisten": 2230,
+      "menunjukkan": 2231,
+      "menumpukan": 2232,
+      "mendedahkan": 2233,
+      "menamakan": 2234,
+      "menengah": 2235,
+      "menjayakan": 2236,
+      "menawarkan": 2237,
+      "menimbulkan": 2238,
+      "meneruskan": 2239,
+      "ambil": 2240,
+      "kegagalan": 2241,
+      "kegiatan": 2242,
+      "kejuaraan": 2243,
+      "kecacatan": 2244,
+      "kelihatan": 2245,
+      "keselamatan": 2246,
+      "kesejahteraan": 2247,
+      "keperluan": 2248,
+      "kebuluran": 2249,
+      "kehidupan": 2250,
+      "keyakinan": 2251,
+      "kehilangan": 2252,
+      "berbanding": 2253,
+      "berwarna": 2254,
+      "berkecai": 2255,
+      "berjumpa": 2256,
+      "berskala": 2257,
+      "bersifat": 2258,
+      "berkaitan": 2259,
+      "berkekuatan": 2260,
+      "lipid": 2261,
+      "perbincangan": 2262,
+      "perlumbaan": 2263,
+      "pertamanya": 2264,
+      "terbabas": 2265,
+      "terbiar": 2266,
+      "terdedah": 2267,
+      "tercicir": 2268,
+      "tergugat": 2269,
+      "terkorban": 2270,
+      "alhadad": 2271,
+      "pendirian": 2272,
+      "penipuan": 2273,
+      "budapest": 2274,
+      "memusnahkannya": 2275,
+      "membenarkan": 2276,
+      "peguam": 2277,
+      "peliharaan": 2278,
+      "melalui": 2279,
+      "melibatkan": 2280,
+      "menggunakan": 2281,
+      "mengekang": 2282,
+      "mengarahkan": 2283,
+      "menghalang": 2284,
+      "piastri": 2285,
+      "pembelian": 2286,
+      "pembukaan": 2287,
+      "pemalsuan": 2288,
+      "pembedahan": 2289,
+      "magnitud": 2290,
+      "defisit": 2291,
+      "kerumitan": 2292,
+      "populariti": 2293,
+      "boikot": 2294,
+      "bandaraya": 2295,
+      "resort": 2296,
+      "kontinjen": 2297,
+      "atipsom": 2298,
+      "kamchatka": 2299,
+      "barcelona": 2300,
+      "menjelaskan": 2301,
+      "doktor": 2302,
+      "kemanusiaan": 2303,
+      "cebisan": 2304,
+      "marquez": 2305,
+      "sheikh": 2306,
+      "eksekutifnya": 2307,
+      "pelaksanaan": 2308,
+      "pengauditan": 2309,
+      "mengesyorkan": 2310,
+      "elektrik": 2311,
+      "keresahan": 2312,
+      "komisioner": 2313,
+      "australia": 2314,
+      "djokovic": 2315,
+      "hollywood": 2316,
+      "lutkenhaus": 2317
+    },
+    "merges": [
+      [
+        "a",
+        "n"
+      ],
+      [
+        "e",
+        "r"
+      ],
+      [
+        "e",
+        "n"
+      ],
+      [
+        "l",
+        "a"
+      ],
+      [
+        "a",
+        "r"
+      ],
+      [
+        "d",
+        "i"
+      ],
+      [
+        "i",
+        "n"
+      ],
+      [
+        "an",
+        "g"
+      ],
+      [
+        "a",
+        "t"
+      ],
+      [
+        "s",
+        "e"
+      ],
+      [
+        "a",
+        "s"
+      ],
+      [
+        "a",
+        "h"
+      ],
+      [
+        "k",
+        "an"
+      ],
+      [
+        "m",
+        "en"
+      ],
+      [
+        "d",
+        "a"
+      ],
+      [
+        "u",
+        "n"
+      ],
+      [
+        "e",
+        "m"
+      ],
+      [
+        "a",
+        "m"
+      ],
+      [
+        "k",
+        "e"
+      ],
+      [
+        "b",
+        "er"
+      ],
+      [
+        "u",
+        "m"
+      ],
+      [
+        "l",
+        "i"
+      ],
+      [
+        "s",
+        "i"
+      ],
+      [
+        "t",
+        "u"
+      ],
+      [
+        "p",
+        "er"
+      ],
+      [
+        "u",
+        "r"
+      ],
+      [
+        "t",
+        "er"
+      ],
+      [
+        "a",
+        "k"
+      ],
+      [
+        "l",
+        "e"
+      ],
+      [
+        "k",
+        "u"
+      ],
+      [
+        "a",
+        "l"
+      ],
+      [
+        "a",
+        "la"
+      ],
+      [
+        "t",
+        "i"
+      ],
+      [
+        "o",
+        "n"
+      ],
+      [
+        "p",
+        "a"
+      ],
+      [
+        "p",
+        "en"
+      ],
+      [
+        "o",
+        "r"
+      ],
+      [
+        "y",
+        "a"
+      ],
+      [
+        "a",
+        "i"
+      ],
+      [
+        "in",
+        "g"
+      ],
+      [
+        "ar",
+        "i"
+      ],
+      [
+        "t",
+        "a"
+      ],
+      [
+        "b",
+        "u"
+      ],
+      [
+        "e",
+        "l"
+      ],
+      [
+        "k",
+        "a"
+      ],
+      [
+        "j",
+        "a"
+      ],
+      [
+        "m",
+        "em"
+      ],
+      [
+        "d",
+        "u"
+      ],
+      [
+        "d",
+        "an"
+      ],
+      [
+        "y",
+        "ang"
+      ],
+      [
+        "g",
+        "a"
+      ],
+      [
+        "i",
+        "s"
+      ],
+      [
+        "b",
+        "a"
+      ],
+      [
+        "g",
+        "an"
+      ],
+      [
+        "k",
+        "i"
+      ],
+      [
+        "p",
+        "e"
+      ],
+      [
+        "u",
+        "s"
+      ],
+      [
+        "in",
+        "i"
+      ],
+      [
+        "b",
+        "i"
+      ],
+      [
+        "g",
+        "i"
+      ],
+      [
+        "m",
+        "e"
+      ],
+      [
+        "b",
+        "e"
+      ],
+      [
+        "t",
+        "ah"
+      ],
+      [
+        "la",
+        "m"
+      ],
+      [
+        "um",
+        "p"
+      ],
+      [
+        "men",
+        "g"
+      ],
+      [
+        "se",
+        "m"
+      ],
+      [
+        "p",
+        "as"
+      ],
+      [
+        "r",
+        "a"
+      ],
+      [
+        "a",
+        "da"
+      ],
+      [
+        "p",
+        "i"
+      ],
+      [
+        "as",
+        "i"
+      ],
+      [
+        "pa",
+        "da"
+      ],
+      [
+        "p",
+        "em"
+      ],
+      [
+        "u",
+        "t"
+      ],
+      [
+        "d",
+        "en"
+      ],
+      [
+        "k",
+        "o"
+      ],
+      [
+        "tu",
+        "k"
+      ],
+      [
+        "ku",
+        "ala"
+      ],
+      [
+        "r",
+        "i"
+      ],
+      [
+        "ar",
+        "a"
+      ],
+      [
+        "un",
+        "g"
+      ],
+      [
+        "l",
+        "u"
+      ],
+      [
+        "m",
+        "a"
+      ],
+      [
+        "ang",
+        "an"
+      ],
+      [
+        "d",
+        "e"
+      ],
+      [
+        "at",
+        "an"
+      ],
+      [
+        "da",
+        "lam"
+      ],
+      [
+        "k",
+        "er"
+      ],
+      [
+        "p",
+        "o"
+      ],
+      [
+        "p",
+        "u"
+      ],
+      [
+        "un",
+        "tuk"
+      ],
+      [
+        "l",
+        "ump"
+      ],
+      [
+        "at",
+        "a"
+      ],
+      [
+        "lump",
+        "ur"
+      ],
+      [
+        "h",
+        "an"
+      ],
+      [
+        "s",
+        "a"
+      ],
+      [
+        "si",
+        "a"
+      ],
+      [
+        "b",
+        "o"
+      ],
+      [
+        "h",
+        "ari"
+      ],
+      [
+        "l",
+        "an"
+      ],
+      [
+        "b",
+        "an"
+      ],
+      [
+        "r",
+        "e"
+      ],
+      [
+        "t",
+        "e"
+      ],
+      [
+        "den",
+        "gan"
+      ],
+      [
+        "j",
+        "u"
+      ],
+      [
+        "s",
+        "y"
+      ],
+      [
+        "ala",
+        "m"
+      ],
+      [
+        "b",
+        "ang"
+      ],
+      [
+        "n",
+        "ya"
+      ],
+      [
+        "da",
+        "k"
+      ],
+      [
+        "am",
+        "a"
+      ],
+      [
+        "or",
+        "ang"
+      ],
+      [
+        "g",
+        "u"
+      ],
+      [
+        "t",
+        "an"
+      ],
+      [
+        "i",
+        "a"
+      ],
+      [
+        "m",
+        "i"
+      ],
+      [
+        "tah",
+        "an"
+      ],
+      [
+        "ar",
+        "u"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "i",
+        "tu"
+      ],
+      [
+        "s",
+        "u"
+      ],
+      [
+        "s",
+        "er"
+      ],
+      [
+        "se",
+        "le"
+      ],
+      [
+        "a",
+        "an"
+      ],
+      [
+        "h",
+        "ada"
+      ],
+      [
+        "n",
+        "e"
+      ],
+      [
+        "at",
+        "u"
+      ],
+      [
+        "pen",
+        "g"
+      ],
+      [
+        "sele",
+        "pas"
+      ],
+      [
+        "f",
+        "i"
+      ],
+      [
+        "k",
+        "on"
+      ],
+      [
+        "m",
+        "u"
+      ],
+      [
+        "m",
+        "er"
+      ],
+      [
+        "p",
+        "an"
+      ],
+      [
+        "r",
+        "m"
+      ],
+      [
+        "at",
+        "i"
+      ],
+      [
+        "ber",
+        "a"
+      ],
+      [
+        "li",
+        "s"
+      ],
+      [
+        "ak",
+        "i"
+      ],
+      [
+        "d",
+        "ah"
+      ],
+      [
+        "w",
+        "an"
+      ],
+      [
+        "en",
+        "g"
+      ],
+      [
+        "o",
+        "l"
+      ],
+      [
+        "o",
+        "s"
+      ],
+      [
+        "t",
+        "r"
+      ],
+      [
+        "v",
+        "i"
+      ],
+      [
+        "z",
+        "i"
+      ],
+      [
+        "men",
+        "y"
+      ],
+      [
+        "li",
+        "k"
+      ],
+      [
+        "le",
+        "bi"
+      ],
+      [
+        "ja",
+        "ya"
+      ],
+      [
+        "du",
+        "a"
+      ],
+      [
+        "b",
+        "ah"
+      ],
+      [
+        "b",
+        "el"
+      ],
+      [
+        "p",
+        "or"
+      ],
+      [
+        "ur",
+        "u"
+      ],
+      [
+        "lebi",
+        "h"
+      ],
+      [
+        "c",
+        "a"
+      ],
+      [
+        "k",
+        "am"
+      ],
+      [
+        "r",
+        "am"
+      ],
+      [
+        "r",
+        "um"
+      ],
+      [
+        "la",
+        "por"
+      ],
+      [
+        "di",
+        "a"
+      ],
+      [
+        "ter",
+        "i"
+      ],
+      [
+        "po",
+        "lis"
+      ],
+      [
+        "rum",
+        "ah"
+      ],
+      [
+        "a",
+        "w"
+      ],
+      [
+        "d",
+        "ar"
+      ],
+      [
+        "s",
+        "en"
+      ],
+      [
+        "la",
+        "ki"
+      ],
+      [
+        "ar",
+        "kan"
+      ],
+      [
+        "ber",
+        "i"
+      ],
+      [
+        "le",
+        "laki"
+      ],
+      [
+        "c",
+        "i"
+      ],
+      [
+        "h",
+        "i"
+      ],
+      [
+        "j",
+        "i"
+      ],
+      [
+        "m",
+        "ah"
+      ],
+      [
+        "r",
+        "an"
+      ],
+      [
+        "ar",
+        "an"
+      ],
+      [
+        "di",
+        "tahan"
+      ],
+      [
+        "ja",
+        "di"
+      ],
+      [
+        "tah",
+        "un"
+      ],
+      [
+        "hada",
+        "p"
+      ],
+      [
+        "bel",
+        "um"
+      ],
+      [
+        "d",
+        "ari"
+      ],
+      [
+        "g",
+        "e"
+      ],
+      [
+        "k",
+        "at"
+      ],
+      [
+        "m",
+        "ala"
+      ],
+      [
+        "s",
+        "ama"
+      ],
+      [
+        "t",
+        "em"
+      ],
+      [
+        "er",
+        "i"
+      ],
+      [
+        "se",
+        "orang"
+      ],
+      [
+        "ter",
+        "hadap"
+      ],
+      [
+        "al",
+        "an"
+      ],
+      [
+        "d",
+        "un"
+      ],
+      [
+        "k",
+        "en"
+      ],
+      [
+        "m",
+        "as"
+      ],
+      [
+        "p",
+        "at"
+      ],
+      [
+        "sem",
+        "alam"
+      ],
+      [
+        "1",
+        "1"
+      ],
+      [
+        "2",
+        "0"
+      ],
+      [
+        "8",
+        "2"
+      ],
+      [
+        "k",
+        "ata"
+      ],
+      [
+        "s",
+        "ini"
+      ],
+      [
+        "u",
+        "kan"
+      ],
+      [
+        "y",
+        "sia"
+      ],
+      [
+        "la",
+        "h"
+      ],
+      [
+        "la",
+        "r"
+      ],
+      [
+        "se",
+        "ba"
+      ],
+      [
+        "ke",
+        "j"
+      ],
+      [
+        "mala",
+        "ysia"
+      ],
+      [
+        "a",
+        "ja"
+      ],
+      [
+        "b",
+        "ar"
+      ],
+      [
+        "b",
+        "at"
+      ],
+      [
+        "c",
+        "h"
+      ],
+      [
+        "h",
+        "u"
+      ],
+      [
+        "r",
+        "em"
+      ],
+      [
+        "t",
+        "o"
+      ],
+      [
+        "w",
+        "a"
+      ],
+      [
+        "men",
+        "j"
+      ],
+      [
+        "ti",
+        "dak"
+      ],
+      [
+        "&",
+        "#"
+      ],
+      [
+        "a",
+        "kan"
+      ],
+      [
+        "b",
+        "en"
+      ],
+      [
+        "d",
+        "o"
+      ],
+      [
+        "g",
+        "un"
+      ],
+      [
+        "h",
+        "ing"
+      ],
+      [
+        "i",
+        "la"
+      ],
+      [
+        "k",
+        "em"
+      ],
+      [
+        "l",
+        "o"
+      ],
+      [
+        "s",
+        "o"
+      ],
+      [
+        "u",
+        "sia"
+      ],
+      [
+        "w",
+        "as"
+      ],
+      [
+        "du",
+        "k"
+      ],
+      [
+        "dun",
+        "ia"
+      ],
+      [
+        "1",
+        "3"
+      ],
+      [
+        "c",
+        "o"
+      ],
+      [
+        "c",
+        "ah"
+      ],
+      [
+        "d",
+        "ang"
+      ],
+      [
+        "e",
+        "ka"
+      ],
+      [
+        "g",
+        "ai"
+      ],
+      [
+        "h",
+        "am"
+      ],
+      [
+        "k",
+        "ur"
+      ],
+      [
+        "l",
+        "on"
+      ],
+      [
+        "p",
+        "ar"
+      ],
+      [
+        "s",
+        "t"
+      ],
+      [
+        "u",
+        "h"
+      ],
+      [
+        "se",
+        "bu"
+      ],
+      [
+        "men",
+        "jadi"
+      ],
+      [
+        "ak",
+        "in"
+      ],
+      [
+        "pen",
+        "du"
+      ],
+      [
+        "mem",
+        "bu"
+      ],
+      [
+        "ba",
+        "gi"
+      ],
+      [
+        "ker",
+        "aja"
+      ],
+      [
+        "ne",
+        "g"
+      ],
+      [
+        "fi",
+        "zi"
+      ],
+      [
+        "keraja",
+        "an"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "c",
+        "e"
+      ],
+      [
+        "d",
+        "on"
+      ],
+      [
+        "f",
+        "or"
+      ],
+      [
+        "h",
+        "a"
+      ],
+      [
+        "j",
+        "an"
+      ],
+      [
+        "k",
+        "al"
+      ],
+      [
+        "m",
+        "asi"
+      ],
+      [
+        "p",
+        "el"
+      ],
+      [
+        "p",
+        "re"
+      ],
+      [
+        "t",
+        "in"
+      ],
+      [
+        "t",
+        "ing"
+      ],
+      [
+        "z",
+        "a"
+      ],
+      [
+        "la",
+        "lu"
+      ],
+      [
+        "di",
+        "k"
+      ],
+      [
+        "di",
+        "n"
+      ],
+      [
+        "di",
+        "per"
+      ],
+      [
+        "se",
+        "l"
+      ],
+      [
+        "se",
+        "belum"
+      ],
+      [
+        "men",
+        "teri"
+      ],
+      [
+        "am",
+        "an"
+      ],
+      [
+        "ke",
+        "pada"
+      ],
+      [
+        "pen",
+        "y"
+      ],
+      [
+        "ban",
+        "tu"
+      ],
+      [
+        "bah",
+        "aru"
+      ],
+      [
+        "82",
+        "11"
+      ],
+      [
+        "d",
+        "er"
+      ],
+      [
+        "g",
+        "en"
+      ],
+      [
+        "j",
+        "am"
+      ],
+      [
+        "m",
+        "o"
+      ],
+      [
+        "m",
+        "an"
+      ],
+      [
+        "p",
+        "un"
+      ],
+      [
+        "w",
+        "ar"
+      ],
+      [
+        "y",
+        "ah"
+      ],
+      [
+        "un",
+        "i"
+      ],
+      [
+        "ber",
+        "sama"
+      ],
+      [
+        "le",
+        "h"
+      ],
+      [
+        "me",
+        "dia"
+      ],
+      [
+        "be",
+        "s"
+      ],
+      [
+        "be",
+        "li"
+      ],
+      [
+        "mer",
+        "eka"
+      ],
+      [
+        "rem",
+        "an"
+      ],
+      [
+        "pendu",
+        "duk"
+      ],
+      [
+        "a",
+        "p"
+      ],
+      [
+        "d",
+        "atu"
+      ],
+      [
+        "h",
+        "ak"
+      ],
+      [
+        "j",
+        "alan"
+      ],
+      [
+        "k",
+        "ini"
+      ],
+      [
+        "m",
+        "ar"
+      ],
+      [
+        "s",
+        "h"
+      ],
+      [
+        "t",
+        "h"
+      ],
+      [
+        "t",
+        "ang"
+      ],
+      [
+        "t",
+        "eng"
+      ],
+      [
+        "an",
+        "a"
+      ],
+      [
+        "la",
+        "ku"
+      ],
+      [
+        "di",
+        "ri"
+      ],
+      [
+        "at",
+        "us"
+      ],
+      [
+        "si",
+        "den"
+      ],
+      [
+        "ti",
+        "kan"
+      ],
+      [
+        "ga",
+        "za"
+      ],
+      [
+        "is",
+        "u"
+      ],
+      [
+        "is",
+        "ra"
+      ],
+      [
+        "ki",
+        "ra"
+      ],
+      [
+        "sem",
+        "akin"
+      ],
+      [
+        "pas",
+        "ukan"
+      ],
+      [
+        "pem",
+        "bang"
+      ],
+      [
+        "mu",
+        "la"
+      ],
+      [
+        "dari",
+        "pada"
+      ],
+      [
+        "seba",
+        "gai"
+      ],
+      [
+        "lon",
+        "don"
+      ],
+      [
+        "masi",
+        "h"
+      ],
+      [
+        "isra",
+        "el"
+      ],
+      [
+        "b",
+        "in"
+      ],
+      [
+        "c",
+        "er"
+      ],
+      [
+        "e",
+        "k"
+      ],
+      [
+        "g",
+        "er"
+      ],
+      [
+        "g",
+        "ar"
+      ],
+      [
+        "i",
+        "m"
+      ],
+      [
+        "j",
+        "ung"
+      ],
+      [
+        "o",
+        "g"
+      ],
+      [
+        "o",
+        "bo"
+      ],
+      [
+        "p",
+        "in"
+      ],
+      [
+        "s",
+        "atu"
+      ],
+      [
+        "di",
+        "l"
+      ],
+      [
+        "as",
+        "a"
+      ],
+      [
+        "as",
+        "t"
+      ],
+      [
+        "as",
+        "atan"
+      ],
+      [
+        "um",
+        "i"
+      ],
+      [
+        "si",
+        "m"
+      ],
+      [
+        "si",
+        "asatan"
+      ],
+      [
+        "ti",
+        "f"
+      ],
+      [
+        "bu",
+        "kan"
+      ],
+      [
+        "pe",
+        "la"
+      ],
+      [
+        "pi",
+        "r"
+      ],
+      [
+        "ata",
+        "u"
+      ],
+      [
+        "lan",
+        "d"
+      ],
+      [
+        "dak",
+        "wa"
+      ],
+      [
+        "bera",
+        "pa"
+      ],
+      [
+        "kam",
+        "ah"
+      ],
+      [
+        "mah",
+        "kamah"
+      ],
+      [
+        "fizi",
+        "kal"
+      ],
+      [
+        "pre",
+        "siden"
+      ],
+      [
+        "cer",
+        "obo"
+      ],
+      [
+        "cerobo",
+        "h"
+      ],
+      [
+        "a",
+        "gen"
+      ],
+      [
+        "n",
+        "ila"
+      ],
+      [
+        "r",
+        "is"
+      ],
+      [
+        "s",
+        "ter"
+      ],
+      [
+        "s",
+        "us"
+      ],
+      [
+        "t",
+        "al"
+      ],
+      [
+        "t",
+        "on"
+      ],
+      [
+        "in",
+        "di"
+      ],
+      [
+        "ang",
+        "at"
+      ],
+      [
+        "at",
+        "kan"
+      ],
+      [
+        "men",
+        "da"
+      ],
+      [
+        "men",
+        "ur"
+      ],
+      [
+        "em",
+        "as"
+      ],
+      [
+        "li",
+        "h"
+      ],
+      [
+        "li",
+        "men"
+      ],
+      [
+        "si",
+        "al"
+      ],
+      [
+        "ur",
+        "i"
+      ],
+      [
+        "pen",
+        "ga"
+      ],
+      [
+        "ari",
+        "kat"
+      ],
+      [
+        "el",
+        "ang"
+      ],
+      [
+        "dan",
+        "a"
+      ],
+      [
+        "is",
+        "t"
+      ],
+      [
+        "pe",
+        "tr"
+      ],
+      [
+        "be",
+        "berapa"
+      ],
+      [
+        "pu",
+        "la"
+      ],
+      [
+        "sy",
+        "arikat"
+      ],
+      [
+        "bang",
+        "sa"
+      ],
+      [
+        "ne",
+        "w"
+      ],
+      [
+        "par",
+        "limen"
+      ],
+      [
+        "datu",
+        "k"
+      ],
+      [
+        "agen",
+        "si"
+      ],
+      [
+        "b",
+        "ur"
+      ],
+      [
+        "c",
+        "in"
+      ],
+      [
+        "c",
+        "am"
+      ],
+      [
+        "c",
+        "ara"
+      ],
+      [
+        "c",
+        "angan"
+      ],
+      [
+        "c",
+        "ast"
+      ],
+      [
+        "g",
+        "uru"
+      ],
+      [
+        "j",
+        "en"
+      ],
+      [
+        "k",
+        "l"
+      ],
+      [
+        "k",
+        "ang"
+      ],
+      [
+        "k",
+        "13"
+      ],
+      [
+        "p",
+        "atan"
+      ],
+      [
+        "t",
+        "un"
+      ],
+      [
+        "t",
+        "ara"
+      ],
+      [
+        "u",
+        "k"
+      ],
+      [
+        "u",
+        "an"
+      ],
+      [
+        "u",
+        "la"
+      ],
+      [
+        "u",
+        "lan"
+      ],
+      [
+        "w",
+        "ang"
+      ],
+      [
+        "y",
+        "ak"
+      ],
+      [
+        "ar",
+        "ah"
+      ],
+      [
+        "se",
+        "k"
+      ],
+      [
+        "ah",
+        "a"
+      ],
+      [
+        "em",
+        "pat"
+      ],
+      [
+        "ke",
+        "t"
+      ],
+      [
+        "ke",
+        "tu"
+      ],
+      [
+        "per",
+        "in"
+      ],
+      [
+        "per",
+        "atus"
+      ],
+      [
+        "per",
+        "dana"
+      ],
+      [
+        "ter",
+        "sebu"
+      ],
+      [
+        "ti",
+        "k"
+      ],
+      [
+        "ti",
+        "ka"
+      ],
+      [
+        "pa",
+        "gi"
+      ],
+      [
+        "ing",
+        "an"
+      ],
+      [
+        "ki",
+        "t"
+      ],
+      [
+        "pe",
+        "cah"
+      ],
+      [
+        "meng",
+        "e"
+      ],
+      [
+        "meng",
+        "en"
+      ],
+      [
+        "pi",
+        "hak"
+      ],
+      [
+        "ma",
+        "j"
+      ],
+      [
+        "de",
+        "o"
+      ],
+      [
+        "00",
+        "0"
+      ],
+      [
+        "ser",
+        "ta"
+      ],
+      [
+        "rm",
+        "k13"
+      ],
+      [
+        "bera",
+        "dik"
+      ],
+      [
+        "wan",
+        "i"
+      ],
+      [
+        "vi",
+        "deo"
+      ],
+      [
+        "hing",
+        "ga"
+      ],
+      [
+        "so",
+        "sial"
+      ],
+      [
+        "neg",
+        "ara"
+      ],
+      [
+        "ting",
+        "gi"
+      ],
+      [
+        "bes",
+        "ar"
+      ],
+      [
+        "teng",
+        "ah"
+      ],
+      [
+        "laku",
+        "kan"
+      ],
+      [
+        "pembang",
+        "kang"
+      ],
+      [
+        "og",
+        "os"
+      ],
+      [
+        "nila",
+        "i"
+      ],
+      [
+        "menur",
+        "ut"
+      ],
+      [
+        "cast",
+        "le"
+      ],
+      [
+        "tersebu",
+        "t"
+      ],
+      [
+        "4",
+        "0"
+      ],
+      [
+        "4",
+        "4"
+      ],
+      [
+        "b",
+        "umi"
+      ],
+      [
+        "f",
+        "a"
+      ],
+      [
+        "g",
+        "am"
+      ],
+      [
+        "g",
+        "ol"
+      ],
+      [
+        "i",
+        "k"
+      ],
+      [
+        "i",
+        "p"
+      ],
+      [
+        "k",
+        "r"
+      ],
+      [
+        "k",
+        "as"
+      ],
+      [
+        "l",
+        "um"
+      ],
+      [
+        "n",
+        "ati"
+      ],
+      [
+        "p",
+        "r"
+      ],
+      [
+        "p",
+        "ak"
+      ],
+      [
+        "p",
+        "al"
+      ],
+      [
+        "p",
+        "ga"
+      ],
+      [
+        "r",
+        "on"
+      ],
+      [
+        "s",
+        "an"
+      ],
+      [
+        "s",
+        "on"
+      ],
+      [
+        "u",
+        "di"
+      ],
+      [
+        "an",
+        "tara"
+      ],
+      [
+        "la",
+        "in"
+      ],
+      [
+        "di",
+        "sy"
+      ],
+      [
+        "di",
+        "dakwa"
+      ],
+      [
+        "in",
+        "a"
+      ],
+      [
+        "se",
+        "lam"
+      ],
+      [
+        "ah",
+        "li"
+      ],
+      [
+        "da",
+        "kan"
+      ],
+      [
+        "am",
+        "eri"
+      ],
+      [
+        "ke",
+        "dua"
+      ],
+      [
+        "ke",
+        "tika"
+      ],
+      [
+        "ber",
+        "mula"
+      ],
+      [
+        "tu",
+        "ju"
+      ],
+      [
+        "per",
+        "n"
+      ],
+      [
+        "per",
+        "se"
+      ],
+      [
+        "ur",
+        "us"
+      ],
+      [
+        "ku",
+        "l"
+      ],
+      [
+        "ai",
+        "k"
+      ],
+      [
+        "ta",
+        "di"
+      ],
+      [
+        "bu",
+        "ka"
+      ],
+      [
+        "mem",
+        "per"
+      ],
+      [
+        "ki",
+        "lo"
+      ],
+      [
+        "pe",
+        "tal"
+      ],
+      [
+        "pem",
+        "peng"
+      ],
+      [
+        "ut",
+        "ama"
+      ],
+      [
+        "pu",
+        "kul"
+      ],
+      [
+        "te",
+        "g"
+      ],
+      [
+        "ju",
+        "ta"
+      ],
+      [
+        "sy",
+        "en"
+      ],
+      [
+        "aru",
+        "h"
+      ],
+      [
+        "ser",
+        "i"
+      ],
+      [
+        "aki",
+        "bat"
+      ],
+      [
+        "vi",
+        "du"
+      ],
+      [
+        "dar",
+        "ah"
+      ],
+      [
+        "tem",
+        "patan"
+      ],
+      [
+        "mas",
+        "ing"
+      ],
+      [
+        "20",
+        "40"
+      ],
+      [
+        "kej",
+        "ar"
+      ],
+      [
+        "gun",
+        "a"
+      ],
+      [
+        "ham",
+        "pir"
+      ],
+      [
+        "kur",
+        "ang"
+      ],
+      [
+        "tin",
+        "dakan"
+      ],
+      [
+        "indi",
+        "vidu"
+      ],
+      [
+        "new",
+        "castle"
+      ],
+      [
+        "ketu",
+        "a"
+      ],
+      [
+        "wani",
+        "ta"
+      ],
+      [
+        "disy",
+        "aki"
+      ],
+      [
+        "ameri",
+        "ka"
+      ],
+      [
+        "petal",
+        "ing"
+      ],
+      [
+        "pempeng",
+        "aruh"
+      ],
+      [
+        "a",
+        "pa"
+      ],
+      [
+        "b",
+        "kan"
+      ],
+      [
+        "h",
+        "asi"
+      ],
+      [
+        "i",
+        "bu"
+      ],
+      [
+        "l",
+        "y"
+      ],
+      [
+        "m",
+        "b"
+      ],
+      [
+        "m",
+        "in"
+      ],
+      [
+        "n",
+        "or"
+      ],
+      [
+        "o",
+        "ku"
+      ],
+      [
+        "o",
+        "leh"
+      ],
+      [
+        "r",
+        "ah"
+      ],
+      [
+        "r",
+        "un"
+      ],
+      [
+        "r",
+        "ak"
+      ],
+      [
+        "t",
+        "am"
+      ],
+      [
+        "t",
+        "ak"
+      ],
+      [
+        "u",
+        "g"
+      ],
+      [
+        "v",
+        "e"
+      ],
+      [
+        "w",
+        "al"
+      ],
+      [
+        "y",
+        "at"
+      ],
+      [
+        "kan",
+        "ada"
+      ],
+      [
+        "da",
+        "ya"
+      ],
+      [
+        "ber",
+        "jaya"
+      ],
+      [
+        "ber",
+        "ken"
+      ],
+      [
+        "ber",
+        "usia"
+      ],
+      [
+        "um",
+        "um"
+      ],
+      [
+        "li",
+        "an"
+      ],
+      [
+        "li",
+        "on"
+      ],
+      [
+        "tu",
+        "s"
+      ],
+      [
+        "ter",
+        "a"
+      ],
+      [
+        "ai",
+        "r"
+      ],
+      [
+        "ing",
+        "gu"
+      ],
+      [
+        "bu",
+        "lan"
+      ],
+      [
+        "ka",
+        "was"
+      ],
+      [
+        "bi",
+        "lion"
+      ],
+      [
+        "me",
+        "lakukan"
+      ],
+      [
+        "be",
+        "kas"
+      ],
+      [
+        "pas",
+        "an"
+      ],
+      [
+        "ko",
+        "d"
+      ],
+      [
+        "ri",
+        "k"
+      ],
+      [
+        "de",
+        "pan"
+      ],
+      [
+        "ker",
+        "ana"
+      ],
+      [
+        "pu",
+        "lu"
+      ],
+      [
+        "ban",
+        "dar"
+      ],
+      [
+        "re",
+        "t"
+      ],
+      [
+        "re",
+        "kod"
+      ],
+      [
+        "tahan",
+        "an"
+      ],
+      [
+        "rm",
+        "1"
+      ],
+      [
+        "eng",
+        "gan"
+      ],
+      [
+        "hi",
+        "r"
+      ],
+      [
+        "hing",
+        "ton"
+      ],
+      [
+        "was",
+        "hington"
+      ],
+      [
+        "membu",
+        "at"
+      ],
+      [
+        "pel",
+        "an"
+      ],
+      [
+        "bantu",
+        "an"
+      ],
+      [
+        "jam",
+        "in"
+      ],
+      [
+        "pela",
+        "bur"
+      ],
+      [
+        "ist",
+        "ret"
+      ],
+      [
+        "mengen",
+        "ai"
+      ],
+      [
+        "maj",
+        "istret"
+      ],
+      [
+        "hasi",
+        "l"
+      ],
+      [
+        "run",
+        "din"
+      ],
+      [
+        "berken",
+        "aan"
+      ],
+      [
+        "kawas",
+        "an"
+      ],
+      [
+        ")",
+        ","
+      ],
+      [
+        ")",
+        "."
+      ],
+      [
+        "8",
+        "44"
+      ],
+      [
+        "b",
+        "ak"
+      ],
+      [
+        "b",
+        "ri"
+      ],
+      [
+        "b",
+        "atu"
+      ],
+      [
+        "c",
+        "u"
+      ],
+      [
+        "e",
+        "le"
+      ],
+      [
+        "f",
+        "e"
+      ],
+      [
+        "g",
+        "el"
+      ],
+      [
+        "h",
+        "as"
+      ],
+      [
+        "i",
+        "b"
+      ],
+      [
+        "i",
+        "j"
+      ],
+      [
+        "j",
+        "ang"
+      ],
+      [
+        "j",
+        "ur"
+      ],
+      [
+        "k",
+        "ah"
+      ],
+      [
+        "p",
+        "m"
+      ],
+      [
+        "p",
+        "ati"
+      ],
+      [
+        "r",
+        "as"
+      ],
+      [
+        "s",
+        "b"
+      ],
+      [
+        "s",
+        "um"
+      ],
+      [
+        "t",
+        "as"
+      ],
+      [
+        "u",
+        "si"
+      ],
+      [
+        "u",
+        "gi"
+      ],
+      [
+        "w",
+        "ila"
+      ],
+      [
+        "an",
+        "an"
+      ],
+      [
+        "an",
+        "war"
+      ],
+      [
+        "er",
+        "usi"
+      ],
+      [
+        "di",
+        "ke"
+      ],
+      [
+        "di",
+        "ra"
+      ],
+      [
+        "di",
+        "reman"
+      ],
+      [
+        "at",
+        "as"
+      ],
+      [
+        "se",
+        "j"
+      ],
+      [
+        "se",
+        "ka"
+      ],
+      [
+        "se",
+        "jam"
+      ],
+      [
+        "se",
+        "cara"
+      ],
+      [
+        "as",
+        "an"
+      ],
+      [
+        "as",
+        "kan"
+      ],
+      [
+        "as",
+        "aran"
+      ],
+      [
+        "men",
+        "e"
+      ],
+      [
+        "men",
+        "eri"
+      ],
+      [
+        "men",
+        "ceroboh"
+      ],
+      [
+        "un",
+        "dang"
+      ],
+      [
+        "ke",
+        "l"
+      ],
+      [
+        "ke",
+        "s"
+      ],
+      [
+        "ber",
+        "nilai"
+      ],
+      [
+        "si",
+        "tif"
+      ],
+      [
+        "per",
+        "i"
+      ],
+      [
+        "per",
+        "lu"
+      ],
+      [
+        "ter",
+        "enggan"
+      ],
+      [
+        "ku",
+        "asa"
+      ],
+      [
+        "pa",
+        "i"
+      ],
+      [
+        "pa",
+        "dan"
+      ],
+      [
+        "pen",
+        "uh"
+      ],
+      [
+        "ai",
+        "land"
+      ],
+      [
+        "ta",
+        "u"
+      ],
+      [
+        "ta",
+        "lian"
+      ],
+      [
+        "bu",
+        "l"
+      ],
+      [
+        "el",
+        "on"
+      ],
+      [
+        "ja",
+        "uh"
+      ],
+      [
+        "mem",
+        "e"
+      ],
+      [
+        "mem",
+        "an"
+      ],
+      [
+        "mem",
+        "beri"
+      ],
+      [
+        "mem",
+        "bantu"
+      ],
+      [
+        "ba",
+        "lik"
+      ],
+      [
+        "pe",
+        "k"
+      ],
+      [
+        "us",
+        "aha"
+      ],
+      [
+        "bi",
+        "la"
+      ],
+      [
+        "me",
+        "ter"
+      ],
+      [
+        "be",
+        "ij"
+      ],
+      [
+        "sem",
+        "ula"
+      ],
+      [
+        "de",
+        "wan"
+      ],
+      [
+        "ker",
+        "e"
+      ],
+      [
+        "bo",
+        "t"
+      ],
+      [
+        "bo",
+        "ja"
+      ],
+      [
+        "bo",
+        "leh"
+      ],
+      [
+        "te",
+        "d"
+      ],
+      [
+        "gu",
+        "g"
+      ],
+      [
+        "mi",
+        "lik"
+      ],
+      [
+        "peng",
+        "guna"
+      ],
+      [
+        "rm",
+        "10"
+      ],
+      [
+        "bera",
+        "pi"
+      ],
+      [
+        "dah",
+        "kan"
+      ],
+      [
+        "tr",
+        "ump"
+      ],
+      [
+        "uru",
+        "han"
+      ],
+      [
+        "lapor",
+        "an"
+      ],
+      [
+        "ran",
+        "cangan"
+      ],
+      [
+        "20",
+        "2"
+      ],
+      [
+        "hu",
+        "jung"
+      ],
+      [
+        "gun",
+        "ung"
+      ],
+      [
+        "kem",
+        "boja"
+      ],
+      [
+        "sebu",
+        "ah"
+      ],
+      [
+        "neg",
+        "eri"
+      ],
+      [
+        "diper",
+        "daya"
+      ],
+      [
+        "uni",
+        "ted"
+      ],
+      [
+        "th",
+        "ailand"
+      ],
+      [
+        "sus",
+        "ulan"
+      ],
+      [
+        "petr",
+        "o"
+      ],
+      [
+        "pula",
+        "u"
+      ],
+      [
+        "selam",
+        "a"
+      ],
+      [
+        "nor",
+        "ris"
+      ],
+      [
+        "ug",
+        "ut"
+      ],
+      [
+        "rundin",
+        "gan"
+      ],
+      [
+        "wila",
+        "yah"
+      ],
+      [
+        "meneri",
+        "ma"
+      ],
+      [
+        "terenggan",
+        "u"
+      ],
+      [
+        "beij",
+        "ing"
+      ],
+      [
+        "rm10",
+        "4"
+      ],
+      [
+        "3",
+        "0"
+      ],
+      [
+        "9",
+        "0"
+      ],
+      [
+        "a",
+        "d"
+      ],
+      [
+        "a",
+        "in"
+      ],
+      [
+        "b",
+        "as"
+      ],
+      [
+        "b",
+        "ari"
+      ],
+      [
+        "b",
+        "atan"
+      ],
+      [
+        "d",
+        "rm"
+      ],
+      [
+        "e",
+        "h"
+      ],
+      [
+        "e",
+        "x"
+      ],
+      [
+        "f",
+        "lik"
+      ],
+      [
+        "g",
+        "si"
+      ],
+      [
+        "h",
+        "al"
+      ],
+      [
+        "h",
+        "ai"
+      ],
+      [
+        "j",
+        "e"
+      ],
+      [
+        "k",
+        "tikan"
+      ],
+      [
+        "l",
+        "ang"
+      ],
+      [
+        "l",
+        "em"
+      ],
+      [
+        "l",
+        "ung"
+      ],
+      [
+        "m",
+        "ak"
+      ],
+      [
+        "m",
+        "el"
+      ],
+      [
+        "m",
+        "us"
+      ],
+      [
+        "m",
+        "alam"
+      ],
+      [
+        "m",
+        "inggu"
+      ],
+      [
+        "n",
+        "in"
+      ],
+      [
+        "o",
+        "o"
+      ],
+      [
+        "o",
+        "han"
+      ],
+      [
+        "p",
+        "kan"
+      ],
+      [
+        "p",
+        "ta"
+      ],
+      [
+        "p",
+        "drm"
+      ],
+      [
+        "s",
+        "ah"
+      ],
+      [
+        "s",
+        "ur"
+      ],
+      [
+        "t",
+        "en"
+      ],
+      [
+        "t",
+        "kan"
+      ],
+      [
+        "t",
+        "ari"
+      ],
+      [
+        "t",
+        "ump"
+      ],
+      [
+        "t",
+        "angan"
+      ],
+      [
+        "v",
+        "er"
+      ],
+      [
+        "w",
+        "ak"
+      ],
+      [
+        "w",
+        "ai"
+      ],
+      [
+        "y",
+        "i"
+      ],
+      [
+        "y",
+        "ar"
+      ],
+      [
+        "an",
+        "i"
+      ],
+      [
+        "an",
+        "yi"
+      ],
+      [
+        "er",
+        "ah"
+      ],
+      [
+        "ar",
+        "ing"
+      ],
+      [
+        "di",
+        "aan"
+      ],
+      [
+        "di",
+        "beri"
+      ],
+      [
+        "ang",
+        "or"
+      ],
+      [
+        "se",
+        "s"
+      ],
+      [
+        "se",
+        "pak"
+      ],
+      [
+        "men",
+        "ci"
+      ],
+      [
+        "un",
+        "an"
+      ],
+      [
+        "un",
+        "tu"
+      ],
+      [
+        "ke",
+        "c"
+      ],
+      [
+        "ber",
+        "kon"
+      ],
+      [
+        "ber",
+        "kata"
+      ],
+      [
+        "li",
+        "ti"
+      ],
+      [
+        "li",
+        "han"
+      ],
+      [
+        "si",
+        "p"
+      ],
+      [
+        "tu",
+        "lar"
+      ],
+      [
+        "per",
+        "tu"
+      ],
+      [
+        "per",
+        "tahanan"
+      ],
+      [
+        "per",
+        "untu"
+      ],
+      [
+        "ter",
+        "us"
+      ],
+      [
+        "ter",
+        "nati"
+      ],
+      [
+        "ku",
+        "h"
+      ],
+      [
+        "ku",
+        "as"
+      ],
+      [
+        "ala",
+        "u"
+      ],
+      [
+        "ti",
+        "ga"
+      ],
+      [
+        "pa",
+        "ya"
+      ],
+      [
+        "pen",
+        "de"
+      ],
+      [
+        "pen",
+        "gu"
+      ],
+      [
+        "ya",
+        "i"
+      ],
+      [
+        "bu",
+        "at"
+      ],
+      [
+        "mem",
+        "beli"
+      ],
+      [
+        "ga",
+        "wai"
+      ],
+      [
+        "is",
+        "nin"
+      ],
+      [
+        "pe",
+        "gawai"
+      ],
+      [
+        "sem",
+        "padan"
+      ],
+      [
+        "ra",
+        "ya"
+      ],
+      [
+        "pi",
+        "lihan"
+      ],
+      [
+        "ko",
+        "le"
+      ],
+      [
+        "ko",
+        "ta"
+      ],
+      [
+        "ko",
+        "mi"
+      ],
+      [
+        "ri",
+        "ti"
+      ],
+      [
+        "lu",
+        "arkan"
+      ],
+      [
+        "ma",
+        "ung"
+      ],
+      [
+        "de",
+        "kat"
+      ],
+      [
+        "po",
+        "sitif"
+      ],
+      [
+        "sa",
+        "ingan"
+      ],
+      [
+        "su",
+        "b"
+      ],
+      [
+        "kon",
+        "flik"
+      ],
+      [
+        "mu",
+        "sim"
+      ],
+      [
+        "bah",
+        "aw"
+      ],
+      [
+        "teri",
+        "ma"
+      ],
+      [
+        "sen",
+        "ti"
+      ],
+      [
+        "beri",
+        "ta"
+      ],
+      [
+        "hi",
+        "du"
+      ],
+      [
+        "mah",
+        "u"
+      ],
+      [
+        "ge",
+        "d"
+      ],
+      [
+        "mas",
+        "uk"
+      ],
+      [
+        "kej",
+        "ohan"
+      ],
+      [
+        "menj",
+        "elang"
+      ],
+      [
+        "ben",
+        "jamin"
+      ],
+      [
+        "st",
+        "asi"
+      ],
+      [
+        "membu",
+        "ktikan"
+      ],
+      [
+        "for",
+        "d"
+      ],
+      [
+        "for",
+        "ex"
+      ],
+      [
+        "jan",
+        "ji"
+      ],
+      [
+        "sel",
+        "angor"
+      ],
+      [
+        "sh",
+        "ah"
+      ],
+      [
+        "bin",
+        "tang"
+      ],
+      [
+        "penga",
+        "dil"
+      ],
+      [
+        "perin",
+        "tah"
+      ],
+      [
+        "tik",
+        "to"
+      ],
+      [
+        "gam",
+        "bar"
+      ],
+      [
+        "pern",
+        "ah"
+      ],
+      [
+        "apa",
+        "bila"
+      ],
+      [
+        "mb",
+        "sb"
+      ],
+      [
+        "rah",
+        "im"
+      ],
+      [
+        "rak",
+        "yat"
+      ],
+      [
+        "pulu",
+        "h"
+      ],
+      [
+        "pelabur",
+        "an"
+      ],
+      [
+        "bri",
+        "ged"
+      ],
+      [
+        "ib",
+        "rahim"
+      ],
+      [
+        "dike",
+        "luarkan"
+      ],
+      [
+        "mak",
+        "lum"
+      ],
+      [
+        "tump",
+        "uan"
+      ],
+      [
+        "diberi",
+        "kan"
+      ],
+      [
+        "menci",
+        "pta"
+      ],
+      [
+        "peruntu",
+        "kan"
+      ],
+      [
+        "pende",
+        "k"
+      ],
+      [
+        "bahaw",
+        "a"
+      ],
+      [
+        "kejohan",
+        "an"
+      ],
+      [
+        "2",
+        "4"
+      ],
+      [
+        "2",
+        "9"
+      ],
+      [
+        "7",
+        "7"
+      ],
+      [
+        "9",
+        "5"
+      ],
+      [
+        "a",
+        "u"
+      ],
+      [
+        "a",
+        "yah"
+      ],
+      [
+        "b",
+        "un"
+      ],
+      [
+        "b",
+        "ra"
+      ],
+      [
+        "b",
+        "ung"
+      ],
+      [
+        "b",
+        "kl"
+      ],
+      [
+        "c",
+        "ang"
+      ],
+      [
+        "c",
+        "ari"
+      ],
+      [
+        "c",
+        "lar"
+      ],
+      [
+        "d",
+        "bi"
+      ],
+      [
+        "d",
+        "angan"
+      ],
+      [
+        "d",
+        "bkl"
+      ],
+      [
+        "e",
+        "ai"
+      ],
+      [
+        "e",
+        "kon"
+      ],
+      [
+        "e",
+        "ster"
+      ],
+      [
+        "f",
+        "1"
+      ],
+      [
+        "f",
+        "c"
+      ],
+      [
+        "f",
+        "lo"
+      ],
+      [
+        "g",
+        "em"
+      ],
+      [
+        "g",
+        "us"
+      ],
+      [
+        "g",
+        "ara"
+      ],
+      [
+        "g",
+        "ram"
+      ],
+      [
+        "h",
+        "e"
+      ],
+      [
+        "h",
+        "ford"
+      ],
+      [
+        "i",
+        "li"
+      ],
+      [
+        "i",
+        "co"
+      ],
+      [
+        "j",
+        "o"
+      ],
+      [
+        "j",
+        "air"
+      ],
+      [
+        "k",
+        "t"
+      ],
+      [
+        "k",
+        "in"
+      ],
+      [
+        "k",
+        "or"
+      ],
+      [
+        "k",
+        "aki"
+      ],
+      [
+        "l",
+        "son"
+      ],
+      [
+        "m",
+        "am"
+      ],
+      [
+        "m",
+        "ai"
+      ],
+      [
+        "m",
+        "uri"
+      ],
+      [
+        "m",
+        "elang"
+      ],
+      [
+        "m",
+        "clar"
+      ],
+      [
+        "n",
+        "i"
+      ],
+      [
+        "n",
+        "aik"
+      ],
+      [
+        "o",
+        "u"
+      ],
+      [
+        "o",
+        "mi"
+      ],
+      [
+        "p",
+        "s"
+      ],
+      [
+        "p",
+        "am"
+      ],
+      [
+        "p",
+        "ur"
+      ],
+      [
+        "p",
+        "ut"
+      ],
+      [
+        "p",
+        "ung"
+      ],
+      [
+        "p",
+        "kr"
+      ],
+      [
+        "r",
+        "y"
+      ],
+      [
+        "r",
+        "en"
+      ],
+      [
+        "s",
+        "la"
+      ],
+      [
+        "s",
+        "un"
+      ],
+      [
+        "s",
+        "ki"
+      ],
+      [
+        "s",
+        "uri"
+      ],
+      [
+        "t",
+        "y"
+      ],
+      [
+        "t",
+        "ar"
+      ],
+      [
+        "t",
+        "ai"
+      ],
+      [
+        "w",
+        "n"
+      ],
+      [
+        "x",
+        "ico"
+      ],
+      [
+        "z",
+        "ah"
+      ],
+      [
+        "z",
+        "on"
+      ],
+      [
+        "an",
+        "jung"
+      ],
+      [
+        "er",
+        "a"
+      ],
+      [
+        "er",
+        "ry"
+      ],
+      [
+        "la",
+        "gu"
+      ],
+      [
+        "ar",
+        "o"
+      ],
+      [
+        "di",
+        "tem"
+      ],
+      [
+        "di",
+        "kejar"
+      ],
+      [
+        "in",
+        "ti"
+      ],
+      [
+        "in",
+        "sip"
+      ],
+      [
+        "ang",
+        "sa"
+      ],
+      [
+        "at",
+        "m"
+      ],
+      [
+        "at",
+        "rik"
+      ],
+      [
+        "at",
+        "kuas"
+      ],
+      [
+        "se",
+        "la"
+      ],
+      [
+        "se",
+        "men"
+      ],
+      [
+        "se",
+        "hingga"
+      ],
+      [
+        "as",
+        "pek"
+      ],
+      [
+        "kan",
+        "an"
+      ],
+      [
+        "kan",
+        "ak"
+      ],
+      [
+        "men",
+        "ing"
+      ],
+      [
+        "men",
+        "ari"
+      ],
+      [
+        "men",
+        "angan"
+      ],
+      [
+        "men",
+        "ca"
+      ],
+      [
+        "da",
+        "dah"
+      ],
+      [
+        "am",
+        "ang"
+      ],
+      [
+        "ke",
+        "la"
+      ],
+      [
+        "ke",
+        "jaya"
+      ],
+      [
+        "ke",
+        "kur"
+      ],
+      [
+        "ke",
+        "sel"
+      ],
+      [
+        "ke",
+        "bangsa"
+      ],
+      [
+        "ber",
+        "ada"
+      ],
+      [
+        "ber",
+        "ha"
+      ],
+      [
+        "li",
+        "si"
+      ],
+      [
+        "li",
+        "ver"
+      ],
+      [
+        "si",
+        "di"
+      ],
+      [
+        "per",
+        "anan"
+      ],
+      [
+        "ur",
+        "kan"
+      ],
+      [
+        "ur",
+        "aw"
+      ],
+      [
+        "ter",
+        "baharu"
+      ],
+      [
+        "ter",
+        "buka"
+      ],
+      [
+        "ter",
+        "masuk"
+      ],
+      [
+        "ak",
+        "ti"
+      ],
+      [
+        "le",
+        "um"
+      ],
+      [
+        "le",
+        "sen"
+      ],
+      [
+        "le",
+        "tus"
+      ],
+      [
+        "ku",
+        "tu"
+      ],
+      [
+        "al",
+        "ternati"
+      ],
+      [
+        "ti",
+        "h"
+      ],
+      [
+        "on",
+        "g"
+      ],
+      [
+        "pa",
+        "kej"
+      ],
+      [
+        "pen",
+        "ta"
+      ],
+      [
+        "ai",
+        "tu"
+      ],
+      [
+        "ing",
+        "gi"
+      ],
+      [
+        "ta",
+        "pi"
+      ],
+      [
+        "bu",
+        "kit"
+      ],
+      [
+        "ka",
+        "d"
+      ],
+      [
+        "ja",
+        "bat"
+      ],
+      [
+        "ja",
+        "batan"
+      ],
+      [
+        "mem",
+        "in"
+      ],
+      [
+        "mem",
+        "ba"
+      ],
+      [
+        "mem",
+        "ap"
+      ],
+      [
+        "is",
+        "tan"
+      ],
+      [
+        "pe",
+        "jabat"
+      ],
+      [
+        "bi",
+        "tkan"
+      ],
+      [
+        "me",
+        "ski"
+      ],
+      [
+        "me",
+        "xico"
+      ],
+      [
+        "me",
+        "letus"
+      ],
+      [
+        "be",
+        "g"
+      ],
+      [
+        "meng",
+        "umum"
+      ],
+      [
+        "sem",
+        "angat"
+      ],
+      [
+        "ra",
+        "fizi"
+      ],
+      [
+        "pi",
+        "l"
+      ],
+      [
+        "pem",
+        "an"
+      ],
+      [
+        "pem",
+        "er"
+      ],
+      [
+        "pem",
+        "ain"
+      ],
+      [
+        "ara",
+        "an"
+      ],
+      [
+        "dalam",
+        "an"
+      ],
+      [
+        "ker",
+        "dil"
+      ],
+      [
+        "po",
+        "ol"
+      ],
+      [
+        "po",
+        "lisi"
+      ],
+      [
+        "han",
+        "ya"
+      ],
+      [
+        "bo",
+        "lson"
+      ],
+      [
+        "ban",
+        "ji"
+      ],
+      [
+        "te",
+        "sla"
+      ],
+      [
+        "ju",
+        "ga"
+      ],
+      [
+        "sy",
+        "or"
+      ],
+      [
+        "tan",
+        "ah"
+      ],
+      [
+        "00",
+        "5"
+      ],
+      [
+        "su",
+        "al"
+      ],
+      [
+        "hada",
+        "pi"
+      ],
+      [
+        "peng",
+        "erusi"
+      ],
+      [
+        "kon",
+        "gan"
+      ],
+      [
+        "mu",
+        "da"
+      ],
+      [
+        "ati",
+        "k"
+      ],
+      [
+        "vi",
+        "ti"
+      ],
+      [
+        "zi",
+        "l"
+      ],
+      [
+        "lik",
+        "nya"
+      ],
+      [
+        "uru",
+        "h"
+      ],
+      [
+        "ca",
+        "yai"
+      ],
+      [
+        "kam",
+        "pung"
+      ],
+      [
+        "lapor",
+        "kan"
+      ],
+      [
+        "aw",
+        "am"
+      ],
+      [
+        "aw",
+        "al"
+      ],
+      [
+        "ci",
+        "an"
+      ],
+      [
+        "mah",
+        "suri"
+      ],
+      [
+        "ge",
+        "or"
+      ],
+      [
+        "ken",
+        "der"
+      ],
+      [
+        "seba",
+        "liknya"
+      ],
+      [
+        "ch",
+        "ester"
+      ],
+      [
+        "to",
+        "wn"
+      ],
+      [
+        "menj",
+        "urus"
+      ],
+      [
+        "menj",
+        "aring"
+      ],
+      [
+        "so",
+        "kongan"
+      ],
+      [
+        "ham",
+        "zah"
+      ],
+      [
+        "par",
+        "ti"
+      ],
+      [
+        "din",
+        "g"
+      ],
+      [
+        "diper",
+        "cayai"
+      ],
+      [
+        "peny",
+        "asaran"
+      ],
+      [
+        "mo",
+        "h"
+      ],
+      [
+        "man",
+        "chester"
+      ],
+      [
+        "mar",
+        "in"
+      ],
+      [
+        "sh",
+        "erry"
+      ],
+      [
+        "ster",
+        "ol"
+      ],
+      [
+        "menda",
+        "pat"
+      ],
+      [
+        "cin",
+        "cin"
+      ],
+      [
+        "jen",
+        "ayah"
+      ],
+      [
+        "sek",
+        "atan"
+      ],
+      [
+        "sek",
+        "sual"
+      ],
+      [
+        "ket",
+        "um"
+      ],
+      [
+        "perin",
+        "cian"
+      ],
+      [
+        "ip",
+        "k"
+      ],
+      [
+        "pr",
+        "insip"
+      ],
+      [
+        "pal",
+        "su"
+      ],
+      [
+        "ron",
+        "95"
+      ],
+      [
+        "udi",
+        "t"
+      ],
+      [
+        "antara",
+        "bangsa"
+      ],
+      [
+        "kilo",
+        "meter"
+      ],
+      [
+        "kilo",
+        "gram"
+      ],
+      [
+        "ele",
+        "s"
+      ],
+      [
+        "fe",
+        "syen"
+      ],
+      [
+        "jang",
+        "ka"
+      ],
+      [
+        "jur",
+        "uraw"
+      ],
+      [
+        "ras",
+        "hford"
+      ],
+      [
+        "dira",
+        "ja"
+      ],
+      [
+        "kel",
+        "marin"
+      ],
+      [
+        "kere",
+        "ta"
+      ],
+      [
+        "bot",
+        "ol"
+      ],
+      [
+        "gug",
+        "urkan"
+      ],
+      [
+        "202",
+        "5"
+      ],
+      [
+        "petro",
+        "leum"
+      ],
+      [
+        "bari",
+        "atrik"
+      ],
+      [
+        "gsi",
+        "kan"
+      ],
+      [
+        "hai",
+        "wan"
+      ],
+      [
+        "mus",
+        "k"
+      ],
+      [
+        "wak",
+        "tu"
+      ],
+      [
+        "ses",
+        "ko"
+      ],
+      [
+        "berkon",
+        "gsikan"
+      ],
+      [
+        "pengu",
+        "atkuas"
+      ],
+      [
+        "kole",
+        "sterol"
+      ],
+      [
+        "sub",
+        "sidi"
+      ],
+      [
+        "maklum",
+        "at"
+      ],
+      [
+        "bra",
+        "zil"
+      ],
+      [
+        "dbi",
+        "ran"
+      ],
+      [
+        "eai",
+        "c"
+      ],
+      [
+        "ekon",
+        "omi"
+      ],
+      [
+        "gem",
+        "pa"
+      ],
+      [
+        "mam",
+        "pu"
+      ],
+      [
+        "muri",
+        "d"
+      ],
+      [
+        "mclar",
+        "en"
+      ],
+      [
+        "pam",
+        "pasan"
+      ],
+      [
+        "ditem",
+        "ukan"
+      ],
+      [
+        "semen",
+        "anjung"
+      ],
+      [
+        "kejaya",
+        "an"
+      ],
+      [
+        "kekur",
+        "angan"
+      ],
+      [
+        "kesel",
+        "uruhan"
+      ],
+      [
+        "kebangsa",
+        "an"
+      ],
+      [
+        "berha",
+        "d"
+      ],
+      [
+        "liver",
+        "pool"
+      ],
+      [
+        "akti",
+        "viti"
+      ],
+      [
+        "alternati",
+        "f"
+      ],
+      [
+        "penta",
+        "dbiran"
+      ],
+      [
+        "memap",
+        "arkan"
+      ],
+      [
+        "meski",
+        "pun"
+      ],
+      [
+        "mengumum",
+        "kan"
+      ],
+      [
+        "bolson",
+        "aro"
+      ],
+      [
+        "banji",
+        "r"
+      ],
+      [
+        "kender",
+        "aan"
+      ],
+      [
+        "menjaring",
+        "kan"
+      ],
+      [
+        "jururaw",
+        "at"
+      ],
+      [
+        "penguatkuas",
+        "aan"
+      ],
+      [
+        "1",
+        "6"
+      ],
+      [
+        "2",
+        "8"
+      ],
+      [
+        "5",
+        "00"
+      ],
+      [
+        "8",
+        "0"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "b"
+      ],
+      [
+        "a",
+        "se"
+      ],
+      [
+        "a",
+        "ut"
+      ],
+      [
+        "a",
+        "jan"
+      ],
+      [
+        "a",
+        "udit"
+      ],
+      [
+        "b",
+        "al"
+      ],
+      [
+        "b",
+        "is"
+      ],
+      [
+        "b",
+        "angan"
+      ],
+      [
+        "b",
+        "aru"
+      ],
+      [
+        "b",
+        "uru"
+      ],
+      [
+        "b",
+        "aik"
+      ],
+      [
+        "c",
+        "c"
+      ],
+      [
+        "c",
+        "ar"
+      ],
+      [
+        "c",
+        "at"
+      ],
+      [
+        "c",
+        "atan"
+      ],
+      [
+        "c",
+        "ia"
+      ],
+      [
+        "d",
+        "m"
+      ],
+      [
+        "d",
+        "as"
+      ],
+      [
+        "d",
+        "ung"
+      ],
+      [
+        "e",
+        "y"
+      ],
+      [
+        "e",
+        "z"
+      ],
+      [
+        "e",
+        "ba"
+      ],
+      [
+        "f",
+        "an"
+      ],
+      [
+        "g",
+        "at"
+      ],
+      [
+        "g",
+        "al"
+      ],
+      [
+        "g",
+        "ran"
+      ],
+      [
+        "h",
+        "o"
+      ],
+      [
+        "h",
+        "ar"
+      ],
+      [
+        "h",
+        "em"
+      ],
+      [
+        "h",
+        "ala"
+      ],
+      [
+        "h",
+        "ut"
+      ],
+      [
+        "h",
+        "ati"
+      ],
+      [
+        "h",
+        "angat"
+      ],
+      [
+        "i",
+        "um"
+      ],
+      [
+        "i",
+        "aitu"
+      ],
+      [
+        "j",
+        "um"
+      ],
+      [
+        "k",
+        "ar"
+      ],
+      [
+        "k",
+        "asi"
+      ],
+      [
+        "k",
+        "hi"
+      ],
+      [
+        "l",
+        "in"
+      ],
+      [
+        "l",
+        "ing"
+      ],
+      [
+        "l",
+        "os"
+      ],
+      [
+        "m",
+        "ata"
+      ],
+      [
+        "m",
+        "os"
+      ],
+      [
+        "n",
+        "y"
+      ],
+      [
+        "n",
+        "am"
+      ],
+      [
+        "n",
+        "asi"
+      ],
+      [
+        "o",
+        "m"
+      ],
+      [
+        "o",
+        "per"
+      ],
+      [
+        "p",
+        "h"
+      ],
+      [
+        "p",
+        "us"
+      ],
+      [
+        "p",
+        "ram"
+      ],
+      [
+        "p",
+        "rem"
+      ],
+      [
+        "r",
+        "b"
+      ],
+      [
+        "r",
+        "at"
+      ],
+      [
+        "r",
+        "ugi"
+      ],
+      [
+        "s",
+        "k"
+      ],
+      [
+        "s",
+        "or"
+      ],
+      [
+        "s",
+        "ara"
+      ],
+      [
+        "s",
+        "angat"
+      ],
+      [
+        "t",
+        "men"
+      ],
+      [
+        "t",
+        "asi"
+      ],
+      [
+        "t",
+        "aman"
+      ],
+      [
+        "u",
+        "a"
+      ],
+      [
+        "u",
+        "ari"
+      ],
+      [
+        "u",
+        "sim"
+      ],
+      [
+        "u",
+        "paya"
+      ],
+      [
+        "v",
+        "asi"
+      ],
+      [
+        "w",
+        "angan"
+      ],
+      [
+        "w",
+        "aan"
+      ],
+      [
+        "w",
+        "alan"
+      ],
+      [
+        "w",
+        "alau"
+      ],
+      [
+        "y",
+        "ata"
+      ],
+      [
+        "y",
+        "aran"
+      ],
+      [
+        "y",
+        "akin"
+      ],
+      [
+        "z",
+        "aman"
+      ],
+      [
+        "z",
+        "oo"
+      ],
+      [
+        "an",
+        "c"
+      ],
+      [
+        "an",
+        "nya"
+      ],
+      [
+        "an",
+        "fi"
+      ],
+      [
+        "an",
+        "der"
+      ],
+      [
+        "er",
+        "ang"
+      ],
+      [
+        "er",
+        "tai"
+      ],
+      [
+        "la",
+        "wan"
+      ],
+      [
+        "la",
+        "yar"
+      ],
+      [
+        "ar",
+        "at"
+      ],
+      [
+        "di",
+        "kata"
+      ],
+      [
+        "in",
+        "teg"
+      ],
+      [
+        "in",
+        "fan"
+      ],
+      [
+        "ang",
+        "gu"
+      ],
+      [
+        "ang",
+        "eles"
+      ],
+      [
+        "se",
+        "ko"
+      ],
+      [
+        "se",
+        "ban"
+      ],
+      [
+        "se",
+        "sama"
+      ],
+      [
+        "se",
+        "dang"
+      ],
+      [
+        "se",
+        "tuju"
+      ],
+      [
+        "se",
+        "gel"
+      ],
+      [
+        "se",
+        "penuh"
+      ],
+      [
+        "se",
+        "jauh"
+      ],
+      [
+        "as",
+        "tikan"
+      ],
+      [
+        "ah",
+        "kan"
+      ],
+      [
+        "men",
+        "am"
+      ],
+      [
+        "men",
+        "ga"
+      ],
+      [
+        "men",
+        "gan"
+      ],
+      [
+        "men",
+        "ce"
+      ],
+      [
+        "da",
+        "an"
+      ],
+      [
+        "da",
+        "pat"
+      ],
+      [
+        "da",
+        "mai"
+      ],
+      [
+        "un",
+        "di"
+      ],
+      [
+        "un",
+        "tun"
+      ],
+      [
+        "em",
+        "uan"
+      ],
+      [
+        "am",
+        "pi"
+      ],
+      [
+        "ke",
+        "h"
+      ],
+      [
+        "ke",
+        "da"
+      ],
+      [
+        "ke",
+        "ci"
+      ],
+      [
+        "ke",
+        "kal"
+      ],
+      [
+        "ke",
+        "menangan"
+      ],
+      [
+        "ke",
+        "wangan"
+      ],
+      [
+        "ke",
+        "untun"
+      ],
+      [
+        "ber",
+        "ak"
+      ],
+      [
+        "ber",
+        "hu"
+      ],
+      [
+        "ber",
+        "kuasa"
+      ],
+      [
+        "ber",
+        "ani"
+      ],
+      [
+        "li",
+        "a"
+      ],
+      [
+        "li",
+        "ga"
+      ],
+      [
+        "si",
+        "f"
+      ],
+      [
+        "per",
+        "ang"
+      ],
+      [
+        "per",
+        "janji"
+      ],
+      [
+        "per",
+        "moh"
+      ],
+      [
+        "per",
+        "lawan"
+      ],
+      [
+        "ur",
+        "an"
+      ],
+      [
+        "ter",
+        "aan"
+      ],
+      [
+        "ter",
+        "tinggi"
+      ],
+      [
+        "ter",
+        "utama"
+      ],
+      [
+        "ak",
+        "ta"
+      ],
+      [
+        "ak",
+        "tif"
+      ],
+      [
+        "le",
+        "ip"
+      ],
+      [
+        "ku",
+        "s"
+      ],
+      [
+        "ku",
+        "kuh"
+      ],
+      [
+        "ku",
+        "dung"
+      ],
+      [
+        "ala",
+        "h"
+      ],
+      [
+        "ti",
+        "m"
+      ],
+      [
+        "ti",
+        "la"
+      ],
+      [
+        "ti",
+        "vasi"
+      ],
+      [
+        "ti",
+        "kus"
+      ],
+      [
+        "on",
+        "an"
+      ],
+      [
+        "on",
+        "al"
+      ],
+      [
+        "pen",
+        "tas"
+      ],
+      [
+        "pen",
+        "emuan"
+      ],
+      [
+        "pen",
+        "ampi"
+      ],
+      [
+        "ai",
+        "h"
+      ],
+      [
+        "ai",
+        "ki"
+      ],
+      [
+        "ari",
+        "s"
+      ],
+      [
+        "ta",
+        "w"
+      ],
+      [
+        "ta",
+        "war"
+      ],
+      [
+        "el",
+        "d"
+      ],
+      [
+        "ka",
+        "li"
+      ],
+      [
+        "ka",
+        "wal"
+      ],
+      [
+        "ka",
+        "walan"
+      ],
+      [
+        "mem",
+        "ili"
+      ],
+      [
+        "mem",
+        "astikan"
+      ],
+      [
+        "du",
+        "han"
+      ],
+      [
+        "ga",
+        "an"
+      ],
+      [
+        "ba",
+        "di"
+      ],
+      [
+        "ba",
+        "gai"
+      ],
+      [
+        "pe",
+        "lar"
+      ],
+      [
+        "bi",
+        "ada"
+      ],
+      [
+        "bi",
+        "lan"
+      ],
+      [
+        "me",
+        "la"
+      ],
+      [
+        "be",
+        "layar"
+      ],
+      [
+        "meng",
+        "u"
+      ],
+      [
+        "meng",
+        "ge"
+      ],
+      [
+        "sem",
+        "bilan"
+      ],
+      [
+        "ra",
+        "kan"
+      ],
+      [
+        "ada",
+        "lah"
+      ],
+      [
+        "pem",
+        "i"
+      ],
+      [
+        "ko",
+        "h"
+      ],
+      [
+        "ko",
+        "k"
+      ],
+      [
+        "ko",
+        "man"
+      ],
+      [
+        "lu",
+        "ar"
+      ],
+      [
+        "ma",
+        "ju"
+      ],
+      [
+        "de",
+        "dik"
+      ],
+      [
+        "ker",
+        "ugi"
+      ],
+      [
+        "ata",
+        "kan"
+      ],
+      [
+        "sa",
+        "ya"
+      ],
+      [
+        "ban",
+        "k"
+      ],
+      [
+        "te",
+        "le"
+      ],
+      [
+        "te",
+        "lah"
+      ],
+      [
+        "alam",
+        "i"
+      ],
+      [
+        "dak",
+        "waan"
+      ],
+      [
+        "tan",
+        "yah"
+      ],
+      [
+        "ia",
+        "gaan"
+      ],
+      [
+        "mi",
+        "si"
+      ],
+      [
+        "su",
+        "lung"
+      ],
+      [
+        "ne",
+        "tanyah"
+      ],
+      [
+        "peng",
+        "hujung"
+      ],
+      [
+        "fi",
+        "fa"
+      ],
+      [
+        "fi",
+        "lem"
+      ],
+      [
+        "kon",
+        "tr"
+      ],
+      [
+        "mu",
+        "zi"
+      ],
+      [
+        "pan",
+        "as"
+      ],
+      [
+        "pan",
+        "ik"
+      ],
+      [
+        "os",
+        "ak"
+      ],
+      [
+        "zi",
+        "g"
+      ],
+      [
+        "meny",
+        "am"
+      ],
+      [
+        "meny",
+        "eba"
+      ],
+      [
+        "meny",
+        "ertai"
+      ],
+      [
+        "meny",
+        "atakan"
+      ],
+      [
+        "ram",
+        "ai"
+      ],
+      [
+        "ram",
+        "pasan"
+      ],
+      [
+        "sen",
+        "diri"
+      ],
+      [
+        "beri",
+        "si"
+      ],
+      [
+        "ci",
+        "ty"
+      ],
+      [
+        "hi",
+        "l"
+      ],
+      [
+        "tem",
+        "pat"
+      ],
+      [
+        "ken",
+        "yata"
+      ],
+      [
+        "bar",
+        "angan"
+      ],
+      [
+        "ch",
+        "ia"
+      ],
+      [
+        "hu",
+        "ey"
+      ],
+      [
+        "to",
+        "koh"
+      ],
+      [
+        "ben",
+        "tuk"
+      ],
+      [
+        "do",
+        "lu"
+      ],
+      [
+        "co",
+        "w"
+      ],
+      [
+        "cah",
+        "kan"
+      ],
+      [
+        "lon",
+        "i"
+      ],
+      [
+        "st",
+        "atus"
+      ],
+      [
+        "menjadi",
+        "kan"
+      ],
+      [
+        "jan",
+        "uari"
+      ],
+      [
+        "pel",
+        "bagai"
+      ],
+      [
+        "pre",
+        "stasi"
+      ],
+      [
+        "tin",
+        "o"
+      ],
+      [
+        "peny",
+        "e"
+      ],
+      [
+        "peny",
+        "erang"
+      ],
+      [
+        "mo",
+        "tivasi"
+      ],
+      [
+        "uni",
+        "t"
+      ],
+      [
+        "beli",
+        "au"
+      ],
+      [
+        "mar",
+        "c"
+      ],
+      [
+        "teng",
+        "ku"
+      ],
+      [
+        "ana",
+        "dolu"
+      ],
+      [
+        "pasukan",
+        "nya"
+      ],
+      [
+        "pembang",
+        "unan"
+      ],
+      [
+        "bin",
+        "cang"
+      ],
+      [
+        "ek",
+        "or"
+      ],
+      [
+        "ger",
+        "akan"
+      ],
+      [
+        "gar",
+        "cia"
+      ],
+      [
+        "pin",
+        "tu"
+      ],
+      [
+        "pir",
+        "asi"
+      ],
+      [
+        "menda",
+        "pati"
+      ],
+      [
+        "cam",
+        "pur"
+      ],
+      [
+        "pecah",
+        "kan"
+      ],
+      [
+        "menge",
+        "cam"
+      ],
+      [
+        "tuju",
+        "an"
+      ],
+      [
+        "pern",
+        "iagaan"
+      ],
+      [
+        "perse",
+        "kutu"
+      ],
+      [
+        "urus",
+        "an"
+      ],
+      [
+        "min",
+        "yak"
+      ],
+      [
+        "ve",
+        "sel"
+      ],
+      [
+        "pelan",
+        "c"
+      ],
+      [
+        "bak",
+        "at"
+      ],
+      [
+        "bak",
+        "al"
+      ],
+      [
+        "cu",
+        "p"
+      ],
+      [
+        "has",
+        "rat"
+      ],
+      [
+        "seka",
+        "li"
+      ],
+      [
+        "seka",
+        "dar"
+      ],
+      [
+        "peri",
+        "kanan"
+      ],
+      [
+        "peri",
+        "badi"
+      ],
+      [
+        "meme",
+        "tik"
+      ],
+      [
+        "meme",
+        "cahkan"
+      ],
+      [
+        "eh",
+        "wal"
+      ],
+      [
+        "ten",
+        "tera"
+      ],
+      [
+        "anyi",
+        "an"
+      ],
+      [
+        "pertu",
+        "duhan"
+      ],
+      [
+        "komi",
+        "tmen"
+      ],
+      [
+        "hidu",
+        "p"
+      ],
+      [
+        "tikto",
+        "k"
+      ],
+      [
+        "bun",
+        "uh"
+      ],
+      [
+        "flo",
+        "tila"
+      ],
+      [
+        "melang",
+        "gar"
+      ],
+      [
+        "put",
+        "ra"
+      ],
+      [
+        "inti",
+        "r"
+      ],
+      [
+        "mening",
+        "gal"
+      ],
+      [
+        "menari",
+        "k"
+      ],
+      [
+        "menca",
+        "pai"
+      ],
+      [
+        "kela",
+        "b"
+      ],
+      [
+        "memba",
+        "bitkan"
+      ],
+      [
+        "peman",
+        "du"
+      ],
+      [
+        "pemer",
+        "in"
+      ],
+      [
+        "mendapat",
+        "kan"
+      ],
+      [
+        "cincin",
+        "nati"
+      ],
+      [
+        "ajan",
+        "si"
+      ],
+      [
+        "hut",
+        "ang"
+      ],
+      [
+        "khi",
+        "dm"
+      ],
+      [
+        "mos",
+        "cow"
+      ],
+      [
+        "ny",
+        "anyian"
+      ],
+      [
+        "nam",
+        "un"
+      ],
+      [
+        "pram",
+        "usim"
+      ],
+      [
+        "prem",
+        "ium"
+      ],
+      [
+        "anfi",
+        "eld"
+      ],
+      [
+        "ander",
+        "son"
+      ],
+      [
+        "dikata",
+        "kan"
+      ],
+      [
+        "integ",
+        "riti"
+      ],
+      [
+        "infan",
+        "tino"
+      ],
+      [
+        "seko",
+        "lah"
+      ],
+      [
+        "seban",
+        "yak"
+      ],
+      [
+        "segel",
+        "intir"
+      ],
+      [
+        "menam",
+        "atkan"
+      ],
+      [
+        "keci",
+        "l"
+      ],
+      [
+        "keuntun",
+        "gan"
+      ],
+      [
+        "berak",
+        "hir"
+      ],
+      [
+        "berhu",
+        "bung"
+      ],
+      [
+        "perjanji",
+        "an"
+      ],
+      [
+        "permoh",
+        "onan"
+      ],
+      [
+        "perlawan",
+        "an"
+      ],
+      [
+        "leip",
+        "zig"
+      ],
+      [
+        "penampi",
+        "lan"
+      ],
+      [
+        "memili",
+        "ki"
+      ],
+      [
+        "pelar",
+        "asan"
+      ],
+      [
+        "dedik",
+        "asi"
+      ],
+      [
+        "kerugi",
+        "an"
+      ],
+      [
+        "netanyah",
+        "u"
+      ],
+      [
+        "kontr",
+        "ak"
+      ],
+      [
+        "menyeba",
+        "bkan"
+      ],
+      [
+        "kenyata",
+        "an"
+      ],
+      [
+        "persekutu",
+        "an"
+      ],
+      [
+        ",",
+        "”"
+      ],
+      [
+        "1",
+        "8"
+      ],
+      [
+        "1",
+        "9"
+      ],
+      [
+        "1",
+        "00"
+      ],
+      [
+        "2",
+        "24"
+      ],
+      [
+        "3",
+        "2"
+      ],
+      [
+        "3",
+        "5"
+      ],
+      [
+        "3",
+        "9"
+      ],
+      [
+        "5",
+        "0"
+      ],
+      [
+        "6",
+        "0"
+      ],
+      [
+        "6",
+        "2"
+      ],
+      [
+        "6",
+        "9"
+      ],
+      [
+        "7",
+        "00"
+      ],
+      [
+        "7",
+        "62"
+      ],
+      [
+        "a",
+        "q"
+      ],
+      [
+        "a",
+        "y"
+      ],
+      [
+        "a",
+        "us"
+      ],
+      [
+        "a",
+        "de"
+      ],
+      [
+        "a",
+        "ju"
+      ],
+      [
+        "a",
+        "dira"
+      ],
+      [
+        "b",
+        "h"
+      ],
+      [
+        "b",
+        "ala"
+      ],
+      [
+        "b",
+        "aran"
+      ],
+      [
+        "b",
+        "ris"
+      ],
+      [
+        "c",
+        "en"
+      ],
+      [
+        "c",
+        "al"
+      ],
+      [
+        "c",
+        "ing"
+      ],
+      [
+        "c",
+        "ol"
+      ],
+      [
+        "c",
+        "elon"
+      ],
+      [
+        "d",
+        "r"
+      ],
+      [
+        "d",
+        "pa"
+      ],
+      [
+        "d",
+        "ra"
+      ],
+      [
+        "d",
+        "ara"
+      ],
+      [
+        "d",
+        "ram"
+      ],
+      [
+        "d",
+        "din"
+      ],
+      [
+        "d",
+        "jo"
+      ],
+      [
+        "e",
+        "a"
+      ],
+      [
+        "e",
+        "s"
+      ],
+      [
+        "e",
+        "la"
+      ],
+      [
+        "e",
+        "gi"
+      ],
+      [
+        "e",
+        "dah"
+      ],
+      [
+        "e",
+        "ik"
+      ],
+      [
+        "f",
+        "l"
+      ],
+      [
+        "f",
+        "m"
+      ],
+      [
+        "f",
+        "on"
+      ],
+      [
+        "f",
+        "aki"
+      ],
+      [
+        "f",
+        "oku"
+      ],
+      [
+        "f",
+        "era"
+      ],
+      [
+        "g",
+        "n"
+      ],
+      [
+        "g",
+        "p"
+      ],
+      [
+        "g",
+        "um"
+      ],
+      [
+        "g",
+        "ala"
+      ],
+      [
+        "g",
+        "on"
+      ],
+      [
+        "g",
+        "angan"
+      ],
+      [
+        "g",
+        "re"
+      ],
+      [
+        "g",
+        "arkan"
+      ],
+      [
+        "g",
+        "aran"
+      ],
+      [
+        "g",
+        "alan"
+      ],
+      [
+        "g",
+        "ina"
+      ],
+      [
+        "h",
+        "en"
+      ],
+      [
+        "h",
+        "ung"
+      ],
+      [
+        "h",
+        "ol"
+      ],
+      [
+        "h",
+        "aw"
+      ],
+      [
+        "h",
+        "bar"
+      ],
+      [
+        "i",
+        "t"
+      ],
+      [
+        "i",
+        "da"
+      ],
+      [
+        "i",
+        "or"
+      ],
+      [
+        "i",
+        "ko"
+      ],
+      [
+        "i",
+        "de"
+      ],
+      [
+        "i",
+        "pu"
+      ],
+      [
+        "j",
+        "p"
+      ],
+      [
+        "j",
+        "er"
+      ],
+      [
+        "j",
+        "as"
+      ],
+      [
+        "j",
+        "ah"
+      ],
+      [
+        "j",
+        "ut"
+      ],
+      [
+        "j",
+        "ara"
+      ],
+      [
+        "j",
+        "ata"
+      ],
+      [
+        "j",
+        "uru"
+      ],
+      [
+        "k",
+        "la"
+      ],
+      [
+        "k",
+        "kan"
+      ],
+      [
+        "k",
+        "si"
+      ],
+      [
+        "k",
+        "ai"
+      ],
+      [
+        "k",
+        "ump"
+      ],
+      [
+        "k",
+        "san"
+      ],
+      [
+        "k",
+        "alau"
+      ],
+      [
+        "k",
+        "cup"
+      ],
+      [
+        "l",
+        "ut"
+      ],
+      [
+        "m",
+        "k"
+      ],
+      [
+        "m",
+        "m"
+      ],
+      [
+        "m",
+        "un"
+      ],
+      [
+        "m",
+        "al"
+      ],
+      [
+        "m",
+        "is"
+      ],
+      [
+        "m",
+        "ung"
+      ],
+      [
+        "m",
+        "aru"
+      ],
+      [
+        "m",
+        "uni"
+      ],
+      [
+        "m",
+        "angsa"
+      ],
+      [
+        "n",
+        "a"
+      ],
+      [
+        "n",
+        "ama"
+      ],
+      [
+        "n",
+        "ahkan"
+      ],
+      [
+        "n",
+        "gum"
+      ],
+      [
+        "o",
+        "lah"
+      ],
+      [
+        "o",
+        "ha"
+      ],
+      [
+        "p",
+        "n"
+      ],
+      [
+        "p",
+        "t"
+      ],
+      [
+        "p",
+        "ri"
+      ],
+      [
+        "p",
+        "so"
+      ],
+      [
+        "p",
+        "inggi"
+      ],
+      [
+        "p",
+        "aris"
+      ],
+      [
+        "q",
+        "u"
+      ],
+      [
+        "q",
+        "is"
+      ],
+      [
+        "r",
+        "o"
+      ],
+      [
+        "r",
+        "u"
+      ],
+      [
+        "r",
+        "us"
+      ],
+      [
+        "r",
+        "ump"
+      ],
+      [
+        "r",
+        "ut"
+      ],
+      [
+        "r",
+        "usia"
+      ],
+      [
+        "r",
+        "inggi"
+      ],
+      [
+        "s",
+        "as"
+      ],
+      [
+        "s",
+        "kan"
+      ],
+      [
+        "s",
+        "am"
+      ],
+      [
+        "s",
+        "al"
+      ],
+      [
+        "s",
+        "ya"
+      ],
+      [
+        "s",
+        "ung"
+      ],
+      [
+        "s",
+        "tr"
+      ],
+      [
+        "s",
+        "ha"
+      ],
+      [
+        "s",
+        "indi"
+      ],
+      [
+        "s",
+        "cam"
+      ],
+      [
+        "s",
+        "asaran"
+      ],
+      [
+        "s",
+        "uruhan"
+      ],
+      [
+        "s",
+        "alah"
+      ],
+      [
+        "s",
+        "pirasi"
+      ],
+      [
+        "s",
+        "mk"
+      ],
+      [
+        "t",
+        "s"
+      ],
+      [
+        "t",
+        "el"
+      ],
+      [
+        "t",
+        "ra"
+      ],
+      [
+        "t",
+        "aran"
+      ],
+      [
+        "u",
+        "i"
+      ],
+      [
+        "u",
+        "da"
+      ],
+      [
+        "u",
+        "ka"
+      ],
+      [
+        "u",
+        "du"
+      ],
+      [
+        "u",
+        "lu"
+      ],
+      [
+        "u",
+        "ju"
+      ],
+      [
+        "u",
+        "bah"
+      ],
+      [
+        "u",
+        "kur"
+      ],
+      [
+        "u",
+        "ger"
+      ],
+      [
+        "u",
+        "pm"
+      ],
+      [
+        "u",
+        "ddin"
+      ],
+      [
+        "v",
+        "o"
+      ],
+      [
+        "w",
+        "in"
+      ],
+      [
+        "w",
+        "aki"
+      ],
+      [
+        "w",
+        "oo"
+      ],
+      [
+        "w",
+        "uju"
+      ],
+      [
+        "x",
+        "in"
+      ],
+      [
+        "z",
+        "el"
+      ],
+      [
+        "z",
+        "ara"
+      ],
+      [
+        "’",
+        "."
+      ],
+      [
+        "…",
+        "."
+      ],
+      [
+        "an",
+        "ak"
+      ],
+      [
+        "an",
+        "ti"
+      ],
+      [
+        "an",
+        "tan"
+      ],
+      [
+        "an",
+        "usia"
+      ],
+      [
+        "an",
+        "tau"
+      ],
+      [
+        "an",
+        "dangan"
+      ],
+      [
+        "an",
+        "ni"
+      ],
+      [
+        "an",
+        "uger"
+      ],
+      [
+        "er",
+        "us"
+      ],
+      [
+        "er",
+        "ni"
+      ],
+      [
+        "en",
+        "am"
+      ],
+      [
+        "en",
+        "tang"
+      ],
+      [
+        "en",
+        "ton"
+      ],
+      [
+        "la",
+        "k"
+      ],
+      [
+        "la",
+        "ke"
+      ],
+      [
+        "la",
+        "gi"
+      ],
+      [
+        "la",
+        "ut"
+      ],
+      [
+        "la",
+        "ran"
+      ],
+      [
+        "la",
+        "yak"
+      ],
+      [
+        "la",
+        "hir"
+      ],
+      [
+        "la",
+        "fc"
+      ],
+      [
+        "la",
+        "tih"
+      ],
+      [
+        "ar",
+        "y"
+      ],
+      [
+        "di",
+        "as"
+      ],
+      [
+        "di",
+        "li"
+      ],
+      [
+        "di",
+        "ing"
+      ],
+      [
+        "di",
+        "ram"
+      ],
+      [
+        "di",
+        "seba"
+      ],
+      [
+        "di",
+        "aman"
+      ],
+      [
+        "di",
+        "jalan"
+      ],
+      [
+        "di",
+        "pin"
+      ],
+      [
+        "di",
+        "buka"
+      ],
+      [
+        "di",
+        "ugut"
+      ],
+      [
+        "di",
+        "laporkan"
+      ],
+      [
+        "di",
+        "jangka"
+      ],
+      [
+        "di",
+        "lahir"
+      ],
+      [
+        "in",
+        "t"
+      ],
+      [
+        "in",
+        "ya"
+      ],
+      [
+        "in",
+        "dah"
+      ],
+      [
+        "in",
+        "dia"
+      ],
+      [
+        "in",
+        "san"
+      ],
+      [
+        "in",
+        "ve"
+      ],
+      [
+        "in",
+        "kcup"
+      ],
+      [
+        "in",
+        "spirasi"
+      ],
+      [
+        "in",
+        "uddin"
+      ],
+      [
+        "ang",
+        "ka"
+      ],
+      [
+        "ang",
+        "garan"
+      ],
+      [
+        "at",
+        "ka"
+      ],
+      [
+        "at",
+        "asi"
+      ],
+      [
+        "at",
+        "egi"
+      ],
+      [
+        "se",
+        "a"
+      ],
+      [
+        "se",
+        "per"
+      ],
+      [
+        "se",
+        "ku"
+      ],
+      [
+        "se",
+        "is"
+      ],
+      [
+        "se",
+        "ki"
+      ],
+      [
+        "se",
+        "pe"
+      ],
+      [
+        "se",
+        "hari"
+      ],
+      [
+        "se",
+        "dia"
+      ],
+      [
+        "se",
+        "dar"
+      ],
+      [
+        "se",
+        "lar"
+      ],
+      [
+        "se",
+        "kit"
+      ],
+      [
+        "se",
+        "gam"
+      ],
+      [
+        "se",
+        "lain"
+      ],
+      [
+        "se",
+        "syen"
+      ],
+      [
+        "se",
+        "ou"
+      ],
+      [
+        "se",
+        "botol"
+      ],
+      [
+        "se",
+        "pasukannya"
+      ],
+      [
+        "se",
+        "gala"
+      ],
+      [
+        "as",
+        "y"
+      ],
+      [
+        "as",
+        "as"
+      ],
+      [
+        "as",
+        "ing"
+      ],
+      [
+        "as",
+        "arkan"
+      ],
+      [
+        "as",
+        "ist"
+      ],
+      [
+        "as",
+        "ingan"
+      ],
+      [
+        "ah",
+        "an"
+      ],
+      [
+        "ah",
+        "anan"
+      ],
+      [
+        "ah",
+        "teraan"
+      ],
+      [
+        "men",
+        "a"
+      ],
+      [
+        "men",
+        "t"
+      ],
+      [
+        "men",
+        "ang"
+      ],
+      [
+        "men",
+        "un"
+      ],
+      [
+        "men",
+        "ump"
+      ],
+      [
+        "men",
+        "de"
+      ],
+      [
+        "men",
+        "ama"
+      ],
+      [
+        "men",
+        "eng"
+      ],
+      [
+        "men",
+        "jaya"
+      ],
+      [
+        "men",
+        "aw"
+      ],
+      [
+        "men",
+        "im"
+      ],
+      [
+        "men",
+        "dakwa"
+      ],
+      [
+        "men",
+        "erusi"
+      ],
+      [
+        "men",
+        "erus"
+      ],
+      [
+        "men",
+        "entang"
+      ],
+      [
+        "men",
+        "ahan"
+      ],
+      [
+        "da",
+        "pe"
+      ],
+      [
+        "da",
+        "erah"
+      ],
+      [
+        "da",
+        "gangan"
+      ],
+      [
+        "un",
+        "sur"
+      ],
+      [
+        "em",
+        "al"
+      ],
+      [
+        "am",
+        "i"
+      ],
+      [
+        "am",
+        "el"
+      ],
+      [
+        "am",
+        "bi"
+      ],
+      [
+        "am",
+        "pas"
+      ],
+      [
+        "am",
+        "bang"
+      ],
+      [
+        "ke",
+        "ku"
+      ],
+      [
+        "ke",
+        "ga"
+      ],
+      [
+        "ke",
+        "gi"
+      ],
+      [
+        "ke",
+        "ju"
+      ],
+      [
+        "ke",
+        "bang"
+      ],
+      [
+        "ke",
+        "ca"
+      ],
+      [
+        "ke",
+        "lih"
+      ],
+      [
+        "ke",
+        "selam"
+      ],
+      [
+        "ke",
+        "sej"
+      ],
+      [
+        "ke",
+        "perlu"
+      ],
+      [
+        "ke",
+        "bul"
+      ],
+      [
+        "ke",
+        "hidu"
+      ],
+      [
+        "ke",
+        "yakin"
+      ],
+      [
+        "ke",
+        "hil"
+      ],
+      [
+        "ke",
+        "diaman"
+      ],
+      [
+        "ber",
+        "at"
+      ],
+      [
+        "ber",
+        "ku"
+      ],
+      [
+        "ber",
+        "ban"
+      ],
+      [
+        "ber",
+        "war"
+      ],
+      [
+        "ber",
+        "kec"
+      ],
+      [
+        "ber",
+        "janji"
+      ],
+      [
+        "ber",
+        "puluh"
+      ],
+      [
+        "ber",
+        "jum"
+      ],
+      [
+        "ber",
+        "sk"
+      ],
+      [
+        "ber",
+        "setuju"
+      ],
+      [
+        "ber",
+        "sif"
+      ],
+      [
+        "ber",
+        "kai"
+      ],
+      [
+        "ber",
+        "asingan"
+      ],
+      [
+        "ber",
+        "keku"
+      ],
+      [
+        "um",
+        "ur"
+      ],
+      [
+        "um",
+        "ba"
+      ],
+      [
+        "li",
+        "pi"
+      ],
+      [
+        "li",
+        "bat"
+      ],
+      [
+        "li",
+        "gat"
+      ],
+      [
+        "si",
+        "r"
+      ],
+      [
+        "si",
+        "t"
+      ],
+      [
+        "si",
+        "ang"
+      ],
+      [
+        "si",
+        "on"
+      ],
+      [
+        "tu",
+        "rut"
+      ],
+      [
+        "per",
+        "eka"
+      ],
+      [
+        "per",
+        "bin"
+      ],
+      [
+        "per",
+        "lum"
+      ],
+      [
+        "per",
+        "saingan"
+      ],
+      [
+        "per",
+        "taman"
+      ],
+      [
+        "per",
+        "osak"
+      ],
+      [
+        "ter",
+        "an"
+      ],
+      [
+        "ter",
+        "ba"
+      ],
+      [
+        "ter",
+        "bi"
+      ],
+      [
+        "ter",
+        "de"
+      ],
+      [
+        "ter",
+        "lebih"
+      ],
+      [
+        "ter",
+        "ci"
+      ],
+      [
+        "ter",
+        "jadi"
+      ],
+      [
+        "ter",
+        "gug"
+      ],
+      [
+        "ter",
+        "pendek"
+      ],
+      [
+        "ter",
+        "kor"
+      ],
+      [
+        "ter",
+        "kawal"
+      ],
+      [
+        "ak",
+        "hbar"
+      ],
+      [
+        "ak",
+        "ui"
+      ],
+      [
+        "le",
+        "bat"
+      ],
+      [
+        "ku",
+        "p"
+      ],
+      [
+        "ku",
+        "men"
+      ],
+      [
+        "ku",
+        "da"
+      ],
+      [
+        "ku",
+        "tan"
+      ],
+      [
+        "ku",
+        "atkan"
+      ],
+      [
+        "ku",
+        "antan"
+      ],
+      [
+        "al",
+        "d"
+      ],
+      [
+        "al",
+        "su"
+      ],
+      [
+        "al",
+        "hada"
+      ],
+      [
+        "al",
+        "do"
+      ],
+      [
+        "ti",
+        "ang"
+      ],
+      [
+        "on",
+        "as"
+      ],
+      [
+        "on",
+        "gan"
+      ],
+      [
+        "pa",
+        "u"
+      ],
+      [
+        "pa",
+        "gar"
+      ],
+      [
+        "pen",
+        "ting"
+      ],
+      [
+        "pen",
+        "diri"
+      ],
+      [
+        "pen",
+        "ipu"
+      ],
+      [
+        "pen",
+        "jara"
+      ],
+      [
+        "pen",
+        "ahanan"
+      ],
+      [
+        "or",
+        "o"
+      ],
+      [
+        "or",
+        "ida"
+      ],
+      [
+        "ta",
+        "pkan"
+      ],
+      [
+        "bu",
+        "s"
+      ],
+      [
+        "bu",
+        "t"
+      ],
+      [
+        "bu",
+        "an"
+      ],
+      [
+        "bu",
+        "han"
+      ],
+      [
+        "bu",
+        "dape"
+      ],
+      [
+        "el",
+        "ps"
+      ],
+      [
+        "el",
+        "uruh"
+      ],
+      [
+        "el",
+        "sea"
+      ],
+      [
+        "ka",
+        "dar"
+      ],
+      [
+        "ka",
+        "pal"
+      ],
+      [
+        "ka",
+        "pkan"
+      ],
+      [
+        "mem",
+        "us"
+      ],
+      [
+        "mem",
+        "ben"
+      ],
+      [
+        "mem",
+        "buru"
+      ],
+      [
+        "du",
+        "lu"
+      ],
+      [
+        "du",
+        "duk"
+      ],
+      [
+        "dan",
+        "i"
+      ],
+      [
+        "is",
+        "teri"
+      ],
+      [
+        "is",
+        "fera"
+      ],
+      [
+        "ba",
+        "an"
+      ],
+      [
+        "ba",
+        "li"
+      ],
+      [
+        "ba",
+        "dan"
+      ],
+      [
+        "ba",
+        "yar"
+      ],
+      [
+        "ba",
+        "yaran"
+      ],
+      [
+        "ki",
+        "ri"
+      ],
+      [
+        "pe",
+        "gu"
+      ],
+      [
+        "pe",
+        "lih"
+      ],
+      [
+        "pe",
+        "sara"
+      ],
+      [
+        "bi",
+        "a"
+      ],
+      [
+        "bi",
+        "das"
+      ],
+      [
+        "gi",
+        "h"
+      ],
+      [
+        "gi",
+        "anni"
+      ],
+      [
+        "me",
+        "i"
+      ],
+      [
+        "me",
+        "ga"
+      ],
+      [
+        "me",
+        "lam"
+      ],
+      [
+        "me",
+        "lalu"
+      ],
+      [
+        "me",
+        "laporkan"
+      ],
+      [
+        "me",
+        "libat"
+      ],
+      [
+        "me",
+        "sir"
+      ],
+      [
+        "be",
+        "dah"
+      ],
+      [
+        "meng",
+        "gun"
+      ],
+      [
+        "meng",
+        "ek"
+      ],
+      [
+        "meng",
+        "arah"
+      ],
+      [
+        "meng",
+        "hal"
+      ],
+      [
+        "meng",
+        "hadapi"
+      ],
+      [
+        "meng",
+        "gugurkan"
+      ],
+      [
+        "meng",
+        "undi"
+      ],
+      [
+        "meng",
+        "alami"
+      ],
+      [
+        "meng",
+        "atasi"
+      ],
+      [
+        "meng",
+        "kebang"
+      ],
+      [
+        "meng",
+        "akui"
+      ],
+      [
+        "sem",
+        "inggu"
+      ],
+      [
+        "sem",
+        "ua"
+      ],
+      [
+        "pas",
+        "angan"
+      ],
+      [
+        "pas",
+        "aran"
+      ],
+      [
+        "ra",
+        "ga"
+      ],
+      [
+        "pi",
+        "an"
+      ],
+      [
+        "pi",
+        "ast"
+      ],
+      [
+        "pem",
+        "beli"
+      ],
+      [
+        "pem",
+        "buka"
+      ],
+      [
+        "pem",
+        "angsa"
+      ],
+      [
+        "pem",
+        "uda"
+      ],
+      [
+        "pem",
+        "alsu"
+      ],
+      [
+        "pem",
+        "bedah"
+      ],
+      [
+        "ut",
+        "ara"
+      ],
+      [
+        "ko",
+        "vi"
+      ],
+      [
+        "ko",
+        "muni"
+      ],
+      [
+        "ri",
+        "bu"
+      ],
+      [
+        "lu",
+        "askan"
+      ],
+      [
+        "ma",
+        "c"
+      ],
+      [
+        "ma",
+        "in"
+      ],
+      [
+        "ma",
+        "ut"
+      ],
+      [
+        "ma",
+        "yat"
+      ],
+      [
+        "ma",
+        "gn"
+      ],
+      [
+        "ma",
+        "dani"
+      ],
+      [
+        "de",
+        "fi"
+      ],
+      [
+        "ker",
+        "s"
+      ],
+      [
+        "ker",
+        "ing"
+      ],
+      [
+        "ker",
+        "umi"
+      ],
+      [
+        "po",
+        "h"
+      ],
+      [
+        "po",
+        "pula"
+      ],
+      [
+        "po",
+        "kok"
+      ],
+      [
+        "pu",
+        "teri"
+      ],
+      [
+        "pu",
+        "tus"
+      ],
+      [
+        "pu",
+        "tera"
+      ],
+      [
+        "pu",
+        "tih"
+      ],
+      [
+        "ata",
+        "se"
+      ],
+      [
+        "han",
+        "tar"
+      ],
+      [
+        "han",
+        "taran"
+      ],
+      [
+        "sa",
+        "int"
+      ],
+      [
+        "bo",
+        "la"
+      ],
+      [
+        "bo",
+        "iko"
+      ],
+      [
+        "lan",
+        "do"
+      ],
+      [
+        "ban",
+        "dara"
+      ],
+      [
+        "re",
+        "ad"
+      ],
+      [
+        "re",
+        "sor"
+      ],
+      [
+        "te",
+        "gu"
+      ],
+      [
+        "te",
+        "liti"
+      ],
+      [
+        "te",
+        "tapi"
+      ],
+      [
+        "ju",
+        "lung"
+      ],
+      [
+        "ju",
+        "kkan"
+      ],
+      [
+        "sy",
+        "arat"
+      ],
+      [
+        "sy",
+        "amel"
+      ],
+      [
+        "alam",
+        "an"
+      ],
+      [
+        "bang",
+        "kan"
+      ],
+      [
+        "bang",
+        "kit"
+      ],
+      [
+        "tan",
+        "pa"
+      ],
+      [
+        "mi",
+        "k"
+      ],
+      [
+        "aru",
+        "zaman"
+      ],
+      [
+        "itu",
+        "d"
+      ],
+      [
+        "su",
+        "ci"
+      ],
+      [
+        "su",
+        "paya"
+      ],
+      [
+        "su",
+        "kar"
+      ],
+      [
+        "su",
+        "ami"
+      ],
+      [
+        "ser",
+        "t"
+      ],
+      [
+        "ser",
+        "angan"
+      ],
+      [
+        "ser",
+        "ong"
+      ],
+      [
+        "ser",
+        "antau"
+      ],
+      [
+        "ser",
+        "buan"
+      ],
+      [
+        "hada",
+        "pan"
+      ],
+      [
+        "peng",
+        "hantaran"
+      ],
+      [
+        "kon",
+        "tin"
+      ],
+      [
+        "kon",
+        "sert"
+      ],
+      [
+        "mu",
+        "dah"
+      ],
+      [
+        "mer",
+        "ah"
+      ],
+      [
+        "mer",
+        "aih"
+      ],
+      [
+        "mer",
+        "ampas"
+      ],
+      [
+        "pan",
+        "tang"
+      ],
+      [
+        "pan",
+        "jang"
+      ],
+      [
+        "pan",
+        "annya"
+      ],
+      [
+        "ati",
+        "pso"
+      ],
+      [
+        "aki",
+        "man"
+      ],
+      [
+        "dah",
+        "ulu"
+      ],
+      [
+        "eng",
+        "land"
+      ],
+      [
+        "eng",
+        "kapkan"
+      ],
+      [
+        "os",
+        "car"
+      ],
+      [
+        "tr",
+        "enton"
+      ],
+      [
+        "meny",
+        "ala"
+      ],
+      [
+        "meny",
+        "erah"
+      ],
+      [
+        "meny",
+        "asarkan"
+      ],
+      [
+        "meny",
+        "eluruh"
+      ],
+      [
+        "lik",
+        "asi"
+      ],
+      [
+        "bel",
+        "la"
+      ],
+      [
+        "ca",
+        "bang"
+      ],
+      [
+        "ca",
+        "baran"
+      ],
+      [
+        "kam",
+        "ch"
+      ],
+      [
+        "kam",
+        "aruzaman"
+      ],
+      [
+        "ram",
+        "li"
+      ],
+      [
+        "ram",
+        "os"
+      ],
+      [
+        "sen",
+        "at"
+      ],
+      [
+        "sen",
+        "ior"
+      ],
+      [
+        "sen",
+        "jata"
+      ],
+      [
+        "ci",
+        "r"
+      ],
+      [
+        "ji",
+        "d"
+      ],
+      [
+        "ji",
+        "kan"
+      ],
+      [
+        "ji",
+        "ka"
+      ],
+      [
+        "ji",
+        "wa"
+      ],
+      [
+        "ran",
+        "tau"
+      ],
+      [
+        "jadi",
+        "kan"
+      ],
+      [
+        "ge",
+        "sa"
+      ],
+      [
+        "ge",
+        "laran"
+      ],
+      [
+        "kat",
+        "ia"
+      ],
+      [
+        "mala",
+        "h"
+      ],
+      [
+        "tem",
+        "poh"
+      ],
+      [
+        "alan",
+        "i"
+      ],
+      [
+        "dun",
+        "gi"
+      ],
+      [
+        "ken",
+        "ha"
+      ],
+      [
+        "mas",
+        "jid"
+      ],
+      [
+        "20",
+        "1"
+      ],
+      [
+        "82",
+        "20"
+      ],
+      [
+        "lah",
+        "ad"
+      ],
+      [
+        "bar",
+        "ca"
+      ],
+      [
+        "bar",
+        "celon"
+      ],
+      [
+        "ch",
+        "ina"
+      ],
+      [
+        "ch",
+        "elsea"
+      ],
+      [
+        "hu",
+        "a"
+      ],
+      [
+        "hu",
+        "jan"
+      ],
+      [
+        "to",
+        "t"
+      ],
+      [
+        "menj",
+        "ela"
+      ],
+      [
+        "menj",
+        "alani"
+      ],
+      [
+        "ben",
+        "ar"
+      ],
+      [
+        "do",
+        "f"
+      ],
+      [
+        "do",
+        "lar"
+      ],
+      [
+        "do",
+        "kt"
+      ],
+      [
+        "do",
+        "kumen"
+      ],
+      [
+        "kem",
+        "anusia"
+      ],
+      [
+        "kem",
+        "bali"
+      ],
+      [
+        "lo",
+        "kasi"
+      ],
+      [
+        "co",
+        "m"
+      ],
+      [
+        "st",
+        "ment"
+      ],
+      [
+        "membu",
+        "atkan"
+      ],
+      [
+        "ce",
+        "bis"
+      ],
+      [
+        "ce",
+        "kup"
+      ],
+      [
+        "don",
+        "ald"
+      ],
+      [
+        "for",
+        "mula"
+      ],
+      [
+        "pel",
+        "anggaran"
+      ],
+      [
+        "pel",
+        "umba"
+      ],
+      [
+        "za",
+        "inuddin"
+      ],
+      [
+        "sel",
+        "uruh"
+      ],
+      [
+        "der",
+        "land"
+      ],
+      [
+        "war",
+        "ga"
+      ],
+      [
+        "bes",
+        "ut"
+      ],
+      [
+        "bes",
+        "aran"
+      ],
+      [
+        "ap",
+        "al"
+      ],
+      [
+        "ap",
+        "mm"
+      ],
+      [
+        "ap",
+        "likasi"
+      ],
+      [
+        "hak",
+        "emal"
+      ],
+      [
+        "jalan",
+        "i"
+      ],
+      [
+        "mar",
+        "qu"
+      ],
+      [
+        "sh",
+        "eik"
+      ],
+      [
+        "th",
+        "e"
+      ],
+      [
+        "th",
+        "inkcup"
+      ],
+      [
+        "th",
+        "read"
+      ],
+      [
+        "ek",
+        "stasi"
+      ],
+      [
+        "ek",
+        "seku"
+      ],
+      [
+        "ger",
+        "main"
+      ],
+      [
+        "im",
+        "pian"
+      ],
+      [
+        "og",
+        "ram"
+      ],
+      [
+        "pin",
+        "dah"
+      ],
+      [
+        "pin",
+        "tar"
+      ],
+      [
+        "pin",
+        "daan"
+      ],
+      [
+        "sim",
+        "panannya"
+      ],
+      [
+        "tif",
+        "nya"
+      ],
+      [
+        "pela",
+        "ksan"
+      ],
+      [
+        "fizikal",
+        "nya"
+      ],
+      [
+        "ster",
+        "ling"
+      ],
+      [
+        "sus",
+        "pek"
+      ],
+      [
+        "menda",
+        "dak"
+      ],
+      [
+        "lih",
+        "at"
+      ],
+      [
+        "penga",
+        "cara"
+      ],
+      [
+        "penga",
+        "udi"
+      ],
+      [
+        "petr",
+        "os"
+      ],
+      [
+        "petr",
+        "onas"
+      ],
+      [
+        "new",
+        "s"
+      ],
+      [
+        "bur",
+        "sa"
+      ],
+      [
+        "jen",
+        "tera"
+      ],
+      [
+        "kl",
+        "2040"
+      ],
+      [
+        "kl",
+        "cc"
+      ],
+      [
+        "tun",
+        "ai"
+      ],
+      [
+        "tun",
+        "is"
+      ],
+      [
+        "wang",
+        "sa"
+      ],
+      [
+        "aha",
+        "d"
+      ],
+      [
+        "menge",
+        "syor"
+      ],
+      [
+        "pihak",
+        "nya"
+      ],
+      [
+        "maj",
+        "lis"
+      ],
+      [
+        "bumi",
+        "putera"
+      ],
+      [
+        "fa",
+        "edah"
+      ],
+      [
+        "kr",
+        "ai"
+      ],
+      [
+        "pr",
+        "o"
+      ],
+      [
+        "pr",
+        "ogram"
+      ],
+      [
+        "pal",
+        "ing"
+      ],
+      [
+        "ron",
+        "aldo"
+      ],
+      [
+        "perse",
+        "diaan"
+      ],
+      [
+        "perse",
+        "tujuan"
+      ],
+      [
+        "memper",
+        "kuatkan"
+      ],
+      [
+        "teg",
+        "ang"
+      ],
+      [
+        "ly",
+        "dia"
+      ],
+      [
+        "ly",
+        "woo"
+      ],
+      [
+        "min",
+        "ta"
+      ],
+      [
+        "rak",
+        "aman"
+      ],
+      [
+        "tam",
+        "pak"
+      ],
+      [
+        "tam",
+        "pil"
+      ],
+      [
+        "ve",
+        "teran"
+      ],
+      [
+        "pulu",
+        "han"
+      ],
+      [
+        "ele",
+        "kt"
+      ],
+      [
+        "gel",
+        "andangan"
+      ],
+      [
+        "has",
+        "ina"
+      ],
+      [
+        "kah",
+        "win"
+      ],
+      [
+        "ras",
+        "mi"
+      ],
+      [
+        "sum",
+        "ber"
+      ],
+      [
+        "sum",
+        "mer"
+      ],
+      [
+        "sum",
+        "bangan"
+      ],
+      [
+        "sej",
+        "ak"
+      ],
+      [
+        "sej",
+        "arah"
+      ],
+      [
+        "mene",
+        "liti"
+      ],
+      [
+        "kel",
+        "ly"
+      ],
+      [
+        "bul",
+        "kan"
+      ],
+      [
+        "meman",
+        "du"
+      ],
+      [
+        "meman",
+        "dang"
+      ],
+      [
+        "kere",
+        "sah"
+      ],
+      [
+        "ugut",
+        "an"
+      ],
+      [
+        "eh",
+        "ati"
+      ],
+      [
+        "je",
+        "pun"
+      ],
+      [
+        "lang",
+        "gar"
+      ],
+      [
+        "lem",
+        "ak"
+      ],
+      [
+        "sur",
+        "ia"
+      ],
+      [
+        "tari",
+        "f"
+      ],
+      [
+        "tari",
+        "k"
+      ],
+      [
+        "ani",
+        "masi"
+      ],
+      [
+        "sepak",
+        "at"
+      ],
+      [
+        "pertu",
+        "buhan"
+      ],
+      [
+        "komi",
+        "sion"
+      ],
+      [
+        "senti",
+        "asa"
+      ],
+      [
+        "senti",
+        "meter"
+      ],
+      [
+        "tikto",
+        "kers"
+      ],
+      [
+        "he",
+        "ung"
+      ],
+      [
+        "jo",
+        "se"
+      ],
+      [
+        "kor",
+        "ea"
+      ],
+      [
+        "ps",
+        "g"
+      ],
+      [
+        "ren",
+        "tas"
+      ],
+      [
+        "sun",
+        "derland"
+      ],
+      [
+        "sela",
+        "tan"
+      ],
+      [
+        "memin",
+        "ta"
+      ],
+      [
+        "memin",
+        "dahkan"
+      ],
+      [
+        "istan",
+        "a"
+      ],
+      [
+        "istan",
+        "bul"
+      ],
+      [
+        "geor",
+        "ge"
+      ],
+      [
+        "geor",
+        "gina"
+      ],
+      [
+        "28",
+        "8"
+      ],
+      [
+        "ase",
+        "an"
+      ],
+      [
+        "bal",
+        "qis"
+      ],
+      [
+        "gran",
+        "d"
+      ],
+      [
+        "har",
+        "am"
+      ],
+      [
+        "hem",
+        "isfera"
+      ],
+      [
+        "nasi",
+        "onal"
+      ],
+      [
+        "om",
+        "bia"
+      ],
+      [
+        "oper",
+        "asi"
+      ],
+      [
+        "ph",
+        "elps"
+      ],
+      [
+        "pus",
+        "at"
+      ],
+      [
+        "tasi",
+        "k"
+      ],
+      [
+        "walau",
+        "pun"
+      ],
+      [
+        "anc",
+        "aman"
+      ],
+      [
+        "sepenuh",
+        "nya"
+      ],
+      [
+        "menga",
+        "dili"
+      ],
+      [
+        "mengan",
+        "dungi"
+      ],
+      [
+        "mence",
+        "cah"
+      ],
+      [
+        "keh",
+        "akiman"
+      ],
+      [
+        "keda",
+        "i"
+      ],
+      [
+        "tim",
+        "ur"
+      ],
+      [
+        "taw",
+        "arkan"
+      ],
+      [
+        "biada",
+        "b"
+      ],
+      [
+        "mela",
+        "ka"
+      ],
+      [
+        "mengge",
+        "garkan"
+      ],
+      [
+        "koman",
+        "der"
+      ],
+      [
+        "tele",
+        "fon"
+      ],
+      [
+        "muzi",
+        "um"
+      ],
+      [
+        "menyam",
+        "but"
+      ],
+      [
+        "penye",
+        "diaan"
+      ],
+      [
+        "marc",
+        "us"
+      ],
+      [
+        "ekor",
+        "an"
+      ],
+      [
+        "pelanc",
+        "ong"
+      ],
+      [
+        "hidup",
+        "nya"
+      ],
+      [
+        "putra",
+        "jaya"
+      ],
+      [
+        "pemerin",
+        "tah"
+      ],
+      [
+        "khidm",
+        "at"
+      ],
+      [
+        "35",
+        "5"
+      ],
+      [
+        "aq",
+        "sa"
+      ],
+      [
+        "aus",
+        "tra"
+      ],
+      [
+        "ade",
+        "gan"
+      ],
+      [
+        "bh",
+        "aru"
+      ],
+      [
+        "bala",
+        "s"
+      ],
+      [
+        "cal",
+        "o"
+      ],
+      [
+        "col",
+        "ombia"
+      ],
+      [
+        "dra",
+        "f"
+      ],
+      [
+        "dram",
+        "atik"
+      ],
+      [
+        "djo",
+        "kovi"
+      ],
+      [
+        "fl",
+        "orida"
+      ],
+      [
+        "fm",
+        "f"
+      ],
+      [
+        "faki",
+        "r"
+      ],
+      [
+        "foku",
+        "s"
+      ],
+      [
+        "gon",
+        "calo"
+      ],
+      [
+        "hung",
+        "ary"
+      ],
+      [
+        "hol",
+        "lywoo"
+      ],
+      [
+        "haw",
+        "ari"
+      ],
+      [
+        "it",
+        "zel"
+      ],
+      [
+        "ide",
+        "al"
+      ],
+      [
+        "jp",
+        "j"
+      ],
+      [
+        "jer",
+        "man"
+      ],
+      [
+        "juru",
+        "latih"
+      ],
+      [
+        "kump",
+        "ulan"
+      ],
+      [
+        "lut",
+        "kenha"
+      ],
+      [
+        "mis",
+        "kin"
+      ],
+      [
+        "mung",
+        "kin"
+      ],
+      [
+        "maru",
+        "ah"
+      ],
+      [
+        "nahkan",
+        "nya"
+      ],
+      [
+        "ngum",
+        "oha"
+      ],
+      [
+        "olah",
+        "raga"
+      ],
+      [
+        "pt",
+        "kl2040"
+      ],
+      [
+        "pri",
+        "x"
+      ],
+      [
+        "pinggi",
+        "r"
+      ],
+      [
+        "rus",
+        "sia"
+      ],
+      [
+        "rump",
+        "ut"
+      ],
+      [
+        "ringgi",
+        "t"
+      ],
+      [
+        "sas",
+        "ar"
+      ],
+      [
+        "sal",
+        "un"
+      ],
+      [
+        "sya",
+        "bu"
+      ],
+      [
+        "sung",
+        "ai"
+      ],
+      [
+        "str",
+        "ategi"
+      ],
+      [
+        "sindi",
+        "ket"
+      ],
+      [
+        "scam",
+        "mer"
+      ],
+      [
+        "suruhan",
+        "jaya"
+      ],
+      [
+        "wuju",
+        "d"
+      ],
+      [
+        "xin",
+        "hua"
+      ],
+      [
+        "anuger",
+        "ah"
+      ],
+      [
+        "erni",
+        "e"
+      ],
+      [
+        "lake",
+        "town"
+      ],
+      [
+        "diram",
+        "pas"
+      ],
+      [
+        "diseba",
+        "bkan"
+      ],
+      [
+        "dijalan",
+        "kan"
+      ],
+      [
+        "dipin",
+        "dahkan"
+      ],
+      [
+        "dilahir",
+        "kan"
+      ],
+      [
+        "inve",
+        "stment"
+      ],
+      [
+        "seper",
+        "ti"
+      ],
+      [
+        "seis",
+        "mik"
+      ],
+      [
+        "sepe",
+        "ket"
+      ],
+      [
+        "selar",
+        "as"
+      ],
+      [
+        "sekit",
+        "ar"
+      ],
+      [
+        "segam",
+        "at"
+      ],
+      [
+        "seou",
+        "l"
+      ],
+      [
+        "asist",
+        "en"
+      ],
+      [
+        "menun",
+        "jukkan"
+      ],
+      [
+        "menump",
+        "ukan"
+      ],
+      [
+        "mende",
+        "dahkan"
+      ],
+      [
+        "menama",
+        "kan"
+      ],
+      [
+        "meneng",
+        "ah"
+      ],
+      [
+        "menjaya",
+        "kan"
+      ],
+      [
+        "menaw",
+        "arkan"
+      ],
+      [
+        "menim",
+        "bulkan"
+      ],
+      [
+        "menerus",
+        "kan"
+      ],
+      [
+        "ambi",
+        "l"
+      ],
+      [
+        "kega",
+        "galan"
+      ],
+      [
+        "kegi",
+        "atan"
+      ],
+      [
+        "keju",
+        "araan"
+      ],
+      [
+        "keca",
+        "catan"
+      ],
+      [
+        "kelih",
+        "atan"
+      ],
+      [
+        "keselam",
+        "atan"
+      ],
+      [
+        "kesej",
+        "ahteraan"
+      ],
+      [
+        "keperlu",
+        "an"
+      ],
+      [
+        "kebul",
+        "uran"
+      ],
+      [
+        "kehidu",
+        "pan"
+      ],
+      [
+        "keyakin",
+        "an"
+      ],
+      [
+        "kehil",
+        "angan"
+      ],
+      [
+        "berban",
+        "ding"
+      ],
+      [
+        "berwar",
+        "na"
+      ],
+      [
+        "berkec",
+        "ai"
+      ],
+      [
+        "berjum",
+        "pa"
+      ],
+      [
+        "bersk",
+        "ala"
+      ],
+      [
+        "bersif",
+        "at"
+      ],
+      [
+        "berkai",
+        "tan"
+      ],
+      [
+        "berkeku",
+        "atan"
+      ],
+      [
+        "lipi",
+        "d"
+      ],
+      [
+        "perbin",
+        "cangan"
+      ],
+      [
+        "perlum",
+        "baan"
+      ],
+      [
+        "pertaman",
+        "ya"
+      ],
+      [
+        "terba",
+        "bas"
+      ],
+      [
+        "terbi",
+        "ar"
+      ],
+      [
+        "terde",
+        "dah"
+      ],
+      [
+        "terci",
+        "cir"
+      ],
+      [
+        "tergug",
+        "at"
+      ],
+      [
+        "terkor",
+        "ban"
+      ],
+      [
+        "alhada",
+        "d"
+      ],
+      [
+        "pendiri",
+        "an"
+      ],
+      [
+        "penipu",
+        "an"
+      ],
+      [
+        "budape",
+        "st"
+      ],
+      [
+        "memus",
+        "nahkannya"
+      ],
+      [
+        "memben",
+        "arkan"
+      ],
+      [
+        "pegu",
+        "am"
+      ],
+      [
+        "pelih",
+        "araan"
+      ],
+      [
+        "melalu",
+        "i"
+      ],
+      [
+        "melibat",
+        "kan"
+      ],
+      [
+        "menggun",
+        "akan"
+      ],
+      [
+        "mengek",
+        "ang"
+      ],
+      [
+        "mengarah",
+        "kan"
+      ],
+      [
+        "menghal",
+        "ang"
+      ],
+      [
+        "piast",
+        "ri"
+      ],
+      [
+        "pembeli",
+        "an"
+      ],
+      [
+        "pembuka",
+        "an"
+      ],
+      [
+        "pemalsu",
+        "an"
+      ],
+      [
+        "pembedah",
+        "an"
+      ],
+      [
+        "magn",
+        "itud"
+      ],
+      [
+        "defi",
+        "sit"
+      ],
+      [
+        "kerumi",
+        "tan"
+      ],
+      [
+        "popula",
+        "riti"
+      ],
+      [
+        "boiko",
+        "t"
+      ],
+      [
+        "bandara",
+        "ya"
+      ],
+      [
+        "resor",
+        "t"
+      ],
+      [
+        "kontin",
+        "jen"
+      ],
+      [
+        "atipso",
+        "m"
+      ],
+      [
+        "kamch",
+        "atka"
+      ],
+      [
+        "barcelon",
+        "a"
+      ],
+      [
+        "menjela",
+        "skan"
+      ],
+      [
+        "dokt",
+        "or"
+      ],
+      [
+        "kemanusia",
+        "an"
+      ],
+      [
+        "cebis",
+        "an"
+      ],
+      [
+        "marqu",
+        "ez"
+      ],
+      [
+        "sheik",
+        "h"
+      ],
+      [
+        "ekseku",
+        "tifnya"
+      ],
+      [
+        "pelaksan",
+        "aan"
+      ],
+      [
+        "pengaudi",
+        "tan"
+      ],
+      [
+        "mengesyor",
+        "kan"
+      ],
+      [
+        "elekt",
+        "rik"
+      ],
+      [
+        "keresah",
+        "an"
+      ],
+      [
+        "komision",
+        "er"
+      ],
+      [
+        "austra",
+        "lia"
+      ],
+      [
+        "djokovi",
+        "c"
+      ],
+      [
+        "hollywoo",
+        "d"
+      ],
+      [
+        "lutkenha",
+        "us"
+      ]
+    ]
+  }
+}
