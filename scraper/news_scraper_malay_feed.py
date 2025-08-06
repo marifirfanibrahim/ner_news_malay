@@ -23,7 +23,7 @@ logging.basicConfig(
 # file path config
 today = datetime.datetime.now().strftime("%Y-%m-%d")                        # get today's date
 
-news_folder = 'news'                                                        # setup save folder
+news_folder = '/workspaces/ner_news_malay/scraper/news'                                                        # setup save folder
 os.makedirs(news_folder, exist_ok=True)
 
 csv_filename = os.path.join(news_folder, f'malay_news_{today}.csv')         # setup save pathing
