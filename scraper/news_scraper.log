@@ -221,3 +221,10 @@ Trying to import the above resulted in these errors:
 2025-08-06 01:43:11,775 - INFO - Summary length: 79 characters
 2025-08-06 01:43:15,925 - INFO - Found valid article: ID 434850 - Kontraktor dijel 7 hari, denda RM10,000 - Utusan Malaysia
 2025-08-06 01:43:15,925 - INFO - Summary length: 57 characters
+2025-08-06 01:43:20,210 - INFO - Found valid article: ID 196916 - [SIDANG DUN SABAH] Rentas daerah di Sabah kembali kepada sistem zon - Utusan Malaysia
+2025-08-06 01:43:20,210 - INFO - Summary length: 85 characters
+2025-08-06 01:43:22,749 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:43:22,752 - INFO - ID 784715 not a valid article page - skipping
+2025-08-06 01:43:24,873 - ERROR - Request failed for ID 668169: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=668169
+2025-08-06 01:43:28,597 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:43:28,599 - INFO - ID 361542 not a valid article page - skipping
