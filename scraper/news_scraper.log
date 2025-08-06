@@ -26,3 +26,198 @@ Trying to import the above resulted in these errors:
 2025-08-05 04:02:44,721 - INFO - Successfully processed Astro Awani
 2025-08-05 04:02:45,741 - INFO - 131 news items saved to news/malay_news_2025-08-05.csv and news/malay_news_2025-08-05.parquet
 2025-08-05 04:02:45,741 - INFO - Scrape completed. Total sources: 5, Successful: 5, Failed: 0, Articles collected: 131
+2025-08-06 01:35:29,159 - INFO - Checking 100 random article IDs from Utusan Malaysia
+2025-08-06 01:35:30,842 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:35:30,851 - INFO - ID 826839 not a valid article page - skipping
+2025-08-06 01:35:32,858 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:35:32,862 - INFO - ID 162343 not a valid article page - skipping
+2025-08-06 01:35:35,022 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:35:35,035 - INFO - ID 725685 not a valid article page - skipping
+2025-08-06 01:35:37,254 - ERROR - Request failed for ID 855603: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=855603
+2025-08-06 01:35:40,899 - ERROR - Request failed for ID 562862: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=562862
+2025-08-06 01:35:46,486 - INFO - Found valid article: ID 236505 - [VIDEO] Tular wanita rotan anjing hingga menangis kesakitan - Utusan Malaysia
+2025-08-06 01:35:46,486 - INFO - Summary length: 77 characters
+2025-08-06 01:35:50,847 - INFO - Found valid article: ID 814713 - Najib tidak beri kerjasama semasa disoal siasat
+2025-08-06 01:35:50,848 - INFO - Summary length: 47 characters
+2025-08-06 01:35:53,352 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:35:53,362 - INFO - ID 109279 not a valid article page - skipping
+2025-08-06 01:35:55,571 - ERROR - Request failed for ID 261268: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=261268
+2025-08-06 01:35:59,242 - ERROR - Request failed for ID 674963: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=674963
+2025-08-06 01:36:04,474 - INFO - Found valid article: ID 253634 - Bursa Malaysia bermula lemah 2022 - Utusan Malaysia
+2025-08-06 01:36:04,474 - INFO - Summary length: 51 characters
+2025-08-06 01:36:07,195 - ERROR - Request failed for ID 302114: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=302114
+2025-08-06 01:36:10,783 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:36:10,784 - INFO - ID 548952 not a valid article page - skipping
+2025-08-06 01:36:12,808 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:36:12,813 - INFO - ID 797623 not a valid article page - skipping
+2025-08-06 01:36:16,831 - INFO - Found valid article: ID 857066 - KPI mampu ukur pencapaian, hala tuju universiti
+2025-08-06 01:36:16,831 - INFO - Summary length: 47 characters
+2025-08-06 01:36:21,369 - INFO - Found valid article: ID 203200 - Tangkapan 12 lelaki selesai 12 kes pecah rumah - Utusan Malaysia
+2025-08-06 01:36:21,369 - INFO - Summary length: 64 characters
+2025-08-06 01:36:25,679 - INFO - Found valid article: ID 633011 - Kuala Lumpur destinasi kedua pilihan selepas Kuta - Airbnb - Utusan Malaysia
+2025-08-06 01:36:25,679 - INFO - Summary length: 76 characters
+2025-08-06 01:36:28,091 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:36:28,098 - INFO - ID 488077 not a valid article page - skipping
+2025-08-06 01:36:30,262 - ERROR - Request failed for ID 785859: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=785859
+2025-08-06 01:36:33,959 - ERROR - Request failed for ID 327750: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=327750
+2025-08-06 01:36:37,735 - ERROR - Request failed for ID 102732: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=102732
+2025-08-06 01:36:41,521 - ERROR - Request failed for ID 648248: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=648248
+2025-08-06 01:36:45,333 - ERROR - Request failed for ID 876804: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=876804
+2025-08-06 01:36:49,006 - ERROR - Request failed for ID 247082: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=247082
+2025-08-06 01:36:54,125 - INFO - Found valid article: ID 290236 - Hilang dua minggu, Bunjai ditemukan selamat - Utusan Malaysia
+2025-08-06 01:36:54,125 - INFO - Summary length: 61 characters
+2025-08-06 01:36:56,861 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:36:56,873 - INFO - ID 545885 not a valid article page - skipping
+2025-08-06 01:37:00,871 - INFO - Found valid article: ID 387292 - GST, masihkah kau ingat - Utusan Malaysia
+2025-08-06 01:37:00,871 - INFO - Summary length: 41 characters
+2025-08-06 01:37:03,609 - ERROR - Request failed for ID 195677: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=195677
+2025-08-06 01:37:07,389 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:37:07,403 - INFO - ID 326655 not a valid article page - skipping
+2025-08-06 01:37:09,319 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:37:09,323 - INFO - ID 774688 not a valid article page - skipping
+2025-08-06 01:37:12,862 - INFO - Found valid article: ID 459184 - Suamiku rupanya penagih dadah  - Utusan Malaysia
+2025-08-06 01:37:12,863 - INFO - Summary length: 48 characters
+2025-08-06 01:37:16,913 - INFO - Found valid article: ID 422789 - Nilai kasih sayang, gembira dan menghormati - Utusan Malaysia
+2025-08-06 01:37:16,913 - INFO - Summary length: 61 characters
+2025-08-06 01:37:20,957 - INFO - Found valid article: ID 460380 - Mungkin didera mental - Polis - Utusan Malaysia
+2025-08-06 01:37:20,957 - INFO - Summary length: 47 characters
+2025-08-06 01:37:23,602 - ERROR - Request failed for ID 686306: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=686306
+2025-08-06 01:37:27,254 - ERROR - Request failed for ID 109409: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=109409
+2025-08-06 01:37:31,128 - ERROR - Request failed for ID 313779: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=313779
+2025-08-06 01:37:34,898 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:37:34,907 - INFO - ID 256633 not a valid article page - skipping
+2025-08-06 01:37:37,077 - ERROR - Request failed for ID 882844: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=882844
+2025-08-06 01:37:40,750 - ERROR - Request failed for ID 159098: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=159098
+2025-08-06 01:37:44,441 - ERROR - Request failed for ID 165239: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=165239
+2025-08-06 01:37:48,078 - ERROR - Request failed for ID 867543: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=867543
+2025-08-06 01:37:51,653 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:37:51,665 - INFO - ID 513570 not a valid article page - skipping
+2025-08-06 01:37:54,094 - ERROR - Request failed for ID 775062: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=775062
+2025-08-06 01:37:57,606 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:37:57,615 - INFO - ID 596630 not a valid article page - skipping
+2025-08-06 01:37:59,559 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:37:59,563 - INFO - ID 727366 not a valid article page - skipping
+2025-08-06 01:38:01,502 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:38:01,505 - INFO - ID 178152 not a valid article page - skipping
+2025-08-06 01:38:03,615 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:38:03,637 - INFO - ID 771039 not a valid article page - skipping
+2025-08-06 01:38:05,903 - ERROR - Request failed for ID 726600: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=726600
+2025-08-06 01:38:11,016 - INFO - Found valid article: ID 273295 - Galak belia hijrah ke pinggir bandar - Utusan Malaysia
+2025-08-06 01:38:11,017 - INFO - Summary length: 54 characters
+2025-08-06 01:38:15,131 - INFO - Found valid article: ID 452222 - Perak mara ke pusingan ketiga kelayakan ACL - Utusan Malaysia
+2025-08-06 01:38:15,131 - INFO - Summary length: 61 characters
+2025-08-06 01:38:19,348 - INFO - Found valid article: ID 731501 - PRK Kuala Terengganu? Pas yakin dapat majoriti besar
+2025-08-06 01:38:19,349 - INFO - Summary length: 52 characters
+2025-08-06 01:38:23,537 - INFO - Found valid article: ID 536146 - Bidaan nombor plat 'Malaysia' dibuka hari ini - Utusan Malaysia
+2025-08-06 01:38:23,537 - INFO - Summary length: 63 characters
+2025-08-06 01:38:26,228 - ERROR - Request failed for ID 308907: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=308907
+2025-08-06 01:38:31,684 - INFO - Found valid article: ID 686605 - Johor tetap larang jual beli vape - Utusan Malaysia
+2025-08-06 01:38:31,684 - INFO - Summary length: 51 characters
+2025-08-06 01:38:34,351 - ERROR - Request failed for ID 544491: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=544491
+2025-08-06 01:38:38,006 - ERROR - Request failed for ID 194489: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=194489
+2025-08-06 01:38:43,279 - INFO - Found valid article: ID 820095 - Laporan Audit: LPP gagal belanja peruntukan RM448.87 juta
+2025-08-06 01:38:43,279 - INFO - Summary length: 57 characters
+2025-08-06 01:38:47,480 - INFO - Found valid article: ID 279359 - Gas sarin dikesan di Ibu Pejabat Facebook - Utusan Malaysia
+2025-08-06 01:38:47,480 - INFO - Summary length: 59 characters
+2025-08-06 01:38:49,844 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:38:49,847 - INFO - ID 261162 not a valid article page - skipping
+2025-08-06 01:38:53,443 - INFO - Found valid article: ID 128864 - Kegiatan ambil untung jejaskan prestasi Bursa Malaysia - Utusan Malaysia
+2025-08-06 01:38:53,444 - INFO - Summary length: 72 characters
+2025-08-06 01:38:55,970 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:38:55,973 - INFO - ID 768016 not a valid article page - skipping
+2025-08-06 01:38:58,112 - ERROR - Request failed for ID 366989: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=366989
+2025-08-06 01:39:01,860 - ERROR - Request failed for ID 811679: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=811679
+2025-08-06 01:39:06,937 - INFO - Found valid article: ID 473122 - AirAsia BIG Loyalty melancarkan BIG Xchange - Utusan Malaysia
+2025-08-06 01:39:06,937 - INFO - Summary length: 61 characters
+2025-08-06 01:39:09,565 - ERROR - Request failed for ID 551670: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=551670
+2025-08-06 01:39:13,225 - ERROR - Request failed for ID 164901: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=164901
+2025-08-06 01:39:16,726 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:39:16,728 - INFO - ID 463042 not a valid article page - skipping
+2025-08-06 01:39:19,004 - ERROR - Request failed for ID 892491: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=892491
+2025-08-06 01:39:22,609 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:39:22,614 - INFO - ID 613179 not a valid article page - skipping
+2025-08-06 01:39:24,851 - ERROR - Request failed for ID 323286: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=323286
+2025-08-06 01:39:30,618 - INFO - Found valid article: ID 557232 - PKNK sudah hentikan kerja di kaki Gunung Jerai - Utusan Malaysia
+2025-08-06 01:39:30,618 - INFO - Summary length: 64 characters
+2025-08-06 01:39:33,291 - ERROR - Request failed for ID 630296: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=630296
+2025-08-06 01:39:37,089 - ERROR - Request failed for ID 641761: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=641761
+2025-08-06 01:39:42,231 - INFO - Found valid article: ID 415432 - Huawei hilang akses ke atas Android, Google  - Utusan Malaysia
+2025-08-06 01:39:42,231 - INFO - Summary length: 62 characters
+2025-08-06 01:39:44,707 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:39:44,709 - INFO - ID 846908 not a valid article page - skipping
+2025-08-06 01:39:48,642 - INFO - Found valid article: ID 895251 - Tiada cuti tambahan Aidilfitri pada 12 April - Anwar
+2025-08-06 01:39:48,642 - INFO - Summary length: 52 characters
+2025-08-06 01:39:52,849 - INFO - Found valid article: ID 752968 - Bebas mampu tewaskan PH, PN - Utusan Malaysia
+2025-08-06 01:39:52,850 - INFO - Summary length: 45 characters
+2025-08-06 01:39:56,927 - INFO - Found valid article: ID 461297 - Ambil tindakan tegas majikan gajikan PATI - Utusan Malaysia
+2025-08-06 01:39:56,927 - INFO - Summary length: 59 characters
+2025-08-06 01:39:59,430 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:39:59,435 - INFO - ID 825983 not a valid article page - skipping
+2025-08-06 01:40:01,652 - ERROR - Request failed for ID 718179: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=718179
+2025-08-06 01:40:06,688 - INFO - Found valid article: ID 396635 - Thi Huong dipenjara tiga tahun cederakan Jong-nam - Utusan Malaysia
+2025-08-06 01:40:06,688 - INFO - Summary length: 67 characters
+2025-08-06 01:40:10,720 - INFO - Found valid article: ID 710641 - Kejar pengetahuan secara berterusan
+2025-08-06 01:40:10,721 - INFO - Summary length: 35 characters
+2025-08-06 01:40:13,158 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:40:13,163 - INFO - ID 382257 not a valid article page - skipping
+2025-08-06 01:40:15,402 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:40:15,406 - INFO - ID 676608 not a valid article page - skipping
+2025-08-06 01:40:17,572 - ERROR - Request failed for ID 893622: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=893622
+2025-08-06 01:40:21,262 - ERROR - Request failed for ID 756606: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=756606
+2025-08-06 01:40:27,445 - INFO - Found valid article: ID 524396 - Peniaga diberi tempoh sebulan kemas kini tanda harga dengan kadar GST sifar - Utusan Malaysia
+2025-08-06 01:40:27,445 - INFO - Summary length: 93 characters
+2025-08-06 01:40:30,096 - ERROR - Request failed for ID 872894: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=872894
+2025-08-06 01:40:33,787 - ERROR - Request failed for ID 892839: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=892839
+2025-08-06 01:40:39,753 - INFO - Found valid article: ID 486715 - Merah 'membara' penyokong Harimau Malaya - Utusan Malaysia
+2025-08-06 01:40:39,754 - INFO - Summary length: 58 characters
+2025-08-06 01:40:42,407 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:40:42,412 - INFO - ID 696013 not a valid article page - skipping
+2025-08-06 01:40:44,449 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:40:44,452 - INFO - ID 628181 not a valid article page - skipping
+2025-08-06 01:40:46,590 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:40:46,594 - INFO - ID 304646 not a valid article page - skipping
+2025-08-06 01:40:48,806 - ERROR - Request failed for ID 846575: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=846575
+2025-08-06 01:40:54,088 - INFO - Found valid article: ID 490580 - Dua ahli PKR ditahan SPRM - Utusan Malaysia
+2025-08-06 01:40:54,088 - INFO - Summary length: 43 characters
+2025-08-06 01:40:56,774 - ERROR - Request failed for ID 700304: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=700304
+2025-08-06 01:41:00,468 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:41:00,472 - INFO - ID 582607 not a valid article page - skipping
+2025-08-06 01:41:05,535 - INFO - Found valid article: ID 467769 - Lebih 2,000 guru alami stres - Utusan Malaysia
+2025-08-06 01:41:05,535 - INFO - Summary length: 46 characters
+2025-08-06 01:41:08,306 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:41:08,311 - INFO - ID 354642 not a valid article page - skipping
+2025-08-06 01:41:10,511 - ERROR - Request failed for ID 754794: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=754794
+2025-08-06 01:41:12,535 - INFO - 31 articles saved to /workspaces/ner_news_malay/scraper/news/malay_news_2025-08-06.csv and /workspaces/ner_news_malay/scraper/news/malay_news_2025-08-06.parquet
+2025-08-06 01:41:12,536 - INFO - Scrape completed. IDs checked: 100, Valid articles found: 31
+2025-08-06 01:42:00,732 - INFO - Fetching from Utusan Malaysia...
+2025-08-06 01:42:01,548 - INFO - Successfully processed Utusan Malaysia
+2025-08-06 01:42:02,549 - INFO - Fetching from Berita Harian...
+2025-08-06 01:42:02,629 - INFO - Successfully processed Berita Harian
+2025-08-06 01:42:03,629 - INFO - Fetching from Harian Metro...
+2025-08-06 01:42:03,854 - INFO - Successfully processed Harian Metro
+2025-08-06 01:42:04,855 - INFO - Fetching from Kosmo...
+2025-08-06 01:42:05,700 - INFO - Successfully processed Kosmo
+2025-08-06 01:42:06,700 - INFO - Fetching from Astro Awani...
+2025-08-06 01:42:07,000 - INFO - Successfully processed Astro Awani
+2025-08-06 01:42:08,016 - INFO - 131 news items saved to /workspaces/ner_news_malay/scraper/news_feed/malay_news_2025-08-06.csv and /workspaces/ner_news_malay/scraper/news_feed/malay_news_2025-08-06.parquet
+2025-08-06 01:42:08,016 - INFO - Scrape completed. Total sources: 5, Successful: 5, Failed: 0, Articles collected: 131
+2025-08-06 01:42:36,273 - INFO - Checking 100 random article IDs from Utusan Malaysia
+2025-08-06 01:42:37,936 - ERROR - Request failed for ID 145800: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=145800
+2025-08-06 01:42:42,895 - INFO - Found valid article: ID 413410 - PH mahu Malaysia dikenali kerana integriti, antirasuah - Utusan Malaysia
+2025-08-06 01:42:42,895 - INFO - Summary length: 72 characters
+2025-08-06 01:42:45,354 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:42:45,359 - INFO - ID 793550 not a valid article page - skipping
+2025-08-06 01:42:49,220 - INFO - Found valid article: ID 149057 - Covid-19: Turun  8,574 kes selepas tiga hari melebihi paras 9,000 - Utusan Malaysia
+2025-08-06 01:42:49,221 - INFO - Summary length: 83 characters
+2025-08-06 01:42:53,453 - INFO - Found valid article: ID 399468 - Tidak mustahil rampasan kuasa di Malaysia - Utusan Malaysia
+2025-08-06 01:42:53,453 - INFO - Summary length: 59 characters
+2025-08-06 01:42:56,170 - ERROR - Request failed for ID 873751: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=873751
+2025-08-06 01:43:01,440 - INFO - Found valid article: ID 612822 - Tawaran PN praktikal, mampu dilaksanakan - Azmin
+2025-08-06 01:43:01,440 - INFO - Summary length: 48 characters
+2025-08-06 01:43:04,153 - ERROR - Request failed for ID 185182: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=185182
+2025-08-06 01:43:07,963 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 01:43:07,973 - INFO - ID 421258 not a valid article page - skipping
+2025-08-06 01:43:11,774 - INFO - Found valid article: ID 666260 - Raja Muda Perlis, Raja Puan Muda adakan pertemuan dengan Ketua Perwakilan Qatar
+2025-08-06 01:43:11,775 - INFO - Summary length: 79 characters
+2025-08-06 01:43:15,925 - INFO - Found valid article: ID 434850 - Kontraktor dijel 7 hari, denda RM10,000 - Utusan Malaysia
+2025-08-06 01:43:15,925 - INFO - Summary length: 57 characters
