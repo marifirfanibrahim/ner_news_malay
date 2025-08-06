@@ -1,4 +1,4 @@
-# new_scraper_malay.py
+# new_scraper_utusan.py
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -10,7 +10,7 @@ import time
 import random
 from requests.exceptions import RequestException
 
-# Configure logging
+# logging config
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -20,51 +20,56 @@ logging.basicConfig(
     ]
 )
 
-# File path configuration
+# file path config
 today = datetime.datetime.now().strftime("%Y-%m-%d")
 news_id_folder = '/workspaces/ner_news_malay/scraper/news_id'
 os.makedirs(news_id_folder, exist_ok=True)
 
-csv_filename = os.path.join(news_id_folder, f'malay_news{today}.csv')
-parquet_filename = os.path.join(news_id_folder, f'malay_news{today}.parquet')
+csv_filename = os.path.join(news_id_folder, f'utusan_news_{today}.csv')
+parquet_filename = os.path.join(news_id_folder, f'utusan_news_{today}.parquet')
 
-# Website configuration
-SOURCE_NAME = "Utusan Malaysia"
-BASE_URL = "https://www.utusan.com.my"
-ID_RANGE = (100000, 900000)  # Estimated ID range
-NUM_IDS_TO_CHECK = 100  # Number of random IDs to check per run
+# Utusan Malaysia configuration
+utusan_config = {
+    "name": "Utusan Malaysia",
+    "base_url": "https://www.utusan.com.my",
+    "id_param": "p",
+    "id_range": (100000, 900000),
+    "num_ids_to_check": 100,
+    "title_selector": "title",
+    "date_selector": ".jeg_meta_date a",
+    "category_selector": ".jeg_meta_category a",
+    # Updated to get all paragraphs in the content container
+    "content_container": "/html/body/div[6]/div/div/div/section[3]/div/div/div[1]/div/div/div[5]/div"
+}
 
 news_items = []
-valid_ids_found = 0
+articles_found = 0
 
 # Generate random IDs to check
-random_ids = random.sample(range(ID_RANGE[0], ID_RANGE[1]), NUM_IDS_TO_CHECK)
+random_ids = random.sample(range(utusan_config['id_range'][0], utusan_config['id_range'][1]), 
+                          utusan_config['num_ids_to_check'])
 
-logging.info(f"Checking {NUM_IDS_TO_CHECK} random article IDs from {SOURCE_NAME}")
+logging.info(f"Checking {utusan_config['num_ids_to_check']} random article IDs from {utusan_config['name']}")
 
 for article_id in random_ids:
     try:
         # Construct the URL
-        article_url = f"{BASE_URL}/?p={article_id}"
+        article_url = f"{utusan_config['base_url']}/?{utusan_config['id_param']}={article_id}"
         
         # Fetch the article page
         response = requests.get(article_url, timeout=15)
         response.raise_for_status()
         
         # Skip if redirected to homepage
-        if response.url == BASE_URL + "/" or response.url == BASE_URL:
-            logging.info(f"ID {article_id} redirected to homepage - skipping")
-            time.sleep(0.5)
+        if response.url == utusan_config['base_url'] + "/" or response.url == utusan_config['base_url']:
             continue
             
         # Parse the HTML
         soup = BeautifulSoup(response.content, 'html.parser')
         
         # Check if it's a valid article page
-        title_tag = soup.find('title')
-        if not title_tag or title_tag.text.strip() == "Utusan Malaysia":
-            logging.info(f"ID {article_id} not a valid article page - skipping")
-            time.sleep(0.5)
+        title_tag = soup.find(utusan_config['title_selector'])
+        if not title_tag or title_tag.text.strip() == utusan_config['name']:
             continue
             
         # Extract title
@@ -72,67 +77,58 @@ for article_id in random_ids:
         
         # Extract date
         pub_date = ""
-        date_element = soup.select_one(".jeg_meta_date a")
-        if not date_element:
-            date_element = soup.select_one(".date")
+        date_element = soup.select_one(utusan_config['date_selector'])
         if date_element:
             pub_date = date_element.text.strip()
         
         # Extract category
         category = ""
-        category_element = soup.select_one(".jeg_meta_category a")
-        if not category_element:
-            category_element = soup.select_one(".category a")
+        category_element = soup.select_one(utusan_config['category_selector'])
         if category_element:
             category = category_element.text.strip()
         
-        # Extract content - more robust approach
-        content = ""
-        content_element = None
-        
-        # Try multiple selectors
-        selectors = [
-            ".content-inner .jeg_post_content",
-            ".entry-content",
-            ".article-content",
-            ".post-content",
-            ".jeg_post_content",
-            ".content"
-        ]
-        
-        for selector in selectors:
-            content_element = soup.select_one(selector)
-            if content_element:
-                break
-        
-        if content_element:
-            # Remove unwanted elements but keep paragraph tags
-            for element in content_element.select('script, style, iframe, .ad-container, .jeg_share_button, .related-posts, .comments, .social-share'):
-                element.decompose()
+        # Extract all paragraphs from content container
+        content_paragraphs = []
+        try:
+            # Find the content container using XPath-like structure
+            container = soup.select_one('body > div:nth-child(6) > div > div > div > section:nth-child(3) > div > div > div:nth-child(1) > div > div > div:nth-child(5) > div')
+            
+            if container:
+                # Extract all paragraph elements
+                paragraphs = container.find_all('p')
                 
-            # Get text content while preserving paragraph structure
-            paragraphs = content_element.find_all(['p', 'div'])
-            content = " ".join([p.get_text(strip=True) for p in paragraphs if p.get_text(strip=True)])
-            content = re.sub(r'\s+', ' ', content).strip()
+                # Collect text from each paragraph
+                for p in paragraphs:
+                    text = p.get_text(strip=True)
+                    if text:  # Skip empty paragraphs
+                        content_paragraphs.append(text)
+        except Exception as e:
+            logging.warning(f"Couldn't extract content for ID {article_id}: {str(e)}")
         
-        # Create summary - fallback to title if no content
-        if content:
-            # Try to get first 2 paragraphs as summary
-            summary = " ".join(content.split()[:200])
-            last_punct = max(summary.rfind('.'), summary.rfind('!'), summary.rfind('?'))
-            if last_punct > 0:
-                summary = summary[:last_punct + 1]
+        # Combine paragraphs into full content
+        full_content = " ".join(content_paragraphs)
+        
+        # Create summary ending on a sentence
+        summary = full_content
+        if full_content:
+            # Find the last sentence-ending punctuation in the entire content
+            last_punct = max(
+                full_content.rfind('.'),
+                full_content.rfind('!'),
+                full_content.rfind('?')
+            )
+            
+            if last_punct != -1:
+                summary = full_content[:last_punct + 1]
             else:
-                # If no punctuation, just take first 200 words
-                summary = " ".join(content.split()[:200])
+                # If no punctuation found, use the entire content
+                summary = full_content
         else:
-            # Fallback to title if no content found
-            summary = title
+            summary = "No content available"
         
-        # Add to results
+        # Add to dataset
         news_items.append({
-            "News_Source": SOURCE_NAME,
-            "Unique_ID": article_id,
+            "News_Source": utusan_config['name'],
             "Title": title,
             "Source_URL": response.url,
             "Publish_Date": pub_date,
@@ -141,30 +137,29 @@ for article_id in random_ids:
             "Scrape_Date": today
         })
         
-        valid_ids_found += 1
-        logging.info(f"Found valid article: ID {article_id} - {title}")
+        articles_found += 1
+        logging.info(f"Found article: ID {article_id} - {title[:50]}...")
         logging.info(f"Summary length: {len(summary)} characters")
-        time.sleep(1)
+        time.sleep(random.uniform(0.5, 1.5))  # Random delay between requests
         
-    except RequestException as req_error:
-        logging.error(f"Request failed for ID {article_id}: {str(req_error)}")
-        time.sleep(2)
+    except RequestException:
+        time.sleep(2)  # Longer delay on request failure
     except Exception as e:
         logging.error(f"Error processing ID {article_id}: {str(e)}")
         time.sleep(1)
 
-# Create DataFrame
+# create df
 if news_items:
     df = pd.DataFrame(news_items)
-    
-    # Save files
+
+    # save files
     try:
         df.to_csv(csv_filename, index=False, encoding='utf-8-sig')
         df.to_parquet(parquet_filename, index=False)
-        logging.info(f"{len(df)} articles saved to {csv_filename} and {parquet_filename}")
+        logging.info(f"{articles_found} Utusan articles saved to {csv_filename} and {parquet_filename}")
     except Exception as save_error:
         logging.error(f"Failed to save files: {str(save_error)}")
 
-# Final log
-logging.info(f"Scrape completed. IDs checked: {NUM_IDS_TO_CHECK}, "
-             f"Valid articles found: {valid_ids_found}")
+# log summary
+logging.info(f"Scrape completed. IDs checked: {utusan_config['num_ids_to_check']}, "
+             f"Articles found: {articles_found}")
