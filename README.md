@@ -2,7 +2,7 @@
 
 This repository includes:
 1. scraper: to scrape Malaysian news online
-2. Gliner NER model (in progress): predicting labels on scraped news
+2. model_gliner (in progress): using the gliner model to predict labels on scraped news
 3. tokenizer (for studying): to tokenize scraped news
 4. transformer (for studying): for the NER model
 
