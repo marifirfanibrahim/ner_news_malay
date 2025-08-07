@@ -657,3 +657,7 @@ Original exception(s) from parser:
 2025-08-06 03:09:54,525 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
 2025-08-06 03:09:55,963 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
 2025-08-06 03:10:04,752 - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-08-06 03:10:07,882 - INFO - Found article: ID 289636 - [VIDEO] Mahkamah Jalan Duta terima maklumat ancama...
+2025-08-06 03:10:07,882 - INFO - Summary length: 20 characters
+2025-08-06 03:10:12,727 - INFO - Found article: ID 437829 - Strategi bangkit semula! - Utusan Malaysia...
+2025-08-06 03:10:12,727 - INFO - Summary length: 20 characters
