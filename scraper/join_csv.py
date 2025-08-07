@@ -23,7 +23,7 @@ if df_list:
     # Concatenate all DataFrames in the list
     merged_df = pd.concat(df_list, ignore_index=True)
     # Save to NEW file (original files remain untouched)
-    merged_df.to_csv(os.path.join(root_directory, "merged_output.csv"), index=False)
+    merged_df.to_csv(os.path.join(root_directory, "/workspaces/ner_news_malay/scraper/news_merged/malay_news.csv"), index=False)
     print(f"Merged {len(df_list)} files successfully! Output: merged_output.csv")
 else:
     print("No CSV files found to merge.")
