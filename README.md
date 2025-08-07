@@ -1,4 +1,4 @@
-NER
+# NER for Malaysian news in Malay language
 
 This repository includes:
 1. scraper: to scrape Malaysian news online
@@ -6,7 +6,7 @@ This repository includes:
 3. tokenizer (for studying): to tokenize scraped news
 4. transformer (for studying): for the NER model
 
-A. Data Collection
+## A. Data Collection
 News article are collected by using the scraper. There are two scrapers used - each using a slightly different approach.
 
 One is parsing the articles directly from the news feed. Following this approach, while providing a quicker runtime and more articles per run, each of these articles can only provide the summary of the article, or even shorter. Since the articles are found on the feed page, there tends to be a "Read more..." at the end of the short summary, oftenly without finishing the last sentence. Another issue is that the articles that appear on the feed page updates ever so often. Meaning that this approach only works on the most recent of news, casting older ones out into the archive.
