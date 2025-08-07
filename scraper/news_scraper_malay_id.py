@@ -1,4 +1,4 @@
-# new_scraper_utusan.py
+# import libraries
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -242,7 +242,7 @@ for article_id in random_ids:
         
     except RequestException as e:
         logging.warning(f"Request failed for ID {article_id}: {str(e)}")
-        time.sleep(3)   # adjust delay
+        time.sleep(3)   
     except Exception as e:
         logging.error(f"Error processing ID {article_id}: {str(e)}")
         time.sleep(1.5)
