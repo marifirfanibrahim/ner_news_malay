@@ -52,7 +52,7 @@ if parquet_dfs:
         compression='snappy',
         index=False
     )
-    print(f"\nMerged {len(parquet_dfs)} Parquet files into {parquet_output_path}")
+    print(f"\nMerged {len(parquet_dfs)} parquet files into {parquet_output_path}")
     print(f"Parquet dataset size: {len(merged_parquet):,} rows")
 else:
     print("\nNo Parquet files found to merge.")
