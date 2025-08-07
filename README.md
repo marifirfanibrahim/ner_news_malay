@@ -16,7 +16,12 @@ Another one is using random id's to find articles to parse [link](#id-approach).
 Even so, to have more data overall, it would be better to use both approaches. One to provide more rows of data of different contexts, and the other for deeper insight on individual contexts. Best of both worlds!
 
 ### Feed-approach
-The 'news_scraper_malay_feed.py' file excecutes the scraping on
+The `news_scraper_malay_feed.py` file excecutes the scraping multiple news websites feed pages. These are:
+- https://www.utusan.com.my/feed
+- https://www.bharian.com.my/feed/
+- https://www.hmetro.com.my/feed/
+- https://www.kosmo.com.my/feed/ 
+- https://www.astroawani.com/feeds/posts/default?alt=rss
 
 ### ID-approach
-
+This approach uses the `news_scraper_malay_id.py` file. It scrapes news articles based on randomized id's. In this code, it gets the data from the https://www.utusan.com.my.
