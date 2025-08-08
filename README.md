@@ -281,4 +281,4 @@ df.to_parquet(parquet_filename, index=False)
 scraper/news_scraper_malay_feed.py --> scraper/news_scraper_malay_id.py --> scraper/join_csv.py --> model_gliner/prediction_main.ipynb
 
 ## C. Prediction Analysis
-...
+`model_gliner/prediction_analysis.ipynb`
