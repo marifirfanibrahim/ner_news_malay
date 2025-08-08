@@ -269,10 +269,10 @@ df.to_parquet(parquet_filename, index=False)
 |PERCENT|Percentage
 |WORK_OF_ART|Titles of Creative Works
 |TIME|Time
-|ORDINAL|Ordinal Numbers
-|CARDINAL|Cardinal Numbers
+|ORDINAL|Sequence Numbers
+|CARDINAL|Counting Numbers
 |QUANTITY|Measurements
-|LAW|Named Documents Made Into Laws|
+|LAW|Law Documents|
 
 ### Labeling Prediction
 <p align='justify'>The `model_gliner/prediction_main.ipynb` file will be used to predict the labels on the text data gathered from the news scraping in Part A. Here, The `model_gliner/malay_news.parquet` file is extracted of its title and summary column entries. These extractions are put in seperate sentences into a txt file. The txt file, `model_gliner/malay_news_corpus.txt`, is then used with the gliner model for the prediction. The specific gliner used for this is the `urchade/gliner_multi`, which supports the Malay language.</p>
