@@ -3449,3 +3449,39 @@ Original exception(s) from parser:
 2025-08-08 04:00:42,559 - WARNING - Request failed for ID 894134: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=894134
 2025-08-08 04:00:45,574 - INFO - 27 Utusan articles saved to /workspaces/ner_news_malay/scraper/news_id/malay_news_2025-08-08_0353.csv and /workspaces/ner_news_malay/scraper/news_id/malay_news_2025-08-08_0353.parquet
 2025-08-08 04:00:45,574 - INFO - Scrape completed. IDs checked: 100, Articles found: 27, Articles excluded (no content): 7
+2025-08-08 07:47:10,788 - INFO - Checking 100 random article IDs from Utusan Malaysia
+2025-08-08 07:47:12,543 - WARNING - Request failed for ID 758017: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=758017
+2025-08-08 07:47:17,200 - WARNING - Request failed for ID 324992: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=324992
+2025-08-08 07:47:21,850 - WARNING - Request failed for ID 786389: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=786389
+2025-08-08 07:47:26,542 - WARNING - Request failed for ID 239155: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=239155
+2025-08-08 07:47:31,250 - WARNING - Request failed for ID 135306: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=135306
+2025-08-08 07:47:35,933 - WARNING - Request failed for ID 817119: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=817119
+2025-08-08 07:47:40,593 - WARNING - Request failed for ID 238981: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=238981
+2025-08-08 07:47:45,339 - WARNING - Request failed for ID 275335: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=275335
+2025-08-08 07:47:51,222 - INFO - Found article: ID 174782 - Lif sering rosak, penduduk tertekan - Utusan Malay...
+2025-08-08 07:47:51,222 - INFO - Date: 2021-08-19 | Category:  | Summary length: 2727 chars
+2025-08-08 07:47:57,568 - WARNING - Request failed for ID 673706: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=673706
+2025-08-08 07:48:02,313 - WARNING - Request failed for ID 274337: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=274337
+2025-08-08 07:48:07,033 - WARNING - Request failed for ID 263805: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=263805
+2025-08-08 07:48:11,671 - WARNING - Request failed for ID 173394: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=173394
+2025-08-08 07:48:21,728 - WARNING - Request failed for ID 780915: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=780915
+2025-08-08 07:48:28,690 - WARNING - Request failed for ID 727821: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=727821
+2025-08-08 07:48:34,916 - WARNING - Skipping article ID 400820 - no content found
+2025-08-08 07:48:38,221 - INFO - Found article: ID 250922 - Individu langgar HSO boleh dikompaun sehingga RM1,...
+2025-08-08 07:48:38,221 - INFO - Date: 2021-12-28 | Category:  | Summary length: 1647 chars
+2025-08-08 07:48:41,124 - WARNING - Request failed for ID 314808: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=314808
+2025-08-08 07:48:45,916 - WARNING - Request failed for ID 892455: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=892455
+2025-08-08 07:48:50,577 - WARNING - Request failed for ID 227231: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=227231
+2025-08-08 07:48:56,937 - WARNING - Skipping article ID 434596 - no content found
+2025-08-08 07:48:58,663 - WARNING - Request failed for ID 580439: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=580439
+2025-08-08 07:49:03,346 - WARNING - Request failed for ID 364977: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=364977
+2025-08-08 07:49:15,116 - INFO - Found article: ID 113862 - Hafizul Hakim nafi ke Kedah - Utusan Malaysia...
+2025-08-08 07:49:15,116 - INFO - Date: 2021-05-14 | Category:  | Summary length: 1185 chars
+2025-08-08 07:49:20,730 - INFO - Found article: ID 706590 - Taufan Mocha ranapkan negeri asal Rohingya...
+2025-08-08 07:49:20,730 - INFO - Date: 2023-05-15 | Category:  | Summary length: 3262 chars
+2025-08-08 07:49:25,736 - INFO - Found article: ID 758312 - Polis siasat video tular pemuda dikasari sekumpula...
+2025-08-08 07:49:25,736 - INFO - Date: 2023-08-12 | Category:  | Summary length: 1015 chars
+2025-08-08 07:49:29,832 - WARNING - Request failed for ID 540553: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=540553
+2025-08-08 07:49:34,489 - WARNING - Request failed for ID 586746: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=586746
+2025-08-08 07:49:41,124 - WARNING - Skipping article ID 478514 - no content found
+2025-08-08 07:49:45,233 - WARNING - Request failed for ID 819747: 404 Client Error: Not Found for url: https://www.utusan.com.my/?p=819747
