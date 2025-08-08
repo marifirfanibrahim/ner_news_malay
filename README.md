@@ -1,8 +1,8 @@
 # NER for Malaysian news in Malay language
 
 This repository includes:
-1. scraper: to scrape Malaysian news online
-2. model_gliner (in progress): using the gliner model to predict labels on scraped news
+1. scraper: to scrape Malaysian news online ([Feed-approach](#feed-approach))([ID-approach](#id-approach))
+2. model_gliner (in progress): using the gliner model to predict labels on scraped news ([Labeling Prediction](#labeling-prediction))
 3. tokenizer (for studying): to tokenize scraped news
 4. transformer (for studying): for the NER model
 
@@ -274,7 +274,7 @@ df.to_parquet(parquet_filename, index=False)
 |QUANTITY|Measurements
 |LAW|Named Documents Made Into Laws|
 
-### Labelling Prediction
+### Labeling Prediction
 <p align='justify'>The `model_gliner/prediction_main.ipynb` file will be used to predict the labels on the text data gathered from the news scraping in Part A. Here, The `model_gliner/malay_news.parquet` file is extracted of its title and summary column entries. These extractions are put in seperate sentences into a txt file. The txt file, `model_gliner/malay_news_corpus.txt`, is then used with the gliner model for the prediction. The specific gliner used for this is the `urchade/gliner_multi`, which supports the Malay language.</p>
 
 ### Running
