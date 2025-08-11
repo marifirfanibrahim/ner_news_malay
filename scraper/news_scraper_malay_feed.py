@@ -15,7 +15,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('/workspaces/ner_news_malay/scraper/news_scraper.log'),
+        logging.FileHandler('./scraper/news_scraper.log'),
         logging.StreamHandler()
     ]
 )
@@ -23,7 +23,7 @@ logging.basicConfig(
 # file path config
 today = datetime.datetime.now().strftime("%Y-%m-%d")                        # get today's date
 
-news_feed_folder = '/workspaces/ner_news_malay/scraper/news_feed'                                                        # setup save folder
+news_feed_folder = './scraper/news_feed'                                                        # setup save folder
 os.makedirs(news_feed_folder, exist_ok=True)
 
 csv_filename = os.path.join(news_feed_folder, f'malay_news_{today}.csv')         # setup save pathing

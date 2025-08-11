@@ -16,7 +16,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('/workspaces/ner_news_malay/scraper/news_scraper.log'),
+        logging.FileHandler('./scraper/news_scraper.log'),
         logging.StreamHandler()
     ]
 )
@@ -27,7 +27,7 @@ date_str = current_datetime.strftime("%Y-%m-%d")
 time_str = current_datetime.strftime("%H%M")      
 
 # file path config
-news_id_folder = '/workspaces/ner_news_malay/scraper/news_id'
+news_id_folder = './scraper/news_id'
 os.makedirs(news_id_folder, exist_ok=True)
 
 # save setup

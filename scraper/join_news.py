@@ -2,8 +2,8 @@ import os
 import pandas as pd
 
 # set/create paths
-root_directory = "/workspaces/ner_news_malay/scraper"
-output_folder = "/workspaces/ner_news_malay/model_gliner"
+root_directory = "./scraper"
+output_folder = "./model_gliner"
 os.makedirs(output_folder, exist_ok=True)
 
 csv_dfs = []
