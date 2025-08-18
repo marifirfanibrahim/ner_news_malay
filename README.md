@@ -6,7 +6,7 @@ This repository includes:
 3. tokenizer (for studying): to tokenize scraped news
 4. transformer (for studying): for the NER model
 
-## A.Architecutre
+## A. Architecutre
 ![NER moderl architeture](NER_model_architecture.png)
 
 ## B. Data Collection
@@ -284,4 +284,34 @@ df.to_parquet(parquet_filename, index=False)
 scraper/news_scraper_malay_feed.py --> scraper/news_scraper_malay_id.py --> scraper/join_csv.py --> model_gliner/prediction/prediction_first_line.ipynb
 
 ## D. Prediction Analysis
-<p align='justify'> In this part, we will be using the `model_gliner/poor_conf_analysis.ipynb` file. This is to analyze the low confidence scores. From here, perhaps we can identify the approach suitable to fine-tune the model. </p>
+<p align='justify'> In this part, we will be using the `model_gliner/poor_conf_analysis.ipynb` file. This is to analyze the low confidence scores. From here, perhaps we can identify the approach suitable to fine-tune the model. 
+
+In this analysis, these questions are to be answered: </p>
+1. Is there a correlation between label frequency and confidence scores?    (`label`)
+2. Are low-confidence predictions associated with text frequency/rarity?    (`text`)
+3. Do certain label types show systematic confidence patterns?              (`label`)
+4. Is confidence score correlated with text length?                         (`text`)
+5. Is confidence score correlated with complexity?                          (`text`)
+
+Based on these questions, 
+
+* If low scores correlate with rare labels: Augment training data for underrepresented classes.
+* If low scores correlate with rare words: Add domain-specific vocabulary for training.
+* If low scores are consistent with certain label group: Focused annotation to cator specific labelings.
+
+## E. Fine-Tune Preparation
+<p align='justify'> Based on the analysis, the confidence score is correlated with the number of labels predicted. This means that by increasing the number of predicted labels, the confidence score will increase as wel. However, this would only appply after the prediction.
+The good news is that from the analysis, there are a few label types that have shown to have poor high confidence score ratio against low confidence score. This is while some low frequency labels have good ratio. So, to increase the confidence score with less label frequency. The training data needs to be augmented. Here, there are two things that can be done for this augmentation. These are: </p>
+- get contextual texts that corresponds to poor ratio labels, which are the labels that has more low scores than high scores.
+- synthesize training data for rare texts, which are low score labels with less than 100 per 20,000 predictions.
+
+Poor ratio labels:
+`ORDINAL`, `CARDINAL`, `QUANTITY`, `NORP`, `WORK_OF_ART`, and `EVENT`
+
+Rare labels:
+`ORDINAL`, `NORP`
+
+<p align='justify'> For this, we are using the `fine_tuning_prep.ipynb` </p>
+
+## F. Fine-Tuning
+<p align='justify'> To fine-tune the model, we will be using the `fine_tuning.ipynb` </p>
