@@ -6,7 +6,10 @@ This repository includes:
 3. tokenizer (for studying): to tokenize scraped news
 4. transformer (for studying): for the NER model
 
-## A. Data Collection
+## A.Architecutre
+<image = 
+
+## B. Data Collection
 <p align='justify'>News article are collected by using the scraper. There are two scrapers used - each using a slightly different approach. One is parsing the articles directly from the news feed. Another one is using random id's to find articles to parse.  Generally, to have more data overall, it would be better to use both approaches. One to provide more rows of data of different contexts, and the other for deeper insight on individual contexts. Best of both worlds!</p>
 
 ### Feed-approach
@@ -252,7 +255,7 @@ df.to_parquet(parquet_filename, index=False)
 ### Handling Mutiple Files of Data
 <p align='justify'>The `scraper/join_csv.py` was made to join all the csv and parquet files into one file respectively. This is easen the data cleaning and preparation for the NER model. The merged file will be saved at `model_gliner/malay_news.csv` and `model_gliner/malay_news.parquet` resepectively.</p>
 
-## B. Data Labeling
+## C. Data Labeling
 <p align='justify'>The labels that will be used for this model is as follows:
 
 |  Label  |  Entity  |
@@ -280,5 +283,5 @@ df.to_parquet(parquet_filename, index=False)
 ### Running
 scraper/news_scraper_malay_feed.py --> scraper/news_scraper_malay_id.py --> scraper/join_csv.py --> model_gliner/prediction_main.ipynb
 
-## C. Prediction Analysis
+## D. Prediction Analysis
 `model_gliner/prediction_analysis.ipynb`
