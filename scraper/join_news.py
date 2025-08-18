@@ -3,7 +3,7 @@ import pandas as pd
 
 # set/create paths
 root_directory = "ner_news_malay\scraper"
-output_folder = "..\model_gliner\data"
+output_folder = "..\model_gliner\news_data"
 os.makedirs(output_folder, exist_ok=True)
 
 csv_dfs = []
