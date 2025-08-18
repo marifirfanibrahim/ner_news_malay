@@ -302,8 +302,9 @@ Based on these questions,
 ## E. Fine-Tune Preparation
 <p align='justify'> Based on the analysis, the confidence score is correlated with the number of labels predicted. This means that by increasing the number of predicted labels, the confidence score will increase as wel. However, this would only appply after the prediction.
 The good news is that from the analysis, there are a few label types that have shown to have poor high confidence score ratio against low confidence score. This is while some low frequency labels have good ratio. So, to increase the confidence score with less label frequency. The training data needs to be augmented. Here, there are two things that can be done for this augmentation. These are: </p>
-- get contextual texts that corresponds to poor ratio labels, which are the labels that has more low scores than high scores.
-- synthesize training data for rare texts, which are low score labels with less than 100 per 20,000 predictions.
+
+* get contextual texts that corresponds to poor ratio labels, which are the labels that has more low scores than high scores.
+* synthesize training data for rare texts, which are low score labels with less than 100 per 20,000 predictions.
 
 Poor ratio labels:
 `ORDINAL`, `CARDINAL`, `QUANTITY`, `NORP`, `WORK_OF_ART`, and `EVENT`
