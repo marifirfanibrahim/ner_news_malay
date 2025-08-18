@@ -281,7 +281,7 @@ df.to_parquet(parquet_filename, index=False)
 <p align='justify'>The `model_gliner/prediction_main.ipynb` file will be used to predict the labels on the text data gathered from the news scraping in Part A. Here, The `model_gliner/malay_news.parquet` file is extracted of its title and summary column entries. These extractions are put in seperate sentences into a txt file. The txt file, `model_gliner/malay_news_corpus.txt`, is then used with the gliner model for the prediction. The specific gliner used for this is the `urchade/gliner_multi`, which supports the Malay language.</p>
 
 ### Running
-scraper/news_scraper_malay_feed.py --> scraper/news_scraper_malay_id.py --> scraper/join_csv.py --> model_gliner/prediction_main.ipynb
+scraper/news_scraper_malay_feed.py --> scraper/news_scraper_malay_id.py --> scraper/join_csv.py --> model_gliner/prediction/prediction_first_line.ipynb
 
 ## D. Prediction Analysis
-`model_gliner/prediction_analysis.ipynb`
+<p align='justify'> In this part, we will be using the `model_gliner/poor_conf_analysis.ipynb` file. This is to analyze the low confidence scores. From here, perhaps we can identify the approach suitable to fine-tune the model. </p>
